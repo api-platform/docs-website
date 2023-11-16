@@ -2,6 +2,7 @@
 # This script fetches api-platform/core to retrieve guides and references
 root=$(pwd)
 IFS=$'\n' read -d '' -r -a versions < docs-versions.txt
+current_version=$(cat current_version.txt)
 
 phive install --trust-gpg-keys 62D05354C61458CB8378FD323F82299C64F51AD2 --copy php-documentation-generator/php-documentation-generator
 

@@ -3,7 +3,6 @@
 root=$(pwd)
 
 IFS=$'\n' read -d '' -r -a versions < docs-versions.txt
-current_version=$(cat current_version.txt)
 
 if [[ ! -d $root/docs.temp ]]; then
   git clone --depth=1 https://github.com/api-platform/docs docs.temp
