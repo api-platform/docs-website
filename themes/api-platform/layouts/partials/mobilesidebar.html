@@ -58,7 +58,13 @@
         </label>
           <div class="py-12 px-6">
               <nav>
-{{- $menuID := replace .Page.Section "." "" }}
+  {{- $menuID := replace .Page.Section "." "" }}
+  {{- .Scratch.Set "menuID" $menuID }}
+  {{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
+  {{- if in $sections $menuID }}
+    {{- .Scratch.Set "menuID" "32" }}
+  {{- end }}
+  {{- $menuID := .Scratch.Get "menuID" }}
   {{ partial "menu.html" (dict "menuID" $menuID "page" .) }}
   </nav>
           </div>

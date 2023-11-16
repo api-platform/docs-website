@@ -42,7 +42,7 @@ Renders a menu for the given menu ID.
           data-menu-open="opacity-100" data-menu-close="opacity-0">
           {{- range .Children}}
             {{- $attrs := dict "href" .URL "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-gray-500 border-l-transparent"}}
-            {{- if $page.IsMenuCurrent .Menu . }}
+            {{- if or ($page.IsMenuCurrent .Menu .) (eq $page.Section .Name) }}
               {{- $attrs = merge $attrs (dict "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-blue border-l-blue font-semibold" "aria-current" "page") }}
             {{- end }}
             <li class="mb-4">
