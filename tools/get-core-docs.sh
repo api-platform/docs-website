@@ -2,7 +2,7 @@
 # This script fetches api-platform/core to retrieve guides and references
 root=$(pwd)
 IFS=$'\n' read -d '' -r -a versions < docs-versions.txt
-current_version=$(cat current_version.txt)
+current_version=$(cat $root/current-version.txt)
 
 phive install --trust-gpg-keys 62D05354C61458CB8378FD323F82299C64F51AD2 --copy php-documentation-generator/php-documentation-generator
 
@@ -30,8 +30,8 @@ do
 		composer install
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
-		$root/tools/pdg guides $root/content/$version/guides
-		$root/tools/pdg references $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
+		$root/tools/pdg guides --quiet --no-debug $root/content/$version/guides
+		$root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
 	fi
 done
 
