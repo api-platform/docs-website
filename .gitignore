@@ -7,3 +7,4 @@ node_modules
 data/*
 tools/pdg
 tools/php-documentation-generator
+.hugo_build.lock
