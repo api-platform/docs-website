@@ -33,3 +33,5 @@ do
 		$root/tools/pdg references $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
 	fi
 done
+
+cp -ur $root/content/$current_version/* $root/content/

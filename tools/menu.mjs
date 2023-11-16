@@ -81,8 +81,8 @@ versions.forEach((version) => {
 type: reference
 ---
 `)
-    mkdirpSync('./data/reference')
-    writeFileSync(`./data/reference/${version}.yaml`, stringify(index))
+    mkdirpSync('./data/references')
+    writeFileSync(`./data/references/${version}.yaml`, stringify(index))
   }
 
   const file = readFileSync(`./content/${version}/outline.yaml`, {encoding: 'utf8'})
@@ -122,6 +122,7 @@ type: reference
   menu += `[[${menuVersion}]]
     name = "API Reference"
     url = '/${version}/references/'
+    pageRef = '/${version}/references/_index.md'
     weight = 3
 `
   }
@@ -130,6 +131,7 @@ type: reference
   menu += `[[${menuVersion}]]
     name = "Guides"
     url = '/${version}/guides/'
+    pageRef = '/${version}/guides/_index.md'
     weight = 3
 `
 
@@ -149,6 +151,7 @@ type: reference
   menu += `[[${menuVersion}]]
     name = "Changelog"
     url = '/${version}/changelog/'
+    pageRef = '/${version}/changelog/'
 `
 
   menu += `[[${menuVersion}]]
@@ -162,7 +165,6 @@ type: reference
     weight = ${version === 'main' ? 0 : version.replace('.', '')}
     parent = "Versions"
 `
-
   })
 
 })
