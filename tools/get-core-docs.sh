@@ -29,7 +29,7 @@ do
 		composer install
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
-		$root/tools/pdg guides $root/content/$version/guides
-		$root/tools/pdg references $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
+		$root/tools/php-documentation-generator guides $root/content/$version/guides
+		$root/tools/php-documentation-generator references $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
 	fi
 done
