@@ -1,0 +1,2 @@
+{{ $result := transform.HighlightCodeBlock . }}
+{{ replaceRE `\x60&lt;a href=(.+)?&gt;(.+)?&lt;\/a&gt;\x60` "<a href=$1>$2</a>" $result.Wrapped | safeHTML}}

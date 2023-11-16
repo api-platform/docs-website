@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "mkdirp": "^3.0.1",
+    "yaml": "^2.3.4"
+  }
+}

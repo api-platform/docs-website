@@ -1,0 +1,7 @@
+baseURL = 'https://api-platform.com/docs/'
+languageCode = 'en-us'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

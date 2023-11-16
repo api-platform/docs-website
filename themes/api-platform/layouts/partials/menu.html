@@ -1,0 +1,59 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+  {{- range .}}
+    {{- $attrs := dict "href" .URL "class" "flex-1 font-semibold uppercase doc-category" }}
+		{{- $isOpen := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "flex-1 font-semibold uppercase doc-category text-blue" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "text-gray-700 dark:text-white flex-1 font-semibold uppercase doc-category text-blue" "aria-current" "true") }}
+    {{- end }}
+    <div class="doc-nav transition-all duration-300 {{ if $isOpen }}mb-8{{ else }}mb-4{{end}}" data-menu-open="mb-8" data-menu-close="mb-4" data-identifier="{{ or (T .Identifier) .Name | safeHTML }}" data-is-open="{{ if $isOpen }}1{{ else }}0{{ end }}">
+      <div {{- if gt (len .Children) 0 }} onclick="toggleSidebarMenu(event)" {{- end }} class="flex flex-row items-center text-left text-gray-700 dark:text-white" data-menu-open="text-blue" data-menu-close="text-gray-700">
+        {{- if gt (len .Children) 0 }}
+        <p role="button" {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end
+          -}}>{{ .Name | safeHTML }}
+        </p>
+        <button class="ml-2 transition-all block">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="h-4 w-4 transition-transform {{ if $isOpen }}rotate-180{{end}}" data-menu-open="rotate-180">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        {{- else }}
+          <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end
+            -}}>{{ .Name | safeHTML }}</a>
+        {{- end }}
+      </div>
+			<div class="mt-4 text-gray-500 dark:text-gray-300 duration-500 transition-all grid {{ if $isOpen }}grid-rows-[1fr]{{ else }}grid-rows-[0fr]{{ end }}"
+          data-menu-open="grid-rows-[1fr]" data-menu-close="grid-rows-[0fr]">
+			{{- if ge (len .Children) 0 }}
+          <ul
+            class="pr-8 border-l-gray-300 dark:border-l-blue-dark border-l-px transition-all duration-500 overflow-hidden {{ if $isOpen }}opacity-100{{ else }}opacity-0{{ end }}"
+            data-menu-open="opacity-100" data-menu-close="opacity-0">
+            {{- range .Children}}
+              {{- $attrs := dict "href" .URL "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-gray-500 border-l-transparent"}}
+              {{- if $page.IsMenuCurrent .Menu . }}
+                {{- $attrs = merge $attrs (dict "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-blue border-l-blue font-semibold" "aria-current" "page") }}
+              {{- end }}
+              <li class="mb-4">
+                <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>{{
+                  .Name | safeHTML }}</a>
+              </li>
+            {{- end }}
+          </ul>
+			{{- end }}
+			</div>
+    </div>
+  {{- end }}
+{{- end }}

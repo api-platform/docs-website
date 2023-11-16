@@ -1,0 +1,70 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+<nav class="relative w-72 h-full px-8 pt-16 overflow-y-auto transition-all duration-300" data-minimize="-translate-x-full">
+  <div class="doc-nav transition-all duration-300" data-menu-open="mb-8" data-menu-close="mb-4">
+    {{- $page := .page }}
+    {{- range .menuEntries }}
+      {{- $attrs := dict "href" .URL }}
+      {{- if $page.IsMenuCurrent .Menu . }}
+        {{- $attrs = merge $attrs (dict "class" "is-active text-blue flex-1 font-semibold uppercase doc-category" "aria-current" "page") }}
+      {{- else if $page.HasMenuCurrent .Menu .}}
+        {{- $attrs = merge $attrs (dict "class" "text-gray-700 dark:text-white flex-1 font-semibold uppercase doc-category" "aria-current" "true") }}
+      {{- end }}
+      <div class="flex flex-row items-center text-left">
+        <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end
+          -}}>{{ or (T .Identifier) .Name | safeHTML }}</a>
+        {{- if ge (len .Children) 0 }}
+        <button class="ml-2 transition-all" onclick="openMenu(event)">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="h-4 w-4 transition-transform" data-menu-open="rotate-180">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        {{- end }}
+      </div>
+      {{- with .Children }}
+        <div class="mt-4 text-gray-500 dark:text-gray-300 duration-500 transition-all grid grid-rows-[0fr]"
+          data-menu-open="grid-rows-[1fr]" data-menu-close="grid-rows-[0fr]">
+          <ul
+            class="pr-8 border-l-gray-300 dark:border-l-blue-dark border-l-px transition-all duration-500 overflow-hidden opacity-0"
+            data-menu-open="opacity-100" data-menu-close="opacity-0">
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+          </ul>
+        </div>
+      {{- end }}
+    {{- end }}
+  </div>
+</nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+    {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-gray-500 border-l-transparent"}}
+    {{- if $page.IsMenuCurrent .Menu . }}
+    {{- $attrs = merge $attrs (dict "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-blue border-l-blue font-semibold" "aria-current" "page") }}
+    {{- end }}
+    <li class="mb-4">
+      <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>{{
+        or (T .Identifier) .Name | safeHTML }}</a>
+    </li>
+  {{- end }}
+{{- end }}
+
+
+
+
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+            k
+{{- define "partials/inline/menu/walk.html" }}
+{{- end }}

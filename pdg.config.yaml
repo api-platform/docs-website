@@ -1,0 +1,11 @@
+pdg:
+    guides:
+        base_url: '/docs/guide'
+        src: './guides'
+    references:
+        exclude: ['*Factory.php', '*.tpl.php', 'deprecation.php']
+        exclude_path: ['JsonSchema/Tests', 'Metadata/Tests', 'OpenApi/Tests', 'GraphQl/Tests', 'RamseyUuid/Tests', 'HttpCache/Tests', 'Elasticsearch/Tests', 'Doctrine/Tests', 'Validator/Tests', 'Serializer/Tests', 'Symfony/Tests', 'State/Tests', 'Doctrine/Common/Tests']
+        namespace: 'ApiPlatform'
+        src: '../src'
+        tags_to_ignore: ['@experimental', '@internal']
+

@@ -1,0 +1,189 @@
+{{ define "main" }}
+    <div class="prose max-w-none dark:prose-invert prose-img:w-full prose-img:max-w-2xl prose-headings:font-title prose-h1:font-bold prose-code:after:hidden prose-code:before:hidden prose-code:py-1 prose-code:px-1.5 prose-code:bg-gray-100 prose-code:dark:bg-blue-darkest prose-h1:border-b-px prose-h1:border-b-gray-300 prose-h1:pb-2 max-md:prose-tr:flex max-md:prose-tr:flex-col max-md:prose-td:px-0 max-md:prose-td:py-1">
+
+      <div class="doc">
+      <!-- <BreadCrumbs breadCrumbs={[{ title: "References" }]} /> -->
+        <div class="bg-blue py-4 text-white px-4 sm:px-6 md:px-10 flex flex-col | lg:py-8 | xl:py-12 xl:flex-row xl:justify-between">
+          <h1 class="font-title text-5xl font-light leading-none text-white dark:text-blue-darkest border-none">Reference</h1>
+          <div class="mt-2 flex flex-col gap-2 | md:flex-row md:flex-1 md:items-center | xl:justify-end">
+            <div class="relative">
+              <button
+                type="button"
+                class="bg-white text-gray-500 text-sm rounded-[14px] relative min-w-[200px] px-3 h-9 w-full flex flex-row items-center | dark:bg-blue-darkest "
+                aria-expanded="true"
+                aria-haspopup="true"
+                onclick="toggleReferenceFilter(event)"
+              >
+                <span class="text-gray-400 font-normal dark:text-white/50">
+                  Type
+                </span>
+                <div class="pl-2 font-semibold flex flex-row items-center text-gray-500 dark:text-white/80" id="selectedReference">
+                 All
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 ml-auto"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+              <ul
+                id="referenceFilter"
+                class="text-gray-500 divide-y font-light text-sm rounded-[14px] divide-blue/20 absolute left-0 top-0 z-10 w-full bg-white shadow-md focus:outline-none overflow-hidden | dark:bg-blue-darkest dark:text-white/80 opacity-0 pointer-events-none" data-open="opacity-1" data-close="opacity-0 pointer-events-none">
+                <li
+                  class="flex flex-row items-center px-2 py-2 transition-all hover:bg-blue/10 font-bold"
+                  role="button"
+                  onclick="onChangeReferenceFilter(event)"
+                >
+                  All
+                </li>
+                <li
+                  class="flex flex-row items-center px-2 py-2 transition-all hover:bg-blue/10 font-light"
+                  role="button"
+                  onclick="onChangeReferenceFilter(event)"
+                >
+                 Class 
+                </li>
+                <li
+                  class="flex flex-row items-center px-2 py-2 transition-all hover:bg-blue/10 font-light"
+                  role="button"
+                  onclick="onChangeReferenceFilter(event)"
+                >
+                 Attribute 
+                </li>
+                <li
+                  class="flex flex-row items-center px-2 py-2 transition-all hover:bg-blue/10 font-light"
+                  role="button"
+                  onclick="onChangeReferenceFilter(event)"
+                >
+                 Interface 
+                </li>
+                <li
+                  class="flex flex-row items-center px-2 py-2 transition-all hover:bg-blue/10 font-light"
+                  role="button"
+                  onclick="onChangeReferenceFilter(event)"
+                >
+                 Trait
+                </li>
+              </ul>
+            </div>
+            <div class="relative inline-flex text-blue h-9">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+              <input
+                oninput="onChangeReferenceSearch(event)"
+                class="pl-12 w-full bg-white rounded-[14px] appearance-none py-2 pr-4 text-gray-500 leading-tight focus:outline-none  focus:text-blue focus:bg-white/90 | dark:bg-blue-darkest dark:focus:bg-blue-darkest/80"
+                type="search"
+                placeholder="Search..."
+                autoComplete="off"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="px-8 pt-4 pb-12">
+          {{ range $k, $v := (index $.Site.Data.reference .Page.Section) }}
+            <div class="mb-12 last:mb-0 overflow-x-hidden hidden [&:has(.is-visible)]:block">
+              <h2 class="text-xl font-semibold text-blue mb-3 mt-0 border-b-px border-b-gray-300 pb-2 overflow-x-hidden whitespace-nowrap text-ellipsis | md:text-3xl ">
+                {{$k}}
+              </h2>
+              <div class="grid grid-cols-1 gap-x-1 text-gray-700 font-light dark:text-gray-300 | lg:grid-cols-2 | xl:grid-cols-3">
+              {{ range $link := $v }}
+                <a href="{{$link.link}}" class="flex flex-row items-center justify-start transition-all py-1 pr-1.5 group !text-current !font-light no-underline | hover:!text-blue hover:pr-0 hover:pl-1.5 is-visible" data-reference-search="{{ $k}} {{ $link.title }}" data-reference-type="{{ $link.type }}">
+                  <div class="w-5 h-5 text-white flex items-center justify-center mr-2 text-xs font-bold dark:text-blue-black {{ $link.color }}">
+                      {{ substr $link.type 0 1 }}
+                    </div>
+                    <span class="flex-1 overflow-x-hidden whitespace-nowrap text-ellipsis">
+                      {{ $link.title }}
+                    </span>
+                </a>
+              {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <script>
+      const state = {open: false, current: 'All'}
+      window.toggleReferenceFilter = function(event) {
+        const list = document.getElementById('referenceFilter')
+        if (state.open) {
+          state.open = false
+          list.classList.remove(...list.dataset.open.split(' '))
+          list.classList.add(...list.dataset.close.split(' '))
+        } else {
+          state.open = true
+          list.classList.remove(...list.dataset.close.split(' '))
+          list.classList.add(...list.dataset.open.split(' '))
+        }
+      }
+      
+      window.onChangeReferenceFilter = function(event) {
+        const current = document.getElementById('selectedReference')
+        const next = event.currentTarget
+        const list = document.getElementById('referenceFilter')
+
+        current.innerText = next.innerText
+
+        ;[].slice.call(list.querySelectorAll('li')).forEach((e) => {
+          if (e === next) {
+            e.classList.remove('font-light')
+            e.classList.add('font-bold', 'text-blue')
+          } else {
+            e.classList.remove('font-bold', 'text-blue')
+            e.classList.add('font-light')
+          }
+        })
+
+        ;[].slice.call(document.querySelectorAll('[data-reference-type]')).forEach((el) => {
+          if (current.innerText === 'All') {
+            el.classList.remove('hidden')
+            el.classList.add("is-visible")
+            return
+          }
+
+          el.classList.add('hidden')
+          el.classList.remove('is-visible');
+
+          if (el.dataset.referenceType === current.innerText) {
+            el.classList.remove('hidden')
+            el.classList.add("is-visible")
+          }
+        })
+
+        window.toggleReferenceFilter()
+      }
+      window.onChangeReferenceSearch = function(event) {
+      const current = document.getElementById('selectedReference');
+      [].slice.call(document.querySelectorAll('[data-reference-search]')).forEach((el) => {
+          if (el.dataset.referenceSearch.toLowerCase().includes(event.target.value.toLowerCase()) && (el.dataset.referenceType === current.innerText || current.innerText === "All")) {
+            el.classList.remove('hidden');
+            el.classList.add("is-visible")
+          } else {
+          el.classList.add('hidden')
+          el.classList.remove("is-visible")
+          }
+        })
+    }
+    </script> 
+{{ end }}

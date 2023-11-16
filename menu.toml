@@ -1,0 +1,575 @@
+
+[[menu.main]]
+    name = 'The Distribution: Create Powerful APIs with Ease'
+    pageRef = '/distribution'
+    weight = 1000
+
+[[menu.main]]
+    name = 'Getting Started With API Platform: Create Your API and Your Jamstack Site'
+    pageRef = '/distribution/index'
+    weight = 1000
+    parent = 'The Distribution: Create Powerful APIs with Ease'
+
+[[menu.main]]
+    name = 'Testing the API'
+    pageRef = '/distribution/testing'
+    weight = 990
+    parent = 'The Distribution: Create Powerful APIs with Ease'
+
+[[menu.main]]
+    name = 'Debugging'
+    pageRef = '/distribution/debugging'
+    weight = 980
+    parent = 'The Distribution: Create Powerful APIs with Ease'
+
+[[menu.main]]
+    name = 'Configuring the Caddy Web Server'
+    pageRef = '/distribution/caddy'
+    weight = 970
+    parent = 'The Distribution: Create Powerful APIs with Ease'
+
+[[menu.main]]
+    name = 'Core'
+    pageRef = '/core'
+    weight = 990
+
+[[menu.main]]
+    name = 'The API Platform Core Library'
+    pageRef = '/core/index'
+    weight = 1000
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Getting started'
+    pageRef = '/core/getting-started'
+    weight = 990
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Upgrade Guide'
+    pageRef = '/core/upgrade-guide'
+    weight = 980
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'General Design Considerations'
+    pageRef = '/core/design'
+    weight = 970
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Extending API Platform'
+    pageRef = '/core/extending'
+    weight = 960
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Testing Utilities'
+    pageRef = '/core/testing'
+    weight = 950
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Operations'
+    pageRef = '/core/operations'
+    weight = 940
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'GraphQL Support'
+    pageRef = '/core/graphql'
+    weight = 930
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'State Providers'
+    pageRef = '/core/state-providers'
+    weight = 920
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'State Processors'
+    pageRef = '/core/state-processors'
+    weight = 910
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Filters'
+    pageRef = '/core/filters'
+    weight = 900
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Subresources'
+    pageRef = '/core/subresources'
+    weight = 890
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'The Serialization Process'
+    pageRef = '/core/serialization'
+    weight = 880
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Validation'
+    pageRef = '/core/validation'
+    weight = 870
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Security'
+    pageRef = '/core/security'
+    weight = 860
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Content Negotiation'
+    pageRef = '/core/content-negotiation'
+    weight = 850
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Pagination'
+    pageRef = '/core/pagination'
+    weight = 840
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Deprecating Resources and Properties (Alternative to Versioning)'
+    pageRef = '/core/deprecations'
+    weight = 830
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Overriding Default Order'
+    pageRef = '/core/default-order'
+    weight = 820
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Performance and Cache'
+    pageRef = '/core/performance'
+    weight = 810
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Extensions'
+    pageRef = '/core/extensions'
+    weight = 800
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Symfony Messenger Integration: CQRS and Async Message Processing'
+    pageRef = '/core/messenger'
+    weight = 790
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Using Data Transfer Objects (DTOs)'
+    pageRef = '/core/dto'
+    weight = 780
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'OpenAPI Specification Support (formerly Swagger)'
+    pageRef = '/core/openapi'
+    weight = 770
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'JSON Schema Support'
+    pageRef = '/core/json-schema'
+    weight = 760
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Creating Async APIs using the Mercure Protocol'
+    pageRef = '/core/mercure'
+    weight = 750
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Pushing Related Resources Using HTTP/2'
+    pageRef = '/core/push-relations'
+    weight = 740
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Errors Handling'
+    pageRef = '/core/errors'
+    weight = 730
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Using External Vocabularies'
+    pageRef = '/core/external-vocabularies'
+    weight = 720
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Operation Path Naming'
+    pageRef = '/core/operation-path-naming'
+    weight = 710
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'URL Generation Strategy'
+    pageRef = '/core/url-generation-strategy'
+    weight = 700
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Extending JSON-LD AND Hydra Contexts'
+    pageRef = '/core/extending-jsonld-context'
+    weight = 690
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Identifiers'
+    pageRef = '/core/identifiers'
+    weight = 680
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'MongoDB Support'
+    pageRef = '/core/mongodb'
+    weight = 670
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Elasticsearch Support'
+    pageRef = '/core/elasticsearch'
+    weight = 660
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Creating Custom Operations and Controllers'
+    pageRef = '/core/controllers'
+    weight = 650
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'The Event System'
+    pageRef = '/core/events'
+    weight = 640
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Handling File Upload'
+    pageRef = '/core/file-upload'
+    weight = 630
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'JWT Authentication'
+    pageRef = '/core/jwt'
+    weight = 620
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'User Entity'
+    pageRef = '/core/user'
+    weight = 610
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Accept `application/x-www-form-urlencoded` Form Data'
+    pageRef = '/core/form-data'
+    weight = 600
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'AngularJS Integration'
+    pageRef = '/core/angularjs-integration'
+    weight = 590
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'FOSUserBundle Integration'
+    pageRef = '/core/fosuser-bundle'
+    weight = 580
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'NelmioApiDocBundle Integration'
+    pageRef = '/core/nelmio-api-doc'
+    weight = 570
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Bootstraping the core library'
+    pageRef = '/core/bootstrap'
+    weight = 560
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Configuration'
+    pageRef = '/core/configuration'
+    weight = 550
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Migrate From FOSRestBundle'
+    pageRef = '/core/migrate-from-fosrestbundle'
+    weight = 540
+    parent = 'Core'
+
+[[menu.main]]
+    name = 'Schema Generator'
+    pageRef = '/schema-generator'
+    weight = 980
+
+[[menu.main]]
+    name = 'The Schema Generator'
+    pageRef = '/schema-generator/index'
+    weight = 1000
+    parent = 'Schema Generator'
+
+[[menu.main]]
+    name = 'Getting Started'
+    pageRef = '/schema-generator/getting-started'
+    weight = 990
+    parent = 'Schema Generator'
+
+[[menu.main]]
+    name = 'Configuration'
+    pageRef = '/schema-generator/configuration'
+    weight = 980
+    parent = 'Schema Generator'
+
+[[menu.main]]
+    name = 'Admin'
+    pageRef = '/admin'
+    weight = 970
+
+[[menu.main]]
+    name = 'The API Platform Admin'
+    pageRef = '/admin/index'
+    weight = 1000
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Getting Started'
+    pageRef = '/admin/getting-started'
+    weight = 990
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Handling Relations'
+    pageRef = '/admin/handling-relations'
+    weight = 980
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'OpenAPI'
+    pageRef = '/admin/openapi'
+    weight = 970
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Using the Schema.org Vocabulary'
+    pageRef = '/admin/schema.org'
+    weight = 960
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Validation'
+    pageRef = '/admin/validation'
+    weight = 950
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Real-time Updates With Mercure'
+    pageRef = '/admin/real-time-mercure'
+    weight = 940
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Authentication Support'
+    pageRef = '/admin/authentication-support'
+    weight = 930
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Handling File Upload'
+    pageRef = '/admin/file-upload'
+    weight = 920
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Performance'
+    pageRef = '/admin/performance'
+    weight = 910
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Customizing the Admin'
+    pageRef = '/admin/customizing'
+    weight = 900
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Components'
+    pageRef = '/admin/components'
+    weight = 890
+    parent = 'Admin'
+
+[[menu.main]]
+    name = 'Create Client'
+    pageRef = '/create-client'
+    weight = 960
+
+[[menu.main]]
+    name = 'API Platform Create Client'
+    pageRef = '/create-client/index'
+    weight = 1000
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Next.js Generator'
+    pageRef = '/create-client/nextjs'
+    weight = 990
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Nuxt Generator'
+    pageRef = '/create-client/nuxt'
+    weight = 980
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Vuetify Generator'
+    pageRef = '/create-client/vuetify'
+    weight = 970
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Quasar Framework Generator'
+    pageRef = '/create-client/quasar'
+    weight = 960
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'React Generator'
+    pageRef = '/create-client/react'
+    weight = 950
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'React Native generator'
+    pageRef = '/create-client/react-native'
+    weight = 940
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Vue.js Generator'
+    pageRef = '/create-client/vuejs'
+    weight = 930
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'TypeScript Interfaces'
+    pageRef = '/create-client/typescript'
+    weight = 920
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Custom Generator'
+    pageRef = '/create-client/custom'
+    weight = 910
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Troubleshooting'
+    pageRef = '/create-client/troubleshooting'
+    weight = 900
+    parent = 'Create Client'
+
+[[menu.main]]
+    name = 'Deployment'
+    pageRef = '/deployment'
+    weight = 950
+
+[[menu.main]]
+    name = 'Deploying API Platform Applications'
+    pageRef = '/deployment/index'
+    weight = 1000
+    parent = 'Deployment'
+
+[[menu.main]]
+    name = 'Deploying with Docker Compose'
+    pageRef = '/deployment/docker-compose'
+    weight = 990
+    parent = 'Deployment'
+
+[[menu.main]]
+    name = 'Deploying to a Kubernetes Cluster'
+    pageRef = '/deployment/kubernetes'
+    weight = 980
+    parent = 'Deployment'
+
+[[menu.main]]
+    name = 'Deploying to Minikube'
+    pageRef = '/deployment/minikube'
+    weight = 970
+    parent = 'Deployment'
+
+[[menu.main]]
+    name = 'Deploying an API Platform App on Heroku'
+    pageRef = '/deployment/heroku'
+    weight = 960
+    parent = 'Deployment'
+
+[[menu.main]]
+    name = 'Implement Træfik Into API Platform Dockerized'
+    pageRef = '/deployment/traefik'
+    weight = 950
+    parent = 'Deployment'
+
+[[menu.main]]
+    name = 'General Information'
+    pageRef = '/extra'
+    weight = 940
+
+[[menu.main]]
+    name = 'API Platform's Philosophy'
+    pageRef = '/extra/philosophy'
+    weight = 1000
+    parent = 'General Information'
+
+[[menu.main]]
+    name = 'The Release Process'
+    pageRef = '/extra/releases'
+    weight = 990
+    parent = 'General Information'
+
+[[menu.main]]
+    name = 'API Platform for Enterprise'
+    pageRef = '/extra/enterprise'
+    weight = 980
+    parent = 'General Information'
+
+[[menu.main]]
+    name = 'Security Policy'
+    pageRef = '/extra/security'
+    weight = 970
+    parent = 'General Information'
+
+[[menu.main]]
+    name = 'Troubleshooting'
+    pageRef = '/extra/troubleshooting'
+    weight = 960
+    parent = 'General Information'
+
+[[menu.main]]
+    name = 'Contribution guides'
+    pageRef = '/extra/contribution-guides'
+    weight = 950
+    parent = 'General Information'
+
+[[menu.main]]
+    name = 'Contributor Code of Conduct'
+    pageRef = '/extra/conduct'
+    weight = 940
+    parent = 'General Information'

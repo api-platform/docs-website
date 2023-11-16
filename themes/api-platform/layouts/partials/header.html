@@ -1,0 +1,58 @@
+<div class="sticky top-0 bg-white dark:bg-blue-darkest shadow-md left-0 w-full z-50">
+  <div onclick="toggleMenu(event)" class="fixed z-40 inset-0 transition-all duration-500  opacity-0 pointer-events-none"
+    data-open="backdrop-blur-sm bg-blue/30" data-close="opacity-0 pointer-events-none"></div>
+  <nav
+    class="mx-auto px-6 md:px-8 h-16 flex flex-row items-center gap-x-6 w-full max-w-8xl text-blue dark:text-blue-light lg:text-blue-black">
+    <a href="/" class="flex-1 flex flex-row text-blue" title="API Platform">
+      <div
+        class="w-[50px] h-[50px] bg-blue-extralight rounded-full flex items-center justify-center p-1 sm:hidden dark:bg-blue-light">
+        <img src="/docs/images/logo_spider.svg" class="w-full" alt="" />
+      </div>
+      <div class="hidden sm:block">
+        {{ partial "logos/api-platform.html" (dict "context" . "className" "h-5") }}
+      </div>
+    </a>
+    <div
+      class="-lg:uppercase -lg:font-bold -lg:text-xl fixed h-screen w-5/6 max-w-md top-0 bg-white dark:bg-blue-black z-40 transition-all duration-500 flex flex-col gap-6 justify-start items-center lg:bg-transparent lg:dark:bg-transparent lg:h-auto lg:w-auto lg:flex-row lg:static lg:justify-end lg:max-w-none -right-full" data-open="right-0 text-blue dark:text-blue-extralight" data-close="-right-full">
+      <div class="flex flex-col flex-1 items-center justify-center gap-5 lg:flex-row">
+        <a href="/docs/">Docs</a>
+        <a href="https://symfonycasts.com/screencast/api-platform?cid=apip">Screencasts</a>
+        <a href="https://api-platform.myspreadshop.net/">Shop</a>
+        <a href="/events/">Events</a>
+        <a href="/help/">Need&nbsp;help?</a>
+        <div
+          class="lg:border-x-2 py-1 lg:px-4 flex flex-row gap-4 lg:gap-2.5 lg:border-gray-300 lg:dark:border-white/50 text-blue dark:text-blue-light">
+          <a href="https://github.com/api-platform/api-platform" target="_blank" rel="noreferrer noopener">
+            {{ partial "logos/github.html" (dict "context" . "className" "h-7 w-7 lg:h-4 lg:w-4") }}
+          </a>
+          <a href="https://fosstodon.org/@ApiPlatform" target="_blank" rel="noreferrer noopener">
+            {{ partial "logos/mastodon.html" (dict "context" . "className" "h-7 w-7 lg:h-4 lg:w-4") }}
+          </a>
+          <a href="https://twitter.com/ApiPlatform" target="_blank" rel="noreferrer noopener">
+            {{ partial "logos/twitter.html" (dict "context" . "className" "h-7 w-7 lg:h-4 lg:w-4") }}
+          </a>
+        </div>
+        <a href="https://les-tilleuls.coop/en" target="_blank" rel="noreferer noopener"
+          class="hidden flex-col justify-center items-center text-center xl:flex">
+          <p class="text-xs opacity-70 -mt-1">Powered by</p>
+          {{ partial "logos/tilleuls.html" (dict "context" . "className" "w-28" "red" true) }}
+        </a>
+      </div>
+      <div class="bg-blue text-white dark:text-blue-black py-16 w-full px-12 block text-center lg:hidden"
+        title="API Platform">
+        <a href="/" title="API Platform">
+          {{ partial "logos/api-platform.html" (dict "context" . "className" "w-full") }}
+        </a>
+        <p class="text-sm font-light mt-4">powered by</p>
+        <a href="https://les-tilleuls.coop/en" target="_blank" rel="noreferer noopener" class="font-bold">
+          {{ partial "logos/tilleuls.html" (dict "context" . "className" "max-w-[170px] mx-auto") }}
+        </a>
+      </div>
+    </div>
+    <div onclick="toggleMenu(event)" class="w-7 h-5 flex relative items-center justify-center z-50 cursor-pointer lg:hidden text-blue dark:text-blue-light" data-open="dark:text-blue" data-close="dark:text-blue-light">
+      <div
+        class="h-0.75 bg-current transition-all after:absolute after:w-full after:left-1/2 after:h-0.75 after:bg-current  after:-translate-x-1/2 after:transition-all before:absolute before:w-full before:h-0.75 before:bg-current before:left-1/2 before:-translate-x-1/2 before:transition-all w-8 before:top-0 after:bottom-0" data-open="w-0 before:top-1/2 after:top-1/2 before:-rotate-45 before:-translate-y-1/2 after:rotate-45 after:-translate-y-1/2" data-close="w-8 before:top-0 after:bottom-0"> 
+      </div>
+    </div>
+  </nav>
+</div>

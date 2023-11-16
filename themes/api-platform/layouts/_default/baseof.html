@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" class="w-full light">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="bg-white">
+	<div class="relative w-full overflow-x-clip bg-white dark:bg-blue-black">
+    {{ partial "header.html" . }}
+    {{ partial "mobilesidebar.html" . }}
+    <div class="max-w-8xl mx-auto overflow-x-clip">
+      <div class="flex flex-row flex-wrap items-start justify-start">
+        {{ partial "sidebar.html" . }}
+        <div class="flex-1 overflow-x-clip">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </div>
+
+    </div>
+	</div>
+  {{ partial "footer.html" . }}
+</body>
+</html>

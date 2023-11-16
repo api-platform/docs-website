@@ -1,0 +1,9 @@
+.phive
+core.temp
+docs.temp
+public
+content/*
+node_modules
+data/*
+tools/pdg
+tools/php-documentation-generator
