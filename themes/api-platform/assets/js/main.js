@@ -123,6 +123,34 @@ function ApiPlatform() {
 
     })
 	})
+  let theme;
+
+  window.setThemeMode = function(mode) {
+  if (mode === "dark") {
+    document.documentElement.classList.add('dark');
+    document.documentElement.classList.add('group/dark');
+    document.documentElement.classList.remove('light');
+  } else {
+    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.remove('group/dark');
+    document.documentElement.classList.add('light');
+  }
+
+  window.toggleTheme = function() {
+    if (theme === "dark") theme = "light";
+    else theme = "dark";
+    localStorage.setItem("theme", theme);
+    setThemeMode(theme);
+  }
+  if (!theme) {
+     theme = localStorage.getItem("theme") || "light";
+     setThemeMode(theme);
+  }
+  //setThemeMode(theme);
+}
+
+
+setThemeMode(localStorage.getItem("theme") || "light");
 }
 
 ApiPlatform()
