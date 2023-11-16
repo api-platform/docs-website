@@ -58,16 +58,7 @@
         </label>
           <div class="py-12 px-6">
               <nav>
-  {{- $menuID := replace .Page.Section "." "" }}
-  {{- .Scratch.Set "menuID" $menuID }}
-  {{- if eq $menuID "" }}
-    {{- .Scratch.Set "menuID" "main" }}
-  {{- else if eq $menuID "changelog" }}
-    {{- .Scratch.Set "menuID" (path.Base .Page.Permalink) }}
-  {{- else if or (eq $menuID "guides") (eq $menuID "reference") }}
-    {{- .Scratch.Set "menuID" (index (split .Page.Permalink "/") 5) }}
-  {{- end }}
-  {{- $menuID := replace (.Scratch.Get "menuID") "." "" }}
+{{- $menuID := replace .Page.Section "." "" }}
   {{ partial "menu.html" (dict "menuID" $menuID "page" .) }}
   </nav>
           </div>

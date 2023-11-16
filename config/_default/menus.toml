@@ -664,6 +664,10 @@
     weight = 7
     parent = 'general-information'
 [[32]]
+    name = "API Reference"
+    url = '/3.2/references/'
+    weight = 3
+[[32]]
     name = "Guides"
     url = '/3.2/guides/'
     weight = 3
@@ -1482,6 +1486,10 @@
     url = '/3.1/extra/conduct'
     weight = 7
     parent = 'general-information'
+[[31]]
+    name = "API Reference"
+    url = '/3.1/references/'
+    weight = 3
 [[31]]
     name = "Guides"
     url = '/3.1/guides/'
@@ -6981,6 +6989,10 @@
     url = '/main/extra/conduct'
     weight = 7
     parent = 'general-information'
+[[main]]
+    name = "API Reference"
+    url = '/main/references/'
+    weight = 3
 [[main]]
     name = "Guides"
     url = '/main/guides/'

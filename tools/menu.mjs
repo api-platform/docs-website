@@ -51,15 +51,15 @@ let menu = ``
 const versions = readFileSync('./docs-versions.txt', {encoding: 'utf8'}).split('\n').map((v) => v.trim()).filter(v => v)
 versions.forEach((version) => {
   // API Reference _index generation
-  if (existsSync(`./content/${version}/reference/`)) {
+  if (existsSync(`./content/${version}/references/`)) {
     let referenceIndex = ''
     const index = {}
 
 
-      const links = globSync(`./content/${version}/reference/**/*.md`).filter(file => !file.includes("_index.md")).map((file) => {
+      const links = globSync(`./content/${version}/references/**/*.md`).filter(file => !file.includes("_index.md")).map((file) => {
         const {data} =  matter(readFileSync(file, {encoding: 'utf8'}).toString())
         const link = `/docs/${file}`.replace('.md', '').replace('/content', '')
-        const base = link.replace(`/docs/${version}/reference/`, '');
+        const base = link.replace(`/docs/${version}/references/`, '');
         let type = data['php-type']
         if (!type) {
           type = 'Class';
@@ -76,7 +76,7 @@ versions.forEach((version) => {
         else index[indexLink] = [fullLink];
       })
 
-    writeFileSync(`./content/${version}/reference/_index.md`, `
+    writeFileSync(`./content/${version}/references/_index.md`, `
 ---
 type: reference
 ---
@@ -118,10 +118,10 @@ type: reference
     })
   })
 
-  if (existsSync(`./content/${version}/reference`)) {
+  if (existsSync(`./content/${version}/references`)) {
   menu += `[[${menuVersion}]]
     name = "API Reference"
-    url = '/${version}/reference/'
+    url = '/${version}/references/'
     weight = 3
 `
   }

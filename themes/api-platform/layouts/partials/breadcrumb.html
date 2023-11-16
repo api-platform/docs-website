@@ -2,7 +2,7 @@
         {{ $parts := split .RelPermalink "/" }}
         {{ $lastPart := index $parts (sub (len $parts) 2) }}
         {{ if in .Permalink "/guides/" }} <span>Guides</span>
-        {{ else if in .Permalink "/reference/" }} <a class="hover:text-blue" href="/docs/{{ .Page.Section }}/references/">References</a>
+        {{ else if in .Permalink "/references/" }} <a class="hover:text-blue" href="/docs/{{ .Page.Section }}/references/">References</a>
         {{ else }} <a class="hover:text-blue" href="/docs/{{ .Page.Section }}/distribution">{{ .Page.Section }}</a>
         {{ end }}
         <svg
@@ -19,7 +19,7 @@
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
-          <span class="font-bold">{{ if in .Permalink "/reference/" }} {{ $lastPart }} {{ else }} {{- $page := .Page }}
+          <span class="font-bold">{{ if in .Permalink "/references/" }} {{ $lastPart }} {{ else }} {{- $page := .Page }}
       {{- $menuID := replace .Page.Section "." "" }}
       {{- with index site.Menus $menuID }}
         {{- range .}}
