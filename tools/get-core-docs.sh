@@ -34,4 +34,4 @@ do
 	fi
 done
 
-cp -ur $root/content/$current_version/* $root/content/
+cp -r $root/content/$current_version/* $root/content/

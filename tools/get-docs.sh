@@ -25,5 +25,3 @@ do
 done
 
 find $root/content/ -name "index.md" -exec sh -c 'f="{}"; mv -- "$f" "${f%index.md}_index.md"' \;
-
-cp -r $root/content/$current_version/* $root/content/
