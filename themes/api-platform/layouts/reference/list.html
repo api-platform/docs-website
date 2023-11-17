@@ -102,7 +102,7 @@
         </div>
         <div class="px-8 pt-4 pb-12">
           {{ range $k, $v := (index $.Site.Data.references .Page.Section) }}
-            <div class="mb-12 last:mb-0 overflow-x-hidden [&:has(.is-visible)]:block">
+            <div class="mb-12 last:mb-0 overflow-x-hidden hidden [&:has(.is-visible)]:block">
               <h2 class="text-xl font-semibold text-blue mb-3 mt-0 border-b-px border-b-gray-300 pb-2 overflow-x-hidden whitespace-nowrap text-ellipsis | md:text-3xl ">
                 {{$k}}
               </h2>
