@@ -191,7 +191,6 @@
 /* PreWrapper */
 
 .light .chroma {
-  background-color: #ffffff;
 }
 
 /* Other */
@@ -732,7 +731,6 @@
 
 .dark .chroma {
   color: #abb2bf;
-  background-color: #282c34;
 }
 
 /* Other */
@@ -2420,7 +2418,7 @@ img {
   --tw-prose-invert-kbd-shadows: 255 255 255;
   --tw-prose-invert-code: #fff;
   --tw-prose-invert-pre-code: #d1d5db;
-  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-pre-bg: #013137;
   --tw-prose-invert-th-borders: #4b5563;
   --tw-prose-invert-td-borders: #374151;
   font-size: 1rem;

@@ -1,5 +1,5 @@
 /* Background */ .light .bg { background-color: #ffffff; }
-/* PreWrapper */ .light .chroma { background-color: #ffffff; }
+/* PreWrapper */ .light .chroma { }
 /* Other */ .light .chroma .x {  }
 /* Error */ .light .chroma .err { color: #a61717; background-color: #e3d2d2 }
 /* CodeLine */ .light .chroma .cl { color: #24292E }
@@ -88,7 +88,7 @@
 
 
 /* Background */ .dark .bg { color: #abb2bf; background-color: #282c34; }
-/* PreWrapper */ .dark .chroma { color: #abb2bf; background-color: #282c34; }
+/* PreWrapper */ .dark .chroma { color: #abb2bf; }
 /* Other */ .dark .chroma .x {  }
 /* Error */ .dark .chroma .err {  }
 /* CodeLine */ .dark .chroma .cl {  }
