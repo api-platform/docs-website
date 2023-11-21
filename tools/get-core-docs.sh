@@ -31,8 +31,8 @@ do
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
 		$root/tools/pdg guides --quiet --no-debug $root/content/v$version/guides
-		$root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/$version/references/ --base-url /docs/v$version/references
+		$root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/v$version/references/ --base-url /docs/v$version/references
 	fi
 done
 
-cp -r $root/content/$current_version/* $root/content/
+cp -r $root/content/v$current_version/* $root/content/
