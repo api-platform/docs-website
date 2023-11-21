@@ -20,7 +20,7 @@ fi
 
 for version in "${versions[@]}"
 do
-	git worktree add $root/content/$version origin/$version
+	git worktree add $root/content/v$version origin/$version
 done
 
 find $root/content/ -name "index.md" -exec sh -c 'f="{}"; mv -- "$f" "${f%index.md}_index.md"' \;

@@ -24,14 +24,14 @@ do
 	git branch -D $version-temp
 	git checkout FETCH_HEAD -b $version-temp
 	git clean -fd
-	cp $root/core.temp/CHANGELOG.md $root/content/$version/changelog.md
+	cp $root/core.temp/CHANGELOG.md $root/content/v$version/changelog.md
 	if [[ -d $root/core.temp/docs/guides ]];
 	then
 		composer install
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
-		$root/tools/pdg guides --quiet --no-debug $root/content/$version/guides
-		$root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
+		$root/tools/pdg guides --quiet --no-debug $root/content/v$version/guides
+		$root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/$version/references/ --base-url /docs/v$version/references
 	fi
 done
 
