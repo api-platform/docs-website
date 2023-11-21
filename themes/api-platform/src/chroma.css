@@ -2,7 +2,7 @@
 /* PreWrapper */ .light .chroma { }
 /* Other */ .light .chroma .x {  }
 /* Error */ .light .chroma .err { color: #a61717; background-color: #e3d2d2 }
-/* CodeLine */ .light .chroma .cl { color: #24292E }
+/* CodeLine */ .light .chroma .cl { color: #24292E; white-space: pre-wrap; }
 /* LineLink */ .light .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
 /* LineTableTD */ .light .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .light .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
@@ -91,7 +91,7 @@
 /* PreWrapper */ .dark .chroma { color: #abb2bf; }
 /* Other */ .dark .chroma .x {  }
 /* Error */ .dark .chroma .err {  }
-/* CodeLine */ .dark .chroma .cl {  }
+/* CodeLine */ .dark .chroma .cl { white-space: pre-wrap; }
 /* LineLink */ .dark .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
 /* LineTableTD */ .dark .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .dark .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
