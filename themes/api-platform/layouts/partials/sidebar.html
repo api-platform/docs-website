@@ -11,13 +11,6 @@
     </svg>
   </button>
   <nav class="relative w-72 h-full px-8 pt-16 overflow-y-auto transition-all duration-300" data-minimize="-translate-x-full">
-  {{- $menuID := replace .Page.Section "." "" }}
-  {{- .Scratch.Set "menuID" $menuID }}
-  {{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
-  {{- if in $sections $menuID }}
-    {{- .Scratch.Set "menuID" "32" }}
-  {{- end }}
-  {{- $menuID := .Scratch.Get "menuID" }}
-  {{ partial "menu.html" (dict "menuID" $menuID "page" .) }}
+  {{ partial "menu.html" . }}
   </nav>
 </div>

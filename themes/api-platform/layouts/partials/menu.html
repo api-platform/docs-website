@@ -4,12 +4,17 @@ Renders a menu for the given menu ID.
 @context {page} page The current page.
 @context {string} menuID The menu ID.
 
-@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+@example: {{ partial "menu.html" (dict "page" .) }}
 */}}
 
-{{- $page := .page }}
-{{- $menuID := .menuID }}
-
+{{- $page := . }}
+{{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
+{{- $menuID := replace $page.Section "." "" }}
+{{- .Scratch.Set "menuID" $menuID }}
+{{- if in $sections $menuID }}
+  {{- .Scratch.Set "menuID" "v32" }}
+{{- end }}
+{{- $menuID := .Scratch.Get "menuID" }}
 {{- range index site.Menus $menuID }}
   {{- $attrs := dict "href" .URL "class" "flex-1 font-semibold uppercase doc-category" }}
   {{- $isOpen := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
@@ -42,7 +47,7 @@ Renders a menu for the given menu ID.
           data-menu-open="opacity-100" data-menu-close="opacity-0">
           {{- range .Children}}
             {{- $attrs := dict "href" .URL "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-gray-500 border-l-transparent"}}
-            {{- if or ($page.IsMenuCurrent .Menu .) (eq $page.Section .Name) }}
+            {{- if or ($page.IsMenuCurrent .Menu .) (eq $page.Section (printf "%s%s" "v" .Name)) }}
               {{- $attrs = merge $attrs (dict "class" "relative block pl-4 -translate-x-px border-l-px transition-all hover:border-l-gray-500 text-blue border-l-blue font-semibold" "aria-current" "page") }}
             {{- end }}
             <li class="mb-4">
