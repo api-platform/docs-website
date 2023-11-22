@@ -17,17 +17,15 @@ export PDG_AUTOLOAD=$root/core.temp/vendor/autoload.php
 
 for version in "${versions[@]}"
 do
-  # FIXME: use reset --hard instead of those 2 lines ?
-	git clean -fd
-	git restore .
+  git restore .
 	git fetch --depth=1 origin $version
 	git branch -D $version-temp
 	git checkout FETCH_HEAD -b $version-temp
-	git clean -fd
+  git reset --hard FETCH_HEAD
 	cp $root/core.temp/CHANGELOG.md $root/content/v$version/changelog.md
 	if [[ -d $root/core.temp/docs/guides ]];
 	then
-		composer install
+		composer install --prefer-dist 
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
 		$root/tools/pdg guides --quiet --no-debug $root/content/v$version/guides
