@@ -52,29 +52,26 @@ const versions = readFileSync('./docs-versions.txt', {encoding: 'utf8'}).split('
 versions.forEach((version) => {
   // API Reference _index generation
   if (existsSync(`./content/v${version}/references/`)) {
-    let referenceIndex = ''
     const index = {}
-
-
-      const links = globSync(`./content/v${version}/references/**/*.md`).filter(file => !file.includes("_index.md")).map((file) => {
-        const {data} =  matter(readFileSync(file, {encoding: 'utf8'}).toString())
-        const link = `/docs/v${file}`.replace('.md', '').replace('/content', '')
-        const base = link.replace(`/docs/v${version}/references/`, '');
-        let type = data['php-type']
-        if (!type) {
-          type = 'Class';
-        }
-        const parts = base.split("/");
-        const fullLink = {
-          type,
-          title: parts[parts.length - 1],
-          link,
-          color: getColor(type),
-        };
-        const indexLink = parts.slice(0, -1).join("/");
-        if (index[indexLink]) index[indexLink].unshift(fullLink);
-        else index[indexLink] = [fullLink];
-      })
+    globSync(`./content/v${version}/references/**/*.md`).filter(file => !file.includes("_index.md")).forEach((file) => {
+      const {data} =  matter(readFileSync(file, {encoding: 'utf8'}).toString())
+      const link = `/docs/v${file}`.replace('.md', '').replace('/content', '')
+      const base = link.replace(`/docs/v${version}/references/`, '');
+      let type = data['php-type']
+      if (!type) {
+        type = 'Class';
+      }
+      const parts = base.split("/");
+      const fullLink = {
+        type,
+        title: parts[parts.length - 1],
+        link,
+        color: getColor(type),
+      };
+      const indexLink = parts.slice(0, -1).join("/");
+      if (index[indexLink]) index[indexLink].unshift(fullLink);
+      else index[indexLink] = [fullLink];
+    })
 
     writeFileSync(`./content/v${version}/references/_index.md`, `
 ---
@@ -127,7 +124,7 @@ type: reference
 `
   }
 
-  if (existsSync(`./vcontent/${version}/guides`)) {
+  if (existsSync(`./content/v${version}/guides`)) {
   menu += `[[${menuVersion}]]
     name = "Guides"
     url = '/v${version}/guides/'

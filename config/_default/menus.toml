@@ -664,6 +664,106 @@
     weight = 7
     parent = 'general-information'
 [[v32]]
+    name = "API Reference"
+    url = '/v3.2/references/'
+    pageRef = '/v3.2/references/_index.md'
+    weight = 3
+[[v32]]
+    name = "Guides"
+    url = '/v3.2/guides/'
+    pageRef = '/v3.2/guides/_index.md'
+    weight = 3
+[[v32]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/create-a-custom-doctrine-filter.md"
+    url = "/v3.2/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v32]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/custom-pagination.md"
+    url = "/v3.2/guides/custom-pagination"
+    weight = "12"
+[[v32]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/declare-a-resource.md"
+    url = "/v3.2/guides/declare-a-resource"
+    weight = "1"
+[[v32]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/delete-operation-with-validation.md"
+    url = "/v3.2/guides/delete-operation-with-validation"
+    weight = "20"
+[[v32]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/doctrine-entity-as-resource.md"
+    url = "/v3.2/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v32]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/doctrine-search-filter.md"
+    url = "/v3.2/guides/doctrine-search-filter"
+    weight = "7"
+[[v32]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/extend-openapi-documentation.md"
+    url = "/v3.2/guides/extend-openapi-documentation"
+    weight = "11"
+[[v32]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/handle-links.md"
+    url = "/v3.2/guides/handle-links"
+    weight = "15"
+[[v32]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v3.2/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v32]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/how-to.md"
+    url = "/v3.2/guides/how-to"
+    weight = "0"
+[[v32]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/provide-the-resource-state.md"
+    url = "/v3.2/guides/provide-the-resource-state"
+    weight = "2"
+[[v32]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v3.2/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v32]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/subresource.md"
+    url = "/v3.2/guides/subresource"
+    weight = "8"
+[[v32]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/test-your-api.md"
+    url = "/v3.2/guides/test-your-api"
+    weight = "7"
+[[v32]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v3.2/guides/validate-incoming-data.md"
+    url = "/v3.2/guides/validate-incoming-data"
+    weight = "5"
+[[v32]]
     name = "Changelog"
     url = '/v3.2/changelog/'
     pageRef = '/v3.2/changelog/'
@@ -1389,6 +1489,106 @@
     url = '/v3.1/extra/conduct'
     weight = 7
     parent = 'general-information'
+[[v31]]
+    name = "API Reference"
+    url = '/v3.1/references/'
+    pageRef = '/v3.1/references/_index.md'
+    weight = 3
+[[v31]]
+    name = "Guides"
+    url = '/v3.1/guides/'
+    pageRef = '/v3.1/guides/_index.md'
+    weight = 3
+[[v31]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/create-a-custom-doctrine-filter.md"
+    url = "/v3.1/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v31]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/custom-pagination.md"
+    url = "/v3.1/guides/custom-pagination"
+    weight = "12"
+[[v31]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/declare-a-resource.md"
+    url = "/v3.1/guides/declare-a-resource"
+    weight = "1"
+[[v31]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/delete-operation-with-validation.md"
+    url = "/v3.1/guides/delete-operation-with-validation"
+    weight = "20"
+[[v31]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/doctrine-entity-as-resource.md"
+    url = "/v3.1/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v31]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/doctrine-search-filter.md"
+    url = "/v3.1/guides/doctrine-search-filter"
+    weight = "7"
+[[v31]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/extend-openapi-documentation.md"
+    url = "/v3.1/guides/extend-openapi-documentation"
+    weight = "11"
+[[v31]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/handle-links.md"
+    url = "/v3.1/guides/handle-links"
+    weight = "15"
+[[v31]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v3.1/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v31]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/how-to.md"
+    url = "/v3.1/guides/how-to"
+    weight = "0"
+[[v31]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/provide-the-resource-state.md"
+    url = "/v3.1/guides/provide-the-resource-state"
+    weight = "2"
+[[v31]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v3.1/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v31]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/subresource.md"
+    url = "/v3.1/guides/subresource"
+    weight = "8"
+[[v31]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/test-your-api.md"
+    url = "/v3.1/guides/test-your-api"
+    weight = "7"
+[[v31]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v3.1/guides/validate-incoming-data.md"
+    url = "/v3.1/guides/validate-incoming-data"
+    weight = "5"
 [[v31]]
     name = "Changelog"
     url = '/v3.1/changelog/'
@@ -2116,6 +2316,106 @@
     weight = 7
     parent = 'general-information'
 [[v30]]
+    name = "API Reference"
+    url = '/v3.0/references/'
+    pageRef = '/v3.0/references/_index.md'
+    weight = 3
+[[v30]]
+    name = "Guides"
+    url = '/v3.0/guides/'
+    pageRef = '/v3.0/guides/_index.md'
+    weight = 3
+[[v30]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/create-a-custom-doctrine-filter.md"
+    url = "/v3.0/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v30]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/custom-pagination.md"
+    url = "/v3.0/guides/custom-pagination"
+    weight = "12"
+[[v30]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/declare-a-resource.md"
+    url = "/v3.0/guides/declare-a-resource"
+    weight = "1"
+[[v30]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/delete-operation-with-validation.md"
+    url = "/v3.0/guides/delete-operation-with-validation"
+    weight = "20"
+[[v30]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/doctrine-entity-as-resource.md"
+    url = "/v3.0/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v30]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/doctrine-search-filter.md"
+    url = "/v3.0/guides/doctrine-search-filter"
+    weight = "7"
+[[v30]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/extend-openapi-documentation.md"
+    url = "/v3.0/guides/extend-openapi-documentation"
+    weight = "11"
+[[v30]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/handle-links.md"
+    url = "/v3.0/guides/handle-links"
+    weight = "15"
+[[v30]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v3.0/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v30]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/how-to.md"
+    url = "/v3.0/guides/how-to"
+    weight = "0"
+[[v30]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/provide-the-resource-state.md"
+    url = "/v3.0/guides/provide-the-resource-state"
+    weight = "2"
+[[v30]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v3.0/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v30]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/subresource.md"
+    url = "/v3.0/guides/subresource"
+    weight = "8"
+[[v30]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/test-your-api.md"
+    url = "/v3.0/guides/test-your-api"
+    weight = "7"
+[[v30]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v3.0/guides/validate-incoming-data.md"
+    url = "/v3.0/guides/validate-incoming-data"
+    weight = "5"
+[[v30]]
     name = "Changelog"
     url = '/v3.0/changelog/'
     pageRef = '/v3.0/changelog/'
@@ -2835,6 +3135,106 @@
     weight = 7
     parent = 'general-information'
 [[v27]]
+    name = "API Reference"
+    url = '/v2.7/references/'
+    pageRef = '/v2.7/references/_index.md'
+    weight = 3
+[[v27]]
+    name = "Guides"
+    url = '/v2.7/guides/'
+    pageRef = '/v2.7/guides/_index.md'
+    weight = 3
+[[v27]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.7/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v27]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/custom-pagination.md"
+    url = "/v2.7/guides/custom-pagination"
+    weight = "12"
+[[v27]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/declare-a-resource.md"
+    url = "/v2.7/guides/declare-a-resource"
+    weight = "1"
+[[v27]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/delete-operation-with-validation.md"
+    url = "/v2.7/guides/delete-operation-with-validation"
+    weight = "20"
+[[v27]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/doctrine-entity-as-resource.md"
+    url = "/v2.7/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v27]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/doctrine-search-filter.md"
+    url = "/v2.7/guides/doctrine-search-filter"
+    weight = "7"
+[[v27]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/extend-openapi-documentation.md"
+    url = "/v2.7/guides/extend-openapi-documentation"
+    weight = "11"
+[[v27]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/handle-links.md"
+    url = "/v2.7/guides/handle-links"
+    weight = "15"
+[[v27]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.7/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v27]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/how-to.md"
+    url = "/v2.7/guides/how-to"
+    weight = "0"
+[[v27]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/provide-the-resource-state.md"
+    url = "/v2.7/guides/provide-the-resource-state"
+    weight = "2"
+[[v27]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.7/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v27]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/subresource.md"
+    url = "/v2.7/guides/subresource"
+    weight = "8"
+[[v27]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/test-your-api.md"
+    url = "/v2.7/guides/test-your-api"
+    weight = "7"
+[[v27]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.7/guides/validate-incoming-data.md"
+    url = "/v2.7/guides/validate-incoming-data"
+    weight = "5"
+[[v27]]
     name = "Changelog"
     url = '/v2.7/changelog/'
     pageRef = '/v2.7/changelog/'
@@ -3533,6 +3933,106 @@
     weight = 7
     parent = 'general-information'
 [[v26]]
+    name = "API Reference"
+    url = '/v2.6/references/'
+    pageRef = '/v2.6/references/_index.md'
+    weight = 3
+[[v26]]
+    name = "Guides"
+    url = '/v2.6/guides/'
+    pageRef = '/v2.6/guides/_index.md'
+    weight = 3
+[[v26]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.6/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v26]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/custom-pagination.md"
+    url = "/v2.6/guides/custom-pagination"
+    weight = "12"
+[[v26]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/declare-a-resource.md"
+    url = "/v2.6/guides/declare-a-resource"
+    weight = "1"
+[[v26]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/delete-operation-with-validation.md"
+    url = "/v2.6/guides/delete-operation-with-validation"
+    weight = "20"
+[[v26]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/doctrine-entity-as-resource.md"
+    url = "/v2.6/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v26]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/doctrine-search-filter.md"
+    url = "/v2.6/guides/doctrine-search-filter"
+    weight = "7"
+[[v26]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/extend-openapi-documentation.md"
+    url = "/v2.6/guides/extend-openapi-documentation"
+    weight = "11"
+[[v26]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/handle-links.md"
+    url = "/v2.6/guides/handle-links"
+    weight = "15"
+[[v26]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.6/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v26]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/how-to.md"
+    url = "/v2.6/guides/how-to"
+    weight = "0"
+[[v26]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/provide-the-resource-state.md"
+    url = "/v2.6/guides/provide-the-resource-state"
+    weight = "2"
+[[v26]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.6/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v26]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/subresource.md"
+    url = "/v2.6/guides/subresource"
+    weight = "8"
+[[v26]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/test-your-api.md"
+    url = "/v2.6/guides/test-your-api"
+    weight = "7"
+[[v26]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.6/guides/validate-incoming-data.md"
+    url = "/v2.6/guides/validate-incoming-data"
+    weight = "5"
+[[v26]]
     name = "Changelog"
     url = '/v2.6/changelog/'
     pageRef = '/v2.6/changelog/'
@@ -4182,6 +4682,106 @@
     weight = 7
     parent = 'general-information'
 [[v25]]
+    name = "API Reference"
+    url = '/v2.5/references/'
+    pageRef = '/v2.5/references/_index.md'
+    weight = 3
+[[v25]]
+    name = "Guides"
+    url = '/v2.5/guides/'
+    pageRef = '/v2.5/guides/_index.md'
+    weight = 3
+[[v25]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.5/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v25]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/custom-pagination.md"
+    url = "/v2.5/guides/custom-pagination"
+    weight = "12"
+[[v25]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/declare-a-resource.md"
+    url = "/v2.5/guides/declare-a-resource"
+    weight = "1"
+[[v25]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/delete-operation-with-validation.md"
+    url = "/v2.5/guides/delete-operation-with-validation"
+    weight = "20"
+[[v25]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/doctrine-entity-as-resource.md"
+    url = "/v2.5/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v25]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/doctrine-search-filter.md"
+    url = "/v2.5/guides/doctrine-search-filter"
+    weight = "7"
+[[v25]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/extend-openapi-documentation.md"
+    url = "/v2.5/guides/extend-openapi-documentation"
+    weight = "11"
+[[v25]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/handle-links.md"
+    url = "/v2.5/guides/handle-links"
+    weight = "15"
+[[v25]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.5/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v25]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/how-to.md"
+    url = "/v2.5/guides/how-to"
+    weight = "0"
+[[v25]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/provide-the-resource-state.md"
+    url = "/v2.5/guides/provide-the-resource-state"
+    weight = "2"
+[[v25]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.5/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v25]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/subresource.md"
+    url = "/v2.5/guides/subresource"
+    weight = "8"
+[[v25]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/test-your-api.md"
+    url = "/v2.5/guides/test-your-api"
+    weight = "7"
+[[v25]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.5/guides/validate-incoming-data.md"
+    url = "/v2.5/guides/validate-incoming-data"
+    weight = "5"
+[[v25]]
     name = "Changelog"
     url = '/v2.5/changelog/'
     pageRef = '/v2.5/changelog/'
@@ -4733,6 +5333,106 @@
     weight = 5
     parent = 'extra'
 [[v24]]
+    name = "API Reference"
+    url = '/v2.4/references/'
+    pageRef = '/v2.4/references/_index.md'
+    weight = 3
+[[v24]]
+    name = "Guides"
+    url = '/v2.4/guides/'
+    pageRef = '/v2.4/guides/_index.md'
+    weight = 3
+[[v24]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.4/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v24]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/custom-pagination.md"
+    url = "/v2.4/guides/custom-pagination"
+    weight = "12"
+[[v24]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/declare-a-resource.md"
+    url = "/v2.4/guides/declare-a-resource"
+    weight = "1"
+[[v24]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/delete-operation-with-validation.md"
+    url = "/v2.4/guides/delete-operation-with-validation"
+    weight = "20"
+[[v24]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/doctrine-entity-as-resource.md"
+    url = "/v2.4/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v24]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/doctrine-search-filter.md"
+    url = "/v2.4/guides/doctrine-search-filter"
+    weight = "7"
+[[v24]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/extend-openapi-documentation.md"
+    url = "/v2.4/guides/extend-openapi-documentation"
+    weight = "11"
+[[v24]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/handle-links.md"
+    url = "/v2.4/guides/handle-links"
+    weight = "15"
+[[v24]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.4/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v24]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/how-to.md"
+    url = "/v2.4/guides/how-to"
+    weight = "0"
+[[v24]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/provide-the-resource-state.md"
+    url = "/v2.4/guides/provide-the-resource-state"
+    weight = "2"
+[[v24]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.4/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v24]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/subresource.md"
+    url = "/v2.4/guides/subresource"
+    weight = "8"
+[[v24]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/test-your-api.md"
+    url = "/v2.4/guides/test-your-api"
+    weight = "7"
+[[v24]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.4/guides/validate-incoming-data.md"
+    url = "/v2.4/guides/validate-incoming-data"
+    weight = "5"
+[[v24]]
     name = "Changelog"
     url = '/v2.4/changelog/'
     pageRef = '/v2.4/changelog/'
@@ -5221,6 +5921,106 @@
     weight = 5
     parent = 'extra'
 [[v23]]
+    name = "API Reference"
+    url = '/v2.3/references/'
+    pageRef = '/v2.3/references/_index.md'
+    weight = 3
+[[v23]]
+    name = "Guides"
+    url = '/v2.3/guides/'
+    pageRef = '/v2.3/guides/_index.md'
+    weight = 3
+[[v23]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.3/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v23]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/custom-pagination.md"
+    url = "/v2.3/guides/custom-pagination"
+    weight = "12"
+[[v23]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/declare-a-resource.md"
+    url = "/v2.3/guides/declare-a-resource"
+    weight = "1"
+[[v23]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/delete-operation-with-validation.md"
+    url = "/v2.3/guides/delete-operation-with-validation"
+    weight = "20"
+[[v23]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/doctrine-entity-as-resource.md"
+    url = "/v2.3/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v23]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/doctrine-search-filter.md"
+    url = "/v2.3/guides/doctrine-search-filter"
+    weight = "7"
+[[v23]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/extend-openapi-documentation.md"
+    url = "/v2.3/guides/extend-openapi-documentation"
+    weight = "11"
+[[v23]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/handle-links.md"
+    url = "/v2.3/guides/handle-links"
+    weight = "15"
+[[v23]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.3/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v23]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/how-to.md"
+    url = "/v2.3/guides/how-to"
+    weight = "0"
+[[v23]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/provide-the-resource-state.md"
+    url = "/v2.3/guides/provide-the-resource-state"
+    weight = "2"
+[[v23]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.3/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v23]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/subresource.md"
+    url = "/v2.3/guides/subresource"
+    weight = "8"
+[[v23]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/test-your-api.md"
+    url = "/v2.3/guides/test-your-api"
+    weight = "7"
+[[v23]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.3/guides/validate-incoming-data.md"
+    url = "/v2.3/guides/validate-incoming-data"
+    weight = "5"
+[[v23]]
     name = "Changelog"
     url = '/v2.3/changelog/'
     pageRef = '/v2.3/changelog/'
@@ -5674,6 +6474,106 @@
     weight = 5
     parent = 'extra'
 [[v22]]
+    name = "API Reference"
+    url = '/v2.2/references/'
+    pageRef = '/v2.2/references/_index.md'
+    weight = 3
+[[v22]]
+    name = "Guides"
+    url = '/v2.2/guides/'
+    pageRef = '/v2.2/guides/_index.md'
+    weight = 3
+[[v22]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.2/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v22]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/custom-pagination.md"
+    url = "/v2.2/guides/custom-pagination"
+    weight = "12"
+[[v22]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/declare-a-resource.md"
+    url = "/v2.2/guides/declare-a-resource"
+    weight = "1"
+[[v22]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/delete-operation-with-validation.md"
+    url = "/v2.2/guides/delete-operation-with-validation"
+    weight = "20"
+[[v22]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/doctrine-entity-as-resource.md"
+    url = "/v2.2/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v22]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/doctrine-search-filter.md"
+    url = "/v2.2/guides/doctrine-search-filter"
+    weight = "7"
+[[v22]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/extend-openapi-documentation.md"
+    url = "/v2.2/guides/extend-openapi-documentation"
+    weight = "11"
+[[v22]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/handle-links.md"
+    url = "/v2.2/guides/handle-links"
+    weight = "15"
+[[v22]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.2/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v22]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/how-to.md"
+    url = "/v2.2/guides/how-to"
+    weight = "0"
+[[v22]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/provide-the-resource-state.md"
+    url = "/v2.2/guides/provide-the-resource-state"
+    weight = "2"
+[[v22]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.2/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v22]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/subresource.md"
+    url = "/v2.2/guides/subresource"
+    weight = "8"
+[[v22]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/test-your-api.md"
+    url = "/v2.2/guides/test-your-api"
+    weight = "7"
+[[v22]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.2/guides/validate-incoming-data.md"
+    url = "/v2.2/guides/validate-incoming-data"
+    weight = "5"
+[[v22]]
     name = "Changelog"
     url = '/v2.2/changelog/'
     pageRef = '/v2.2/changelog/'
@@ -6077,6 +6977,106 @@
     url = '/v2.1/extra/conduct'
     weight = 4
     parent = 'extra'
+[[v21]]
+    name = "API Reference"
+    url = '/v2.1/references/'
+    pageRef = '/v2.1/references/_index.md'
+    weight = 3
+[[v21]]
+    name = "Guides"
+    url = '/v2.1/guides/'
+    pageRef = '/v2.1/guides/_index.md'
+    weight = 3
+[[v21]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/create-a-custom-doctrine-filter.md"
+    url = "/v2.1/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[v21]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/custom-pagination.md"
+    url = "/v2.1/guides/custom-pagination"
+    weight = "12"
+[[v21]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/declare-a-resource.md"
+    url = "/v2.1/guides/declare-a-resource"
+    weight = "1"
+[[v21]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/delete-operation-with-validation.md"
+    url = "/v2.1/guides/delete-operation-with-validation"
+    weight = "20"
+[[v21]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/doctrine-entity-as-resource.md"
+    url = "/v2.1/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[v21]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/doctrine-search-filter.md"
+    url = "/v2.1/guides/doctrine-search-filter"
+    weight = "7"
+[[v21]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/extend-openapi-documentation.md"
+    url = "/v2.1/guides/extend-openapi-documentation"
+    weight = "11"
+[[v21]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/handle-links.md"
+    url = "/v2.1/guides/handle-links"
+    weight = "15"
+[[v21]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/v2.1/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[v21]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/how-to.md"
+    url = "/v2.1/guides/how-to"
+    weight = "0"
+[[v21]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/provide-the-resource-state.md"
+    url = "/v2.1/guides/provide-the-resource-state"
+    weight = "2"
+[[v21]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/v2.1/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[v21]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/subresource.md"
+    url = "/v2.1/guides/subresource"
+    weight = "8"
+[[v21]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/test-your-api.md"
+    url = "/v2.1/guides/test-your-api"
+    weight = "7"
+[[v21]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/v2.1/guides/validate-incoming-data.md"
+    url = "/v2.1/guides/validate-incoming-data"
+    weight = "5"
 [[v21]]
     name = "Changelog"
     url = '/v2.1/changelog/'
@@ -6803,6 +7803,106 @@
     url = '/vmain/extra/conduct'
     weight = 7
     parent = 'general-information'
+[[vmain]]
+    name = "API Reference"
+    url = '/vmain/references/'
+    pageRef = '/vmain/references/_index.md'
+    weight = 3
+[[vmain]]
+    name = "Guides"
+    url = '/vmain/guides/'
+    pageRef = '/vmain/guides/_index.md'
+    weight = 3
+[[vmain]]
+    name = "Create a Custom Doctrine Filter"
+    parent = "Guides"
+    pageRef = "/vmain/guides/create-a-custom-doctrine-filter.md"
+    url = "/vmain/guides/create-a-custom-doctrine-filter"
+    weight = "10"
+[[vmain]]
+    name = "Custom pagination"
+    parent = "Guides"
+    pageRef = "/vmain/guides/custom-pagination.md"
+    url = "/vmain/guides/custom-pagination"
+    weight = "12"
+[[vmain]]
+    name = "Declare a Resource"
+    parent = "Guides"
+    pageRef = "/vmain/guides/declare-a-resource.md"
+    url = "/vmain/guides/declare-a-resource"
+    weight = "1"
+[[vmain]]
+    name = "Delete operation with validation"
+    parent = "Guides"
+    pageRef = "/vmain/guides/delete-operation-with-validation.md"
+    url = "/vmain/guides/delete-operation-with-validation"
+    weight = "20"
+[[vmain]]
+    name = "Doctrine entity as API resource"
+    parent = "Guides"
+    pageRef = "/vmain/guides/doctrine-entity-as-resource.md"
+    url = "/vmain/guides/doctrine-entity-as-resource"
+    weight = "4"
+[[vmain]]
+    name = "Doctrine ORM SearchFilter"
+    parent = "Guides"
+    pageRef = "/vmain/guides/doctrine-search-filter.md"
+    url = "/vmain/guides/doctrine-search-filter"
+    weight = "7"
+[[vmain]]
+    name = "Extend OpenAPI Documentation"
+    parent = "Guides"
+    pageRef = "/vmain/guides/extend-openapi-documentation.md"
+    url = "/vmain/guides/extend-openapi-documentation"
+    weight = "11"
+[[vmain]]
+    name = "Handle doctrine links"
+    parent = "Guides"
+    pageRef = "/vmain/guides/handle-links.md"
+    url = "/vmain/guides/handle-links"
+    weight = "15"
+[[vmain]]
+    name = "Hook a Persistence Layer with a Processor"
+    parent = "Guides"
+    pageRef = "/vmain/guides/hook-a-persistence-layer-with-a-processor.md"
+    url = "/vmain/guides/hook-a-persistence-layer-with-a-processor"
+    weight = "3"
+[[vmain]]
+    name = "How to create a Guide"
+    parent = "Guides"
+    pageRef = "/vmain/guides/how-to.md"
+    url = "/vmain/guides/how-to"
+    weight = "0"
+[[vmain]]
+    name = "Provide the Resource State"
+    parent = "Guides"
+    pageRef = "/vmain/guides/provide-the-resource-state.md"
+    url = "/vmain/guides/provide-the-resource-state"
+    weight = "2"
+[[vmain]]
+    name = "How to return an IRI instead of an object for your resources relations ?"
+    parent = "Guides"
+    pageRef = "/vmain/guides/return-the-iri-of-your-resources-relations.md"
+    url = "/vmain/guides/return-the-iri-of-your-resources-relations"
+    weight = "11"
+[[vmain]]
+    name = "Declare a subresource"
+    parent = "Guides"
+    pageRef = "/vmain/guides/subresource.md"
+    url = "/vmain/guides/subresource"
+    weight = "8"
+[[vmain]]
+    name = "Test your API"
+    parent = "Guides"
+    pageRef = "/vmain/guides/test-your-api.md"
+    url = "/vmain/guides/test-your-api"
+    weight = "7"
+[[vmain]]
+    name = "Validate incoming data"
+    parent = "Guides"
+    pageRef = "/vmain/guides/validate-incoming-data.md"
+    url = "/vmain/guides/validate-incoming-data"
+    weight = "5"
 [[vmain]]
     name = "Changelog"
     url = '/vmain/changelog/'
