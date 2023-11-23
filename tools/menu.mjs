@@ -55,7 +55,7 @@ versions.forEach((version) => {
     const index = {}
     globSync(`./content/v${version}/references/**/*.md`).filter(file => !file.includes("_index.md")).forEach((file) => {
       const {data} =  matter(readFileSync(file, {encoding: 'utf8'}).toString())
-      const link = `/docs/v${file}`.replace('.md', '').replace('/content', '')
+      const link = `/docs/${file}`.replace('.md', '').replace('/content', '')
       const base = link.replace(`/docs/v${version}/references/`, '');
       let type = data['php-type']
       if (!type) {
