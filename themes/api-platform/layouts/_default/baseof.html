@@ -8,9 +8,9 @@
     {{ partial "header.html" . }}
     {{ partial "mobilesidebar.html" . }}
     <div class="max-w-8xl mx-auto overflow-x-clip">
-      <div class="flex flex-row flex-wrap items-start justify-start">
+      <div class="flex flex-row items-start justify-start flex-wrap">
         {{ partial "sidebar.html" . }}
-        <div class="flex-1 overflow-x-clip">
+        <div class="flex-1 overflow-x-clip min-w-0">
           {{ block "main" . }}{{ end }}
         </div>
       </div>

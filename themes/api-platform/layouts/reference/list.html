@@ -1,7 +1,5 @@
 {{ define "main" }}
-    <div class="prose max-w-none dark:prose-invert prose-img:w-full prose-img:max-w-2xl prose-headings:font-title prose-h1:font-bold prose-code:after:hidden prose-code:before:hidden prose-code:py-1 prose-code:px-1.5 prose-code:bg-gray-100 prose-code:dark:bg-blue-darkest prose-h1:border-b-px prose-h1:border-b-gray-300 prose-h1:pb-2 max-md:prose-tr:flex max-md:prose-tr:flex-col max-md:prose-td:px-0 max-md:prose-td:py-1">
-
-      <div class="doc">
+    <div class="doc prose max-w-none dark:prose-invert prose-img:w-full prose-img:max-w-2xl prose-headings:font-title prose-h1:font-bold prose-code:after:hidden prose-code:before:hidden prose-code:py-1 prose-code:px-1.5 prose-code:bg-gray-100 prose-code:dark:bg-blue-darkest prose-h1:border-b-px prose-h1:border-b-gray-300 prose-h1:pb-2 max-md:prose-tr:flex max-md:prose-tr:flex-col max-md:prose-td:px-0 max-md:prose-td:py-1">
       <!-- <BreadCrumbs breadCrumbs={[{ title: "References" }]} /> -->
         <div class="bg-blue py-4 text-white px-4 sm:px-6 md:px-10 flex flex-col | lg:py-8 | xl:py-12 xl:flex-row xl:justify-between">
           <h1 class="font-title text-5xl font-light leading-none text-white dark:text-blue-darkest border-none">Reference</h1>
@@ -102,8 +100,8 @@
         </div>
         <div class="px-8 pt-4 pb-12">
           {{ range $k, $v := (index $.Site.Data.references .Page.Section) }}
-            <div class="mb-12 last:mb-0 overflow-x-hidden hidden [&:has(.is-visible)]:block">
-              <h2 class="text-xl font-semibold text-blue mb-3 mt-0 border-b-px border-b-gray-300 pb-2 overflow-x-hidden whitespace-nowrap text-ellipsis | md:text-3xl ">
+            <div class="mb-12 last:mb-0 overflow-x-hidden reference-section">
+              <h2 class="block text-xl font-semibold text-blue mb-3 mt-0 border-b-px border-b-gray-300 pb-2 overflow-hidden whitespace-nowrap text-ellipsis | md:text-3xl ">
                 {{$k}}
               </h2>
               <div class="grid grid-cols-1 gap-x-1 text-gray-700 font-light dark:text-gray-300 | lg:grid-cols-2 | xl:grid-cols-3">
@@ -122,8 +120,18 @@
           {{ end }}
         </div>
       </div>
-    </div>
     <script>
+
+      window.checkIfSectionsVisibles = function() {
+          const sections = document.querySelectorAll('.reference-section');
+          sections.forEach(function(section) {
+            const isVisible = section.querySelector('.is-visible');
+
+            if (!isVisible) {
+                section.classList.add('hidden');
+            } else section.classList.remove('hidden');
+});
+      }
       const state = {open: false, current: 'All'}
       window.toggleReferenceFilter = function(event) {
         const list = document.getElementById('referenceFilter')
@@ -172,6 +180,7 @@
         })
 
         window.toggleReferenceFilter()
+        window.checkIfSectionsVisibles();
       }
 
       window.onChangeReferenceSearch = function(event) {
@@ -185,6 +194,7 @@
             el.classList.remove("is-visible")
           }
         })
+        checkIfSectionsVisibles();
       }
     </script> 
 {{ end }}
