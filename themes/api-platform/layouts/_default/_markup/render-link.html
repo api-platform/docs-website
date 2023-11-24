@@ -1,6 +1,5 @@
-{{ $link := .Destination }}
-{{ $isRemote := strings.HasPrefix $link "http" }}
-{{- if not $isRemote -}}
-{{ $link := (.Page.GetPage .Destination).RelPermalink }}
+{{- if not (strings.HasPrefix .Destination "http") -}}
+<a href="{{ (.Page.GetPage .Destination).RelPermalink | safeURL }}">{{ .Text | safeHTML }}</a>
+{{- else -}}
+<a href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
 {{- end -}}
-<a href="{{ $link | safeURL }}">{{ .Text | safeHTML }}</a>
