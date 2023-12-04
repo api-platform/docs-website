@@ -10,7 +10,12 @@
 
     <p class="mt-10">
       {{- $link := substr (replace .Page.RelPermalink "/docs/" "") 0 -1 }}
-      <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{ replaceRE `^v` "" $link }}.md">You can also help us improve the documentation of this page.</a>
+        {{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
+        {{- .Scratch.Set "version" "" }}
+        {{- if in $sections (replace .Page.Section "." "") }}
+          {{- .Scratch.Set "version" "3.2/" }}
+        {{- end }}
+        <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{ .Scratch.Get "version"}}{{ replaceRE `^v` "" $link }}.md">You can also help us improve the documentation of this page.</a>
     </p>
   </div>
 </div>
