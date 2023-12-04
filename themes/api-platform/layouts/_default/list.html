@@ -8,8 +8,8 @@
       </div>
 
       <p class="mt-10">
-        <a class="text-blue">
-          <a href="https://github.com/api-platform/docs/edit/{{ substr (replace .Page.RelPermalink "/docs/" "") 0 -1 }}.md">You can also help us improve the documentation of this page.</a>
+        {{- $link := substr (replace .Page.RelPermalink "/docs/" "") 0 -1 }}
+        <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{ replaceRE `^v` "" $link }}/index.md">You can also help us improve the documentation of this page.</a>
       </p>
     </div>
   </div>
