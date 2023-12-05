@@ -1,841 +1,3 @@
-[[v32]]
-      name = "The Distribution: Create Powerful APIs with Ease"
-      identifier = "the-distribution-create-powerful-apis-with-ease"
-      pageRef = '/v3.2/distribution'
-      weight = 1
-[[v32]]
-      name = "Getting Started With API Platform: Create Your API and Your Jamstack Site"
-      identifier = "the-distribution-create-powerful-apis-with-ease-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
-      pageRef = '/v3.2/distribution'
-      url = '/v3.2/distribution'
-      weight = 1
-      parent = 'the-distribution-create-powerful-apis-with-ease'
-[[v32]]
-      name = "Testing the API"
-      identifier = "the-distribution-create-powerful-apis-with-ease-testing-the-api"
-      pageRef = '/v3.2/distribution/testing'
-      url = '/v3.2/distribution/testing'
-      weight = 2
-      parent = 'the-distribution-create-powerful-apis-with-ease'
-[[v32]]
-      name = "Debugging"
-      identifier = "the-distribution-create-powerful-apis-with-ease-debugging"
-      pageRef = '/v3.2/distribution/debugging'
-      url = '/v3.2/distribution/debugging'
-      weight = 3
-      parent = 'the-distribution-create-powerful-apis-with-ease'
-[[v32]]
-      name = "Configuring the Caddy Web Server"
-      identifier = "the-distribution-create-powerful-apis-with-ease-configuring-the-caddy-web-server"
-      pageRef = '/v3.2/distribution/caddy'
-      url = '/v3.2/distribution/caddy'
-      weight = 4
-      parent = 'the-distribution-create-powerful-apis-with-ease'
-[[v32]]
-      name = "Core"
-      identifier = "core"
-      pageRef = '/v3.2/core'
-      weight = 2
-[[v32]]
-      name = "The API Platform Core Library"
-      identifier = "core-the-api-platform-core-library"
-      pageRef = '/v3.2/core'
-      url = '/v3.2/core'
-      weight = 1
-      parent = 'core'
-[[v32]]
-      name = "Getting started"
-      identifier = "core-getting-started"
-      pageRef = '/v3.2/core/getting-started'
-      url = '/v3.2/core/getting-started'
-      weight = 2
-      parent = 'core'
-[[v32]]
-      name = "Upgrade Guide"
-      identifier = "core-upgrade-guide"
-      pageRef = '/v3.2/core/upgrade-guide'
-      url = '/v3.2/core/upgrade-guide'
-      weight = 3
-      parent = 'core'
-[[v32]]
-      name = "General Design Considerations"
-      identifier = "core-general-design-considerations"
-      pageRef = '/v3.2/core/design'
-      url = '/v3.2/core/design'
-      weight = 4
-      parent = 'core'
-[[v32]]
-      name = "Extending API Platform"
-      identifier = "core-extending-api-platform"
-      pageRef = '/v3.2/core/extending'
-      url = '/v3.2/core/extending'
-      weight = 5
-      parent = 'core'
-[[v32]]
-      name = "Testing Utilities"
-      identifier = "core-testing-utilities"
-      pageRef = '/v3.2/core/testing'
-      url = '/v3.2/core/testing'
-      weight = 6
-      parent = 'core'
-[[v32]]
-      name = "Operations"
-      identifier = "core-operations"
-      pageRef = '/v3.2/core/operations'
-      url = '/v3.2/core/operations'
-      weight = 7
-      parent = 'core'
-[[v32]]
-      name = "GraphQL Support"
-      identifier = "core-graphql-support"
-      pageRef = '/v3.2/core/graphql'
-      url = '/v3.2/core/graphql'
-      weight = 8
-      parent = 'core'
-[[v32]]
-      name = "State Providers"
-      identifier = "core-state-providers"
-      pageRef = '/v3.2/core/state-providers'
-      url = '/v3.2/core/state-providers'
-      weight = 9
-      parent = 'core'
-[[v32]]
-      name = "State Processors"
-      identifier = "core-state-processors"
-      pageRef = '/v3.2/core/state-processors'
-      url = '/v3.2/core/state-processors'
-      weight = 10
-      parent = 'core'
-[[v32]]
-      name = "Filters"
-      identifier = "core-filters"
-      pageRef = '/v3.2/core/filters'
-      url = '/v3.2/core/filters'
-      weight = 11
-      parent = 'core'
-[[v32]]
-      name = "Subresources"
-      identifier = "core-subresources"
-      pageRef = '/v3.2/core/subresources'
-      url = '/v3.2/core/subresources'
-      weight = 12
-      parent = 'core'
-[[v32]]
-      name = "The Serialization Process"
-      identifier = "core-the-serialization-process"
-      pageRef = '/v3.2/core/serialization'
-      url = '/v3.2/core/serialization'
-      weight = 13
-      parent = 'core'
-[[v32]]
-      name = "Validation"
-      identifier = "core-validation"
-      pageRef = '/v3.2/core/validation'
-      url = '/v3.2/core/validation'
-      weight = 14
-      parent = 'core'
-[[v32]]
-      name = "Security"
-      identifier = "core-security"
-      pageRef = '/v3.2/core/security'
-      url = '/v3.2/core/security'
-      weight = 15
-      parent = 'core'
-[[v32]]
-      name = "Content Negotiation"
-      identifier = "core-content-negotiation"
-      pageRef = '/v3.2/core/content-negotiation'
-      url = '/v3.2/core/content-negotiation'
-      weight = 16
-      parent = 'core'
-[[v32]]
-      name = "Pagination"
-      identifier = "core-pagination"
-      pageRef = '/v3.2/core/pagination'
-      url = '/v3.2/core/pagination'
-      weight = 17
-      parent = 'core'
-[[v32]]
-      name = "Deprecating Resources and Properties (Alternative to Versioning)"
-      identifier = "core-deprecating-resources-and-properties-alternative-to-versioning"
-      pageRef = '/v3.2/core/deprecations'
-      url = '/v3.2/core/deprecations'
-      weight = 18
-      parent = 'core'
-[[v32]]
-      name = "Overriding Default Order"
-      identifier = "core-overriding-default-order"
-      pageRef = '/v3.2/core/default-order'
-      url = '/v3.2/core/default-order'
-      weight = 19
-      parent = 'core'
-[[v32]]
-      name = "Performance and Cache"
-      identifier = "core-performance-and-cache"
-      pageRef = '/v3.2/core/performance'
-      url = '/v3.2/core/performance'
-      weight = 20
-      parent = 'core'
-[[v32]]
-      name = "Extensions"
-      identifier = "core-extensions"
-      pageRef = '/v3.2/core/extensions'
-      url = '/v3.2/core/extensions'
-      weight = 21
-      parent = 'core'
-[[v32]]
-      name = "Symfony Messenger Integration: CQRS and Async Message Processing"
-      identifier = "core-symfony-messenger-integration-cqrs-and-async-message-processing"
-      pageRef = '/v3.2/core/messenger'
-      url = '/v3.2/core/messenger'
-      weight = 22
-      parent = 'core'
-[[v32]]
-      name = "Using Data Transfer Objects (DTOs)"
-      identifier = "core-using-data-transfer-objects-dtos"
-      pageRef = '/v3.2/core/dto'
-      url = '/v3.2/core/dto'
-      weight = 23
-      parent = 'core'
-[[v32]]
-      name = "OpenAPI Specification Support (formerly Swagger)"
-      identifier = "core-openapi-specification-support-formerly-swagger"
-      pageRef = '/v3.2/core/openapi'
-      url = '/v3.2/core/openapi'
-      weight = 24
-      parent = 'core'
-[[v32]]
-      name = "JSON Schema Support"
-      identifier = "core-json-schema-support"
-      pageRef = '/v3.2/core/json-schema'
-      url = '/v3.2/core/json-schema'
-      weight = 25
-      parent = 'core'
-[[v32]]
-      name = "Creating Async APIs using the Mercure Protocol"
-      identifier = "core-creating-async-apis-using-the-mercure-protocol"
-      pageRef = '/v3.2/core/mercure'
-      url = '/v3.2/core/mercure'
-      weight = 26
-      parent = 'core'
-[[v32]]
-      name = "Pushing Related Resources Using HTTP/2"
-      identifier = "core-pushing-related-resources-using-http2"
-      pageRef = '/v3.2/core/push-relations'
-      url = '/v3.2/core/push-relations'
-      weight = 27
-      parent = 'core'
-[[v32]]
-      name = "Errors Handling"
-      identifier = "core-errors-handling"
-      pageRef = '/v3.2/core/errors'
-      url = '/v3.2/core/errors'
-      weight = 28
-      parent = 'core'
-[[v32]]
-      name = "Using External Vocabularies"
-      identifier = "core-using-external-vocabularies"
-      pageRef = '/v3.2/core/external-vocabularies'
-      url = '/v3.2/core/external-vocabularies'
-      weight = 29
-      parent = 'core'
-[[v32]]
-      name = "Operation Path Naming"
-      identifier = "core-operation-path-naming"
-      pageRef = '/v3.2/core/operation-path-naming'
-      url = '/v3.2/core/operation-path-naming'
-      weight = 30
-      parent = 'core'
-[[v32]]
-      name = "URL Generation Strategy"
-      identifier = "core-url-generation-strategy"
-      pageRef = '/v3.2/core/url-generation-strategy'
-      url = '/v3.2/core/url-generation-strategy'
-      weight = 31
-      parent = 'core'
-[[v32]]
-      name = "Extending JSON-LD AND Hydra Contexts"
-      identifier = "core-extending-json-ld-and-hydra-contexts"
-      pageRef = '/v3.2/core/extending-jsonld-context'
-      url = '/v3.2/core/extending-jsonld-context'
-      weight = 32
-      parent = 'core'
-[[v32]]
-      name = "Identifiers"
-      identifier = "core-identifiers"
-      pageRef = '/v3.2/core/identifiers'
-      url = '/v3.2/core/identifiers'
-      weight = 33
-      parent = 'core'
-[[v32]]
-      name = "MongoDB Support"
-      identifier = "core-mongodb-support"
-      pageRef = '/v3.2/core/mongodb'
-      url = '/v3.2/core/mongodb'
-      weight = 34
-      parent = 'core'
-[[v32]]
-      name = "Elasticsearch Support"
-      identifier = "core-elasticsearch-support"
-      pageRef = '/v3.2/core/elasticsearch'
-      url = '/v3.2/core/elasticsearch'
-      weight = 35
-      parent = 'core'
-[[v32]]
-      name = "Creating Custom Operations and Controllers"
-      identifier = "core-creating-custom-operations-and-controllers"
-      pageRef = '/v3.2/core/controllers'
-      url = '/v3.2/core/controllers'
-      weight = 36
-      parent = 'core'
-[[v32]]
-      name = "The Event System"
-      identifier = "core-the-event-system"
-      pageRef = '/v3.2/core/events'
-      url = '/v3.2/core/events'
-      weight = 37
-      parent = 'core'
-[[v32]]
-      name = "Handling File Upload"
-      identifier = "core-handling-file-upload"
-      pageRef = '/v3.2/core/file-upload'
-      url = '/v3.2/core/file-upload'
-      weight = 38
-      parent = 'core'
-[[v32]]
-      name = "JWT Authentication"
-      identifier = "core-jwt-authentication"
-      pageRef = '/v3.2/core/jwt'
-      url = '/v3.2/core/jwt'
-      weight = 39
-      parent = 'core'
-[[v32]]
-      name = "User Entity"
-      identifier = "core-user-entity"
-      pageRef = '/v3.2/core/user'
-      url = '/v3.2/core/user'
-      weight = 40
-      parent = 'core'
-[[v32]]
-      name = "Accept `application/x-www-form-urlencoded` Form Data"
-      identifier = "core-accept-applicationx-www-form-urlencoded-form-data"
-      pageRef = '/v3.2/core/form-data'
-      url = '/v3.2/core/form-data'
-      weight = 41
-      parent = 'core'
-[[v32]]
-      name = "AngularJS Integration"
-      identifier = "core-angularjs-integration"
-      pageRef = '/v3.2/core/angularjs-integration'
-      url = '/v3.2/core/angularjs-integration'
-      weight = 42
-      parent = 'core'
-[[v32]]
-      name = "FOSUserBundle Integration"
-      identifier = "core-fosuserbundle-integration"
-      pageRef = '/v3.2/core/fosuser-bundle'
-      url = '/v3.2/core/fosuser-bundle'
-      weight = 43
-      parent = 'core'
-[[v32]]
-      name = "NelmioApiDocBundle Integration"
-      identifier = "core-nelmioapidocbundle-integration"
-      pageRef = '/v3.2/core/nelmio-api-doc'
-      url = '/v3.2/core/nelmio-api-doc'
-      weight = 44
-      parent = 'core'
-[[v32]]
-      name = "Bootstraping the core library"
-      identifier = "core-bootstraping-the-core-library"
-      pageRef = '/v3.2/core/bootstrap'
-      url = '/v3.2/core/bootstrap'
-      weight = 45
-      parent = 'core'
-[[v32]]
-      name = "Configuration"
-      identifier = "core-configuration"
-      pageRef = '/v3.2/core/configuration'
-      url = '/v3.2/core/configuration'
-      weight = 46
-      parent = 'core'
-[[v32]]
-      name = "Migrate From FOSRestBundle"
-      identifier = "core-migrate-from-fosrestbundle"
-      pageRef = '/v3.2/core/migrate-from-fosrestbundle'
-      url = '/v3.2/core/migrate-from-fosrestbundle'
-      weight = 47
-      parent = 'core'
-[[v32]]
-      name = "Schema Generator"
-      identifier = "schema-generator"
-      pageRef = '/v3.2/schema-generator'
-      weight = 3
-[[v32]]
-      name = "The Schema Generator"
-      identifier = "schema-generator-the-schema-generator"
-      pageRef = '/v3.2/schema-generator'
-      url = '/v3.2/schema-generator'
-      weight = 1
-      parent = 'schema-generator'
-[[v32]]
-      name = "Getting Started"
-      identifier = "schema-generator-getting-started"
-      pageRef = '/v3.2/schema-generator/getting-started'
-      url = '/v3.2/schema-generator/getting-started'
-      weight = 2
-      parent = 'schema-generator'
-[[v32]]
-      name = "Configuration"
-      identifier = "schema-generator-configuration"
-      pageRef = '/v3.2/schema-generator/configuration'
-      url = '/v3.2/schema-generator/configuration'
-      weight = 3
-      parent = 'schema-generator'
-[[v32]]
-      name = "Admin"
-      identifier = "admin"
-      pageRef = '/v3.2/admin'
-      weight = 4
-[[v32]]
-      name = "The API Platform Admin"
-      identifier = "admin-the-api-platform-admin"
-      pageRef = '/v3.2/admin'
-      url = '/v3.2/admin'
-      weight = 1
-      parent = 'admin'
-[[v32]]
-      name = "Getting Started"
-      identifier = "admin-getting-started"
-      pageRef = '/v3.2/admin/getting-started'
-      url = '/v3.2/admin/getting-started'
-      weight = 2
-      parent = 'admin'
-[[v32]]
-      name = "Handling Relations"
-      identifier = "admin-handling-relations"
-      pageRef = '/v3.2/admin/handling-relations'
-      url = '/v3.2/admin/handling-relations'
-      weight = 3
-      parent = 'admin'
-[[v32]]
-      name = "OpenAPI"
-      identifier = "admin-openapi"
-      pageRef = '/v3.2/admin/openapi'
-      url = '/v3.2/admin/openapi'
-      weight = 4
-      parent = 'admin'
-[[v32]]
-      name = "Using the Schema.org Vocabulary"
-      identifier = "admin-using-the-schemaorg-vocabulary"
-      pageRef = '/v3.2/admin/schema.org'
-      url = '/v3.2/admin/schema.org'
-      weight = 5
-      parent = 'admin'
-[[v32]]
-      name = "Validation"
-      identifier = "admin-validation"
-      pageRef = '/v3.2/admin/validation'
-      url = '/v3.2/admin/validation'
-      weight = 6
-      parent = 'admin'
-[[v32]]
-      name = "Real-time Updates With Mercure"
-      identifier = "admin-real-time-updates-with-mercure"
-      pageRef = '/v3.2/admin/real-time-mercure'
-      url = '/v3.2/admin/real-time-mercure'
-      weight = 7
-      parent = 'admin'
-[[v32]]
-      name = "Authentication Support"
-      identifier = "admin-authentication-support"
-      pageRef = '/v3.2/admin/authentication-support'
-      url = '/v3.2/admin/authentication-support'
-      weight = 8
-      parent = 'admin'
-[[v32]]
-      name = "Handling File Upload"
-      identifier = "admin-handling-file-upload"
-      pageRef = '/v3.2/admin/file-upload'
-      url = '/v3.2/admin/file-upload'
-      weight = 9
-      parent = 'admin'
-[[v32]]
-      name = "Performance"
-      identifier = "admin-performance"
-      pageRef = '/v3.2/admin/performance'
-      url = '/v3.2/admin/performance'
-      weight = 10
-      parent = 'admin'
-[[v32]]
-      name = "Customizing the Admin"
-      identifier = "admin-customizing-the-admin"
-      pageRef = '/v3.2/admin/customizing'
-      url = '/v3.2/admin/customizing'
-      weight = 11
-      parent = 'admin'
-[[v32]]
-      name = "Components"
-      identifier = "admin-components"
-      pageRef = '/v3.2/admin/components'
-      url = '/v3.2/admin/components'
-      weight = 12
-      parent = 'admin'
-[[v32]]
-      name = "Create Client"
-      identifier = "create-client"
-      pageRef = '/v3.2/create-client'
-      weight = 5
-[[v32]]
-      name = "API Platform Create Client"
-      identifier = "create-client-api-platform-create-client"
-      pageRef = '/v3.2/create-client'
-      url = '/v3.2/create-client'
-      weight = 1
-      parent = 'create-client'
-[[v32]]
-      name = "Next.js Generator"
-      identifier = "create-client-nextjs-generator"
-      pageRef = '/v3.2/create-client/nextjs'
-      url = '/v3.2/create-client/nextjs'
-      weight = 2
-      parent = 'create-client'
-[[v32]]
-      name = "Nuxt Generator"
-      identifier = "create-client-nuxt-generator"
-      pageRef = '/v3.2/create-client/nuxt'
-      url = '/v3.2/create-client/nuxt'
-      weight = 3
-      parent = 'create-client'
-[[v32]]
-      name = "Vuetify Generator"
-      identifier = "create-client-vuetify-generator"
-      pageRef = '/v3.2/create-client/vuetify'
-      url = '/v3.2/create-client/vuetify'
-      weight = 4
-      parent = 'create-client'
-[[v32]]
-      name = "Quasar Framework Generator"
-      identifier = "create-client-quasar-framework-generator"
-      pageRef = '/v3.2/create-client/quasar'
-      url = '/v3.2/create-client/quasar'
-      weight = 5
-      parent = 'create-client'
-[[v32]]
-      name = "React Generator"
-      identifier = "create-client-react-generator"
-      pageRef = '/v3.2/create-client/react'
-      url = '/v3.2/create-client/react'
-      weight = 6
-      parent = 'create-client'
-[[v32]]
-      name = "React Native generator"
-      identifier = "create-client-react-native-generator"
-      pageRef = '/v3.2/create-client/react-native'
-      url = '/v3.2/create-client/react-native'
-      weight = 7
-      parent = 'create-client'
-[[v32]]
-      name = "Vue.js Generator"
-      identifier = "create-client-vuejs-generator"
-      pageRef = '/v3.2/create-client/vuejs'
-      url = '/v3.2/create-client/vuejs'
-      weight = 8
-      parent = 'create-client'
-[[v32]]
-      name = "TypeScript Interfaces"
-      identifier = "create-client-typescript-interfaces"
-      pageRef = '/v3.2/create-client/typescript'
-      url = '/v3.2/create-client/typescript'
-      weight = 9
-      parent = 'create-client'
-[[v32]]
-      name = "Custom Generator"
-      identifier = "create-client-custom-generator"
-      pageRef = '/v3.2/create-client/custom'
-      url = '/v3.2/create-client/custom'
-      weight = 10
-      parent = 'create-client'
-[[v32]]
-      name = "Troubleshooting"
-      identifier = "create-client-troubleshooting"
-      pageRef = '/v3.2/create-client/troubleshooting'
-      url = '/v3.2/create-client/troubleshooting'
-      weight = 11
-      parent = 'create-client'
-[[v32]]
-      name = "Deployment"
-      identifier = "deployment"
-      pageRef = '/v3.2/deployment'
-      weight = 6
-[[v32]]
-      name = "Deploying API Platform Applications"
-      identifier = "deployment-deploying-api-platform-applications"
-      pageRef = '/v3.2/deployment'
-      url = '/v3.2/deployment'
-      weight = 1
-      parent = 'deployment'
-[[v32]]
-      name = "Deploying with Docker Compose"
-      identifier = "deployment-deploying-with-docker-compose"
-      pageRef = '/v3.2/deployment/docker-compose'
-      url = '/v3.2/deployment/docker-compose'
-      weight = 2
-      parent = 'deployment'
-[[v32]]
-      name = "Deploying to a Kubernetes Cluster"
-      identifier = "deployment-deploying-to-a-kubernetes-cluster"
-      pageRef = '/v3.2/deployment/kubernetes'
-      url = '/v3.2/deployment/kubernetes'
-      weight = 3
-      parent = 'deployment'
-[[v32]]
-      name = "Deploying to Minikube"
-      identifier = "deployment-deploying-to-minikube"
-      pageRef = '/v3.2/deployment/minikube'
-      url = '/v3.2/deployment/minikube'
-      weight = 4
-      parent = 'deployment'
-[[v32]]
-      name = "Deploying an API Platform App on Heroku"
-      identifier = "deployment-deploying-an-api-platform-app-on-heroku"
-      pageRef = '/v3.2/deployment/heroku'
-      url = '/v3.2/deployment/heroku'
-      weight = 5
-      parent = 'deployment'
-[[v32]]
-      name = "Implement Træfik Into API Platform Dockerized"
-      identifier = "deployment-implement-trfik-into-api-platform-dockerized"
-      pageRef = '/v3.2/deployment/traefik'
-      url = '/v3.2/deployment/traefik'
-      weight = 6
-      parent = 'deployment'
-[[v32]]
-      name = "General Information"
-      identifier = "general-information"
-      pageRef = '/v3.2/extra'
-      weight = 7
-[[v32]]
-      name = "API Platform's Philosophy"
-      identifier = "general-information-api-platforms-philosophy"
-      pageRef = '/v3.2/extra/philosophy'
-      url = '/v3.2/extra/philosophy'
-      weight = 1
-      parent = 'general-information'
-[[v32]]
-      name = "The Release Process"
-      identifier = "general-information-the-release-process"
-      pageRef = '/v3.2/extra/releases'
-      url = '/v3.2/extra/releases'
-      weight = 2
-      parent = 'general-information'
-[[v32]]
-      name = "API Platform for Enterprise"
-      identifier = "general-information-api-platform-for-enterprise"
-      pageRef = '/v3.2/extra/enterprise'
-      url = '/v3.2/extra/enterprise'
-      weight = 3
-      parent = 'general-information'
-[[v32]]
-      name = "Security Policy"
-      identifier = "general-information-security-policy"
-      pageRef = '/v3.2/extra/security'
-      url = '/v3.2/extra/security'
-      weight = 4
-      parent = 'general-information'
-[[v32]]
-      name = "Troubleshooting"
-      identifier = "general-information-troubleshooting"
-      pageRef = '/v3.2/extra/troubleshooting'
-      url = '/v3.2/extra/troubleshooting'
-      weight = 5
-      parent = 'general-information'
-[[v32]]
-      name = "Contribution guides"
-      identifier = "general-information-contribution-guides"
-      pageRef = '/v3.2/extra/contribution-guides'
-      url = '/v3.2/extra/contribution-guides'
-      weight = 6
-      parent = 'general-information'
-[[v32]]
-      name = "Contributor Code of Conduct"
-      identifier = "general-information-contributor-code-of-conduct"
-      pageRef = '/v3.2/extra/conduct'
-      url = '/v3.2/extra/conduct'
-      weight = 7
-      parent = 'general-information'
-[[v32]]
-      name = "API Reference"
-      url = '/v3.2/references/'
-      pageRef = '/v3.2/references/_index.md'
-      weight = 3
-[[v32]]
-      name = "Guides"
-      url = '/v3.2/guides/'
-      pageRef = '/v3.2/guides/_index.md'
-      weight = 3
-[[v32]]
-      name = "Create a Custom Doctrine Filter"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/create-a-custom-doctrine-filter.md"
-      url = "/v3.2/guides/create-a-custom-doctrine-filter"
-      weight = "10"
-[[v32]]
-      name = "Custom pagination"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/custom-pagination.md"
-      url = "/v3.2/guides/custom-pagination"
-      weight = "12"
-[[v32]]
-      name = "Declare a Resource"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/declare-a-resource.md"
-      url = "/v3.2/guides/declare-a-resource"
-      weight = "1"
-[[v32]]
-      name = "Delete operation with validation"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/delete-operation-with-validation.md"
-      url = "/v3.2/guides/delete-operation-with-validation"
-      weight = "20"
-[[v32]]
-      name = "Doctrine entity as API resource"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/doctrine-entity-as-resource.md"
-      url = "/v3.2/guides/doctrine-entity-as-resource"
-      weight = "4"
-[[v32]]
-      name = "Doctrine ORM SearchFilter"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/doctrine-search-filter.md"
-      url = "/v3.2/guides/doctrine-search-filter"
-      weight = "7"
-[[v32]]
-      name = "Error provider to translate exception messages"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/error-provider.md"
-      url = "/v3.2/guides/error-provider"
-      weight = "7"
-[[v32]]
-      name = "Error resource for domain exceptions"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/error-resource.md"
-      url = "/v3.2/guides/error-resource"
-      weight = "7"
-[[v32]]
-      name = "Extend OpenAPI Documentation"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/extend-openapi-documentation.md"
-      url = "/v3.2/guides/extend-openapi-documentation"
-      weight = "11"
-[[v32]]
-      name = "Handle doctrine links"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/handle-links.md"
-      url = "/v3.2/guides/handle-links"
-      weight = "15"
-[[v32]]
-      name = "Hook a Persistence Layer with a Processor"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/hook-a-persistence-layer-with-a-processor.md"
-      url = "/v3.2/guides/hook-a-persistence-layer-with-a-processor"
-      weight = "3"
-[[v32]]
-      name = "How to create a Guide"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/how-to.md"
-      url = "/v3.2/guides/how-to"
-      weight = "0"
-[[v32]]
-      name = "Provide the Resource State"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/provide-the-resource-state.md"
-      url = "/v3.2/guides/provide-the-resource-state"
-      weight = "2"
-[[v32]]
-      name = "How to return an IRI instead of an object for your resources relations ?"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/return-the-iri-of-your-resources-relations.md"
-      url = "/v3.2/guides/return-the-iri-of-your-resources-relations"
-      weight = "11"
-[[v32]]
-      name = "Declare a subresource"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/subresource.md"
-      url = "/v3.2/guides/subresource"
-      weight = "8"
-[[v32]]
-      name = "Test your API"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/test-your-api.md"
-      url = "/v3.2/guides/test-your-api"
-      weight = "7"
-[[v32]]
-      name = "Validate incoming data"
-      parent = "Guides"
-      pageRef = "/v3.2/guides/validate-incoming-data.md"
-      url = "/v3.2/guides/validate-incoming-data"
-      weight = "5"
-[[v32]]
-      name = "Changelog"
-      url = '/v3.2/changelog/'
-      pageRef = '/v3.2/changelog/'
-[[v32]]
-      name = "Versions"
-[[v32]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
-      parent = "Versions"
-[[v32]]
-      name = "3.1"
-      url = '/v3.1/distribution'
-      weight = 31
-      parent = "Versions"
-[[v32]]
-      name = "3.0"
-      url = '/v3.0/distribution'
-      weight = 30
-      parent = "Versions"
-[[v32]]
-      name = "2.7"
-      url = '/v2.7/distribution'
-      weight = 27
-      parent = "Versions"
-[[v32]]
-      name = "2.6"
-      url = '/v2.6/distribution'
-      weight = 26
-      parent = "Versions"
-[[v32]]
-      name = "2.5"
-      url = '/v2.5/distribution'
-      weight = 25
-      parent = "Versions"
-[[v32]]
-      name = "2.4"
-      url = '/v2.4/distribution'
-      weight = 24
-      parent = "Versions"
-[[v32]]
-      name = "2.3"
-      url = '/v2.3/distribution'
-      weight = 23
-      parent = "Versions"
-[[v32]]
-      name = "2.2"
-      url = '/v2.2/distribution'
-      weight = 22
-      parent = "Versions"
-[[v32]]
-      name = "2.1"
-      url = '/v2.1/distribution'
-      weight = 21
-      parent = "Versions"
-[[v32]]
-      name = "main"
-      url = '/main/distribution'
-      weight = 0
-      parent = "Versions"
 [[v31]]
       name = "The Distribution: Create Powerful APIs with Ease"
       identifier = "the-distribution-create-powerful-apis-with-ease"
@@ -1608,59 +770,59 @@
 [[v31]]
       name = "Versions"
 [[v31]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v31]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v31]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v31]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v31]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v31]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v31]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v31]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v31]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v31]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v31]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v30]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -2334,59 +1496,59 @@
 [[v30]]
       name = "Versions"
 [[v30]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v30]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v30]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v30]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v30]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v30]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v30]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v30]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v30]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v30]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v30]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v27]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -3053,59 +2215,59 @@
 [[v27]]
       name = "Versions"
 [[v27]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v27]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v27]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v27]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v27]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v27]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v27]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v27]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v27]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v27]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v27]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v26]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -3751,59 +2913,59 @@
 [[v26]]
       name = "Versions"
 [[v26]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v26]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v26]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v26]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v26]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v26]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v26]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v26]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v26]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v26]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v26]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v25]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -4400,59 +3562,59 @@
 [[v25]]
       name = "Versions"
 [[v25]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v25]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v25]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v25]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v25]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v25]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v25]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v25]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v25]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v25]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v25]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v24]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -4951,59 +4113,59 @@
 [[v24]]
       name = "Versions"
 [[v24]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v24]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v24]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v24]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v24]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v24]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v24]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v24]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v24]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v24]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v24]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v23]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -5439,59 +4601,59 @@
 [[v23]]
       name = "Versions"
 [[v23]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v23]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v23]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v23]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v23]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v23]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v23]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v23]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v23]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v23]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v23]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v22]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -5892,59 +5054,59 @@
 [[v22]]
       name = "Versions"
 [[v22]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v22]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v22]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v22]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v22]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v22]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v22]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v22]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v22]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v22]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v22]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[v21]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -6296,59 +5458,59 @@
 [[v21]]
       name = "Versions"
 [[v21]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[v21]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[v21]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[v21]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[v21]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[v21]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[v21]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[v21]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[v21]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[v21]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[v21]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[main]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -7134,59 +6296,59 @@
 [[main]]
       name = "Versions"
 [[main]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[main]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[main]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[main]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[main]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[main]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[main]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[main]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[main]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[main]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[main]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"
 [[current]]
       name = "The Distribution: Create Powerful APIs with Ease"
@@ -7972,57 +7134,57 @@
 [[current]]
       name = "Versions"
 [[current]]
-      name = "3.2"
-      url = '/v3.2/distribution'
-      weight = 32
+      name = "3.2 (current)"
+      url = '/distribution'
+      weight = 1 
       parent = "Versions"
 [[current]]
       name = "3.1"
       url = '/v3.1/distribution'
-      weight = 31
+      weight = 2
       parent = "Versions"
 [[current]]
       name = "3.0"
       url = '/v3.0/distribution'
-      weight = 30
+      weight = 3
       parent = "Versions"
 [[current]]
       name = "2.7"
       url = '/v2.7/distribution'
-      weight = 27
+      weight = 4
       parent = "Versions"
 [[current]]
       name = "2.6"
       url = '/v2.6/distribution'
-      weight = 26
+      weight = 5
       parent = "Versions"
 [[current]]
       name = "2.5"
       url = '/v2.5/distribution'
-      weight = 25
+      weight = 6
       parent = "Versions"
 [[current]]
       name = "2.4"
       url = '/v2.4/distribution'
-      weight = 24
+      weight = 7
       parent = "Versions"
 [[current]]
       name = "2.3"
       url = '/v2.3/distribution'
-      weight = 23
+      weight = 8
       parent = "Versions"
 [[current]]
       name = "2.2"
       url = '/v2.2/distribution'
-      weight = 22
+      weight = 9
       parent = "Versions"
 [[current]]
       name = "2.1"
       url = '/v2.1/distribution'
-      weight = 21
+      weight = 10
       parent = "Versions"
 [[current]]
-      name = "main"
+      name = "main (dev)"
       url = '/main/distribution'
-      weight = 0
+      weight = 11
       parent = "Versions"

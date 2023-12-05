@@ -45,7 +45,7 @@ function getColor(type) {
   }
 }
 
-function createMenu(pathVersion, menuVersion) {
+function createMenu(pathVersion, menuVersion, currentVersion) {
   let menu = ``
   // API Reference _index generation
   if (existsSync(`./content${pathVersion}/references/`)) {
@@ -150,12 +150,23 @@ type: reference
       name = "Versions"
 `
 
-  versions.forEach((version) => {
+  versions.forEach((version, i) => {
+    if (version === currentVersion) {
+      menu += `[[${menuVersion}]]
+      name = "${version} (current)"
+      url = '/distribution'
+      weight = ${i + 1} 
+      parent = "Versions"
+`
+      return;
+
+    }
+
     const pVer = version === 'main' ? version : `v${version}`
     menu += `[[${menuVersion}]]
-      name = "${version}"
+      name = "${version === 'main' ? "main (dev)" : version}"
       url = '/${pVer}/distribution'
-      weight = ${version === 'main' ? 0 : version.replace('.', '')}
+      weight = ${i + 1}
       parent = "Versions"
 `
   })
@@ -165,17 +176,22 @@ type: reference
 
 let menu = ``
 
+const currentVersion = readFileSync('./current-version.txt', {encoding: 'utf8'}).trim()
 const versions = readFileSync('./docs-versions.txt', {encoding: 'utf8'})
   .split('\n')
   .map((v) => v.trim())
   .filter(v => v)
 
 versions.forEach((version) => {
+  if (version === currentVersion) {
+    return;
+  }
+
   const pathVersion = version === 'main' ? `/${version}` : `/v${version}`
   const menuVersion = version === 'main' ? 'main' : `v${version.replace('.', '')}`
-  menu += createMenu(pathVersion, menuVersion)
+  menu += createMenu(pathVersion, menuVersion, currentVersion)
 })
 
-menu += createMenu('', 'current')
+menu += createMenu('', 'current', currentVersion)
 
 writeFileSync('config/_default/menus.toml', menu)

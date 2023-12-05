@@ -46,3 +46,4 @@ do
 done
 
 cp -r $root/content/v$current_version/* $root/content/
+rm -r $root/content/v$current_version
