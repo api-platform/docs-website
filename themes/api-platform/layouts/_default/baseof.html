@@ -18,14 +18,22 @@
     </div>
 	</div>
   {{ partial "footer.html" . }}
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-    <script>
-      docsearch({
-  container: '#docsearch',
-  appId: 'ZQ00U6B6ML',
-  indexName: 'api-platform',
-  apiKey: '52043128794330355240504c03762281',
-});
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  {{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
+  {{- .Scratch.Set "version" .Page.Section }}
+  {{- if in $sections .Page.Section }}
+    {{- .Scratch.Set "version" "3.2" }}
+  {{- end }}
+  <script>
+    docsearch({
+      container: '#docsearch',
+      appId: 'ZQ00U6B6ML',
+      indexName: 'api-platform',
+      apiKey: '52043128794330355240504c03762281',
+      searchParameters: {
+        facetFilters: ['version:{{ .Scratch.Get "version" }}']
+      }
+    });
+  </script>
 </body>
 </html>
