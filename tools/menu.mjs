@@ -45,6 +45,124 @@ function getColor(type) {
   }
 }
 
+function createMenu(pathVersion, menuVersion) {
+  let menu = ``
+  // API Reference _index generation
+  if (existsSync(`./content${pathVersion}/references/`)) {
+    const index = {}
+    globSync(`./content${pathVersion}/references/**/*.md`).filter(file => !file.includes("_index.md")).forEach((file) => {
+      const {data} =  matter(readFileSync(file, {encoding: 'utf8'}).toString())
+      const link = `/docs/${file}`.replace('.md', '').replace('/content', '')
+      const base = link.replace(`/docs${pathVersion}/references/`, '');
+      let type = data['php-type']
+      if (!type) {
+        type = 'Class';
+      }
+      const parts = base.split("/");
+      const fullLink = {
+        type,
+        title: parts[parts.length - 1],
+        link,
+        color: getColor(type),
+      };
+      const indexLink = parts.slice(0, -1).join("/");
+      if (index[indexLink]) index[indexLink].unshift(fullLink);
+      else index[indexLink] = [fullLink];
+    })
+
+    writeFileSync(`./content${pathVersion}/references/_index.md`, `---
+type: reference
+---`)
+    mkdirpSync('./data/references')
+    const referenceDataFilename = pathVersion === '' ? '/references' : pathVersion;
+    writeFileSync(`./data/references${referenceDataFilename}.yaml`, stringify(index))
+  }
+
+  const file = readFileSync(`./content${pathVersion}/outline.yaml`, {encoding: 'utf8'})
+  const data = parse(file)
+
+  data.chapters.forEach((e, i) => {
+    const parentId = slugify(e.title)
+    menu += `[[${menuVersion}]]
+      name = "${e.title}"
+      identifier = "${parentId}"
+      pageRef = '${pathVersion}/${e.path}'
+      weight = ${i + 1}
+`
+    const parent = e;
+    e.items.forEach((f, j) => {
+      let filename = f
+      let path = `${pathVersion}/${parent.path}/${f}`
+      if (f === 'index') {
+        filename = '_index'
+        path = `${pathVersion}/${parent.path}`
+      }
+
+      const title = extractTitleFromMarkdown(readFileSync(`./content${pathVersion}/${parent.path}/${filename}.md`, {encoding: 'utf8'}).toString())
+    menu += `[[${menuVersion}]]
+      name = "${title}"
+      identifier = "${parentId}-${slugify(title)}"
+      pageRef = '${path}'
+      url = '${path}'
+      weight = ${j+1}
+      parent = '${parentId}'
+`
+    })
+  })
+
+  if (existsSync(`./content${pathVersion}/references`)) {
+    menu += `[[${menuVersion}]]
+      name = "API Reference"
+      url = '${pathVersion}/references/'
+      pageRef = '${pathVersion}/references/_index.md'
+      weight = 3
+`
+  }
+
+  if (existsSync(`./content${pathVersion}/guides`)) {
+    menu += `[[${menuVersion}]]
+      name = "Guides"
+      url = '${pathVersion}/guides/'
+      pageRef = '${pathVersion}/guides/_index.md'
+      weight = 3
+`
+
+    const guides = readdirSync(`./content${pathVersion}/guides/`)
+    guides.forEach((guide) => {
+      const {data} =  matter(readFileSync(`./content${pathVersion}/guides/${guide}`, {encoding: 'utf8'}).toString())
+      menu += `[[${menuVersion}]]
+      name = "${data.name}"
+      parent = "Guides"
+      pageRef = "${pathVersion}/guides/${guide}"
+      url = "${pathVersion}/guides/${data.slug}"
+      weight = "${data.position}"
+`
+    })
+  }
+
+  menu += `[[${menuVersion}]]
+      name = "Changelog"
+      url = '${pathVersion}/changelog/'
+      pageRef = '${pathVersion}/changelog/'
+`
+
+  menu += `[[${menuVersion}]]
+      name = "Versions"
+`
+
+  versions.forEach((version) => {
+    const pVer = version === 'main' ? version : `v${version}`
+    menu += `[[${menuVersion}]]
+      name = "${version}"
+      url = '/${pVer}/distribution'
+      weight = ${version === 'main' ? 0 : version.replace('.', '')}
+      parent = "Versions"
+`
+  })
+
+  return menu
+}
+
 let menu = ``
 
 const versions = readFileSync('./docs-versions.txt', {encoding: 'utf8'})
@@ -53,121 +171,11 @@ const versions = readFileSync('./docs-versions.txt', {encoding: 'utf8'})
   .filter(v => v)
 
 versions.forEach((version) => {
-    const pathVersion = version === 'main' ? version : `v${version}`
+  const pathVersion = version === 'main' ? `/${version}` : `/v${version}`
+  const menuVersion = `${version.replace('.', '')}`
+  menu += createMenu(pathVersion, menuVersion)
+})
 
-    // API Reference _index generation
-    if (existsSync(`./content/${pathVersion}/references/`)) {
-      const index = {}
-      globSync(`./content/${pathVersion}/references/**/*.md`).filter(file => !file.includes("_index.md")).forEach((file) => {
-        const {data} =  matter(readFileSync(file, {encoding: 'utf8'}).toString())
-        const link = `/docs/${file}`.replace('.md', '').replace('/content', '')
-        const base = link.replace(`/docs/${pathVersion}/references/`, '');
-        let type = data['php-type']
-        if (!type) {
-          type = 'Class';
-        }
-        const parts = base.split("/");
-        const fullLink = {
-          type,
-          title: parts[parts.length - 1],
-          link,
-          color: getColor(type),
-        };
-        const indexLink = parts.slice(0, -1).join("/");
-        if (index[indexLink]) index[indexLink].unshift(fullLink);
-        else index[indexLink] = [fullLink];
-      })
-
-      writeFileSync(`./content/${pathVersion}/references/_index.md`, `---
-type: reference
----`)
-      mkdirpSync('./data/references')
-      writeFileSync(`./data/references/${pathVersion}.yaml`, stringify(index))
-    }
-
-    const file = readFileSync(`./content/${pathVersion}/outline.yaml`, {encoding: 'utf8'})
-    const data = parse(file)
-    const menuVersion = `${pathVersion.replace('.', '')}`
-
-    data.chapters.forEach((e, i) => {
-      const parentId = slugify(e.title)
-      menu += `[[${menuVersion}]]
-      name = "${e.title}"
-      identifier = "${parentId}"
-      pageRef = '/${pathVersion}/${e.path}'
-      weight = ${i + 1}
-  `
-      const parent = e;
-      e.items.forEach((f, j) => {
-        let filename = f
-        let path = `/${pathVersion}/${parent.path}/${f}`
-        if (f === 'index') {
-          filename = '_index'
-          path = `/${pathVersion}/${parent.path}`
-        }
-
-        const title = extractTitleFromMarkdown(readFileSync(`./content/${pathVersion}/${parent.path}/${filename}.md`, {encoding: 'utf8'}).toString())
-      menu += `[[${menuVersion}]]
-      name = "${title}"
-      identifier = "${parentId}-${slugify(title)}"
-      pageRef = '${path}'
-      url = '${path}'
-      weight = ${j+1}
-      parent = '${parentId}'
-  `
-      })
-    })
-
-    if (existsSync(`./content/${pathVersion}/references`)) {
-    menu += `[[${menuVersion}]]
-      name = "API Reference"
-      url = '/${pathVersion}/references/'
-      pageRef = '/${pathVersion}/references/_index.md'
-      weight = 3
-  `
-    }
-
-    if (existsSync(`./content/${pathVersion}/guides`)) {
-    menu += `[[${menuVersion}]]
-      name = "Guides"
-      url = '/${pathVersion}/guides/'
-      pageRef = '/${pathVersion}/guides/_index.md'
-      weight = 3
-  `
-
-      const guides = readdirSync(`./content/${pathVersion}/guides/`)
-      guides.forEach((guide) => {
-        const {data} =  matter(readFileSync(`./content/${pathVersion}/guides/${guide}`, {encoding: 'utf8'}).toString())
-        menu += `[[${menuVersion}]]
-      name = "${data.name}"
-      parent = "Guides"
-      pageRef = "/${pathVersion}/guides/${guide}"
-      url = "/${pathVersion}/guides/${data.slug}"
-      weight = "${data.position}"
-  `
-      })
-    }
-
-    menu += `[[${menuVersion}]]
-      name = "Changelog"
-      url = '/${pathVersion}/changelog/'
-      pageRef = '/${pathVersion}/changelog/'
-  `
-
-    menu += `[[${menuVersion}]]
-      name = "Versions"
-  `
-
-    versions.forEach((version) => {
-      const pVer = version === 'main' ? version : `v${version}`
-      menu += `[[${menuVersion}]]
-      name = "${version}"
-      url = '/${pVer}/distribution'
-      weight = ${version === 'main' ? 0 : version.replace('.', '')}
-      parent = "Versions"
-  `
-    })
-
-  })
+menu += createMenu('', 'current')
 
 writeFileSync('config/_default/menus.toml', menu)

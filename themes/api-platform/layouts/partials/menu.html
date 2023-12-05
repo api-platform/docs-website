@@ -12,7 +12,7 @@ Renders a menu for the given menu ID.
 {{- $menuID := replace $page.Section "." "" }}
 {{- .Scratch.Set "menuID" $menuID }}
 {{- if in $sections $menuID }}
-  {{- .Scratch.Set "menuID" "v32" }}
+  {{- .Scratch.Set "menuID" "current" }}
 {{- end }}
 {{- $menuID := .Scratch.Get "menuID" }}
 {{- range index site.Menus $menuID }}
