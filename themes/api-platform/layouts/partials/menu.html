@@ -19,11 +19,11 @@ Renders a menu for the given menu ID.
   {{- $attrs := dict "href" .URL "class" "flex-1 font-semibold uppercase doc-category" }}
   {{- $isOpen := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
   {{- if $page.IsMenuCurrent .Menu . }}
-    {{- $attrs = merge $attrs (dict "class" "flex-1 font-semibold uppercase doc-category text-blue" "aria-current" "page") }}
+    {{- $attrs = merge $attrs (dict "class" "flex-1 font-semibold uppercase doc-category text-blue is-active" "aria-current" "page") }}
   {{- else if $page.HasMenuCurrent .Menu .}}
-    {{- $attrs = merge $attrs (dict "class" "dark:text-white flex-1 font-semibold uppercase doc-category text-blue" "aria-current" "true") }}
+    {{- $attrs = merge $attrs (dict "class" "dark:text-white flex-1 font-semibold uppercase doc-category text-blue is-active" "aria-current" "true") }}
   {{- end }}
-  <div class="doc-nav transition-all duration-300 {{ if $isOpen }}mb-8{{ else }}mb-4{{end}}" data-menu-open="mb-8" data-menu-close="mb-4" data-identifier="{{ or (T .Identifier) .Name | safeHTML }}" data-is-open="{{ if $isOpen }}1{{ else }}0{{ end }}">
+  <div class="main-nav doc-nav transition-all duration-300 {{ if $isOpen }}mb-8{{ else }}mb-4{{end}}" data-menu-open="mb-8" data-menu-close="mb-4" data-identifier="{{ or (T .Identifier) .Name | safeHTML }}" data-is-open="{{ if $isOpen }}1{{ else }}0{{ end }}">
     <div {{- if gt (len .Children) 0 }} onclick="toggleSidebarMenu(event)" {{- end }} class="flex flex-row items-center text-left text-gray-700 dark:text-white" data-menu-open="text-blue" data-menu-close="text-gray-700">
       {{- if gt (len .Children) 0 }}
       <p role="button" {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end
