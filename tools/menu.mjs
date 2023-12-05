@@ -172,7 +172,7 @@ const versions = readFileSync('./docs-versions.txt', {encoding: 'utf8'})
 
 versions.forEach((version) => {
   const pathVersion = version === 'main' ? `/${version}` : `/v${version}`
-  const menuVersion = `${version.replace('.', '')}`
+  const menuVersion = version === 'main' ? 'main' : `v${version.replace('.', '')}`
   menu += createMenu(pathVersion, menuVersion)
 })
 
