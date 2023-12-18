@@ -1,5 +1,42 @@
+{{- $page := .Page }}
+{{- .Scratch.Set "title" .Site.Title }}
+{{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
+{{- .Scratch.Set "menuID" (replace $page.Section "." "") }}
+{{- if in $sections (.Scratch.Get "menuID") }}
+  {{- .Scratch.Set "menuID" "current" }}
+{{- end }}
+
+{{- if eq .Page.Type "reference" }}
+  {{- .Scratch.Set "title" "Reference" }}
+
+  {{- range $k, $v := (index $.Site.Data.references .Page.Section) }}
+    {{- range $link := $v }}
+      {{ if eq $.RelPermalink $link.link }}
+        {{ $.Scratch.Set "title" (printf "Reference | %s" (delimit $link.parts " ")) }}
+      {{ end }}
+    {{- end }}
+  {{- end }}
+{{- else }}
+  {{- with index site.Menus (.Scratch.Get "menuID") }}
+    {{- range .}}
+      {{- range .Children}}
+        {{- if $page.IsMenuCurrent .Menu . }}
+          {{- $.Scratch.Set "title" .Name }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if eq .Page.Type "guides" }}
+  {{- .Scratch.Set "description" (index (index .Params.sections 0) "text") }}
+  {{- .Scratch.Set "title" (printf "%s | %s" "Guides" (.Scratch.Get "title")) }}
+{{- else }}
+  {{ .Scratch.Set "description" (index (split .Page.Summary "\n") 0) }}
+{{- end }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>{{ printf "%s | %s" .Title site.Title }}</title>
+<title>{{ printf "API Platform | %s" (.Scratch.Get "title") }}</title>
+<meta name="description" content="{{ .Scratch.Get "description" }}">
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

@@ -9,13 +9,11 @@ Renders a menu for the given menu ID.
 
 {{- $page := . }}
 {{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "extra" "guides" "references" "schema-generator" "changelog" }}
-{{- $menuID := replace $page.Section "." "" }}
-{{- .Scratch.Set "menuID" $menuID }}
-{{- if in $sections $menuID }}
+{{- .Scratch.Set "menuID" (replace $page.Section "." "") }}
+{{- if in $sections (.Scratch.Get "menuID") }}
   {{- .Scratch.Set "menuID" "current" }}
 {{- end }}
-{{- $menuID := .Scratch.Get "menuID" }}
-{{- range index site.Menus $menuID }}
+{{- range index site.Menus (.Scratch.Get "menuID") }}
   {{- $attrs := dict "href" .URL "class" "flex-1 font-semibold uppercase doc-category" }}
   {{- $isOpen := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
   {{- if $page.IsMenuCurrent .Menu . }}

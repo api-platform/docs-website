@@ -62,8 +62,9 @@ function createMenu(pathVersion, menuVersion, currentVersion) {
       const fullLink = {
         type,
         title: parts[parts.length - 1],
-        link,
+        link: link + "/",
         color: getColor(type),
+        parts: parts
       };
       const indexLink = parts.slice(0, -1).join("/");
       if (index[indexLink]) index[indexLink].unshift(fullLink);
