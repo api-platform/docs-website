@@ -58,71 +58,77 @@ function ApiPlatform() {
   const typeSelectedClasses = ['text-blue', 'dark:text-white', 'border-blue', 'bg-blue-black/5', 'dark:bg-blue-black/30'];
   const typeClasses = ['text-gray-400', 'dark:text-blue/60', 'border-transparent'];
 
+  /**
+   * Transforms a code selector style into something more readable
+   */
+  function setCodeSelector(codeselector) {
+    const container = document.createElement('div')
+    container.classList.add('mb-4', 'overflow-hidden', 'rounded-2xl', 'bg-gray-100', 'dark:bg-blue-darkest')
+    const types = document.createElement('div')
+    types.classList.add('flex', 'flex-wrap', '-mb-px', 'bg-gray-300/10', 'dark:bg-blue/20', 'border-b', 'border-gray-300', 'dark:border-blue-dark')
+
+    const codes = [].slice.call(codeselector.querySelectorAll('.highlight'))
+    codes.forEach((c, i) => {
+      const link = document.createElement('a')
+      link.classList.add('inline-block', 'py-2', 'px-6', 'border-b-2', 'font-semibold', 'text-sm', 'uppercase', 'hover:bg-blue-black/5', 'dark:hover:bg-blue-black/30', 'transition-all')
+      link.setAttribute('role', 'button')
+
+      const type = c.querySelector('[data-lang]').dataset.lang
+      link.dataset.lang = type
+
+      if (i === 0) {
+        link.classList.add(...typeSelectedClasses)
+      } else {
+        link.classList.add(...typeClasses)
+      }
+
+      // type.classList.add()
+      link.innerText = type
+      link.onclick = function(event) {
+        event.preventDefault()
+        ;[].slice.call(types.querySelectorAll('a')).forEach((e) => {
+          e.classList.remove(...typeSelectedClasses)
+          e.classList.add(...typeClasses)
+        })
+
+        link.classList.add(...typeSelectedClasses)
+
+        ;[].slice.call(container.querySelectorAll('.highlight')).forEach((e) => {
+          const type = e.querySelector('[data-lang]').dataset.lang
+          if (this.dataset.lang === type) {
+            e.classList.remove('hidden')
+            return;
+          }
+
+          e.classList.add('hidden')
+        })
+      }
+
+      types.appendChild(link)
+    })
+
+    container.appendChild(types)
+
+    codes.forEach((c) => {
+      codeselector.removeChild(c)
+    })
+
+    codeselector.appendChild(container)
+
+    codes.forEach((c, i) => {
+      if (i !== 0) {
+        c.classList.add('hidden')
+      }
+      container.appendChild(c)
+    })
+  }
+
   document.addEventListener("DOMContentLoaded", (event) => {
     // To use Shortcodes (https://gohugo.io/templates/shortcode-templates/) we'd need to change how this is declared in the documentation itself...
-    ;[].slice.call(document.querySelectorAll('[data-code-selector]')).forEach((codeselector) => {
-      const container = document.createElement('div')
-      container.classList.add('mb-4', 'overflow-hidden', 'rounded-2xl', 'bg-gray-100', 'dark:bg-blue-darkest')
-      const types = document.createElement('div')
-      types.classList.add('flex', 'flex-wrap', '-mb-px', 'bg-gray-300/10', 'dark:bg-blue/20', 'border-b', 'border-gray-300', 'dark:border-blue-dark')
-
-      const codes = [].slice.call(codeselector.querySelectorAll('.highlight'))
-      codes.forEach((c, i) => {
-        const link = document.createElement('a')
-        link.classList.add('inline-block', 'py-2', 'px-6', 'border-b-2', 'font-semibold', 'text-sm', 'uppercase', 'hover:bg-blue-black/5', 'dark:hover:bg-blue-black/30', 'transition-all')
-        link.setAttribute('role', 'button')
-
-        const type = c.querySelector('[data-lang]').dataset.lang
-        link.dataset.lang = type
-
-        if (i === 0) {
-          link.classList.add(...typeSelectedClasses)
-        } else {
-          link.classList.add(...typeClasses)
-        }
-
-        // type.classList.add()
-        link.innerText = type
-        link.onclick = function(event) {
-          event.preventDefault()
-          ;[].slice.call(types.querySelectorAll('a')).forEach((e) => {
-            e.classList.remove(...typeSelectedClasses)
-            e.classList.add(...typeClasses)
-          })
-
-          link.classList.add(...typeSelectedClasses)
-
-          ;[].slice.call(container.querySelectorAll('.highlight')).forEach((e) => {
-            const type = e.querySelector('[data-lang]').dataset.lang
-            if (this.dataset.lang === type) {
-              e.classList.remove('hidden')
-              return;
-            }
-
-            e.classList.add('hidden')
-          })
-        }
-
-        types.appendChild(link)
-      })
-
-      container.appendChild(types)
-
-      codes.forEach((c) => {
-        codeselector.removeChild(c)
-      })
-
-      codeselector.appendChild(container)
-
-      codes.forEach((c, i) => {
-        if (i !== 0) {
-          c.classList.add('hidden')
-        }
-        container.appendChild(c)
-      })
-
-    })
+    ;[].slice.call(document.querySelectorAll('[data-code-selector]')).forEach((el) => setCodeSelector(el))
+    ;[].slice.call(document.querySelectorAll('code-selector')).forEach((el) => setCodeSelector(el))
 	})
+
   let theme;
 
   window.setThemeMode = function(mode) {

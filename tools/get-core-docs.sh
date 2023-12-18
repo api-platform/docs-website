@@ -38,6 +38,9 @@ do
     if [[ $version == "main" ]]; then
       $root/tools/pdg guides --quiet --no-debug $root/content/$version/guides
       $root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/$version/references/ --base-url /docs/$version/references
+    elif [[ $version == $current_version ]]; then
+      $root/tools/pdg guides --quiet --no-debug $root/content/v$version/guides
+      $root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/v$version/references/ --base-url /docs/references
     else
       $root/tools/pdg guides --quiet --no-debug $root/content/v$version/guides
       $root/tools/pdg references --quiet --no-debug $root/core.temp/src $root/content/v$version/references/ --base-url /docs/v$version/references
