@@ -38,5 +38,14 @@
 <meta name="viewport" content="width=device-width">
 <title>{{ printf "API Platform | %s" (.Scratch.Get "title") }}</title>
 <meta name="description" content="{{ .Scratch.Get "description" }}">
+
+<meta property="og:title" content="{{ .Scratch.Get "title" }}">
+<meta property="og:description" content="{{ .Scratch.Get "description" }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
+<meta name="twitter:description" content="{{ .Scratch.Get "description" }}">
+
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
