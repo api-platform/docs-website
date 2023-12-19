@@ -34,6 +34,9 @@
 {{- else }}
   {{ .Scratch.Set "description" (index (split .Page.Summary "\n") 0) }}
 {{- end }}
+
+{{ $image := resources.Get "images/opengraph-image.png" }}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ printf "API Platform | %s" (.Scratch.Get "title") }}</title>
@@ -43,9 +46,13 @@
 <meta property="og:description" content="{{ .Scratch.Get "description" }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image.Permalink }}">
+<meta property="og:image:width" content="{{ $image.Width }}"/>
+<meta property="og:image:height" content="{{ $image.Height }}"/>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
 <meta name="twitter:description" content="{{ .Scratch.Get "description" }}">
+<meta name="twitter:image" content="{{ $image.Permalink }}">
 
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
