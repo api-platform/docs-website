@@ -1,0 +1,3 @@
+{{ $pathParts := split (path.Dir .Page.File.Path) "/" }}
+{{ $parentFolder := delimit $pathParts "/" }}
+<img src="{{ print $parentFolder "/" | relURL }}{{ .Destination | safeURL }}" alt="{{ .Text | safeHTML }}" />
