@@ -31,7 +31,8 @@ do
 
 	if [[ -d $root/core.temp/docs/guides ]];
 	then
-		composer install --prefer-dist 
+		rm -f composer.lock
+		composer update --prefer-dist 
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
 
