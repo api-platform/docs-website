@@ -3,7 +3,7 @@
         {{ $lastPart := index $parts (sub (len $parts) 2) }}
         {{ if in .Permalink "/guides/" }} <span>Guides</span>
         {{ else if in .Permalink "/references/" }} <a class="hover:text-blue" href="/docs/{{ .Page.Section }}/references/">References</a>
-        {{ else }} <a class="hover:text-blue" href="/docs/{{ .Page.Section }}/distribution">{{ .Page.Section }}</a>
+        {{ else }} <a class="hover:text-blue" href="/docs/{{ .Page.Section }}">{{ .Page.Section }}</a>
         {{ end }}
         <svg
                 xmlns="http://www.w3.org/2000/svg"

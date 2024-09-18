@@ -671,72 +671,72 @@
       name = "Versions"
 [[v34]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v34]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v34]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v34]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v34]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v34]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v34]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v34]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v34]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v34]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v34]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v34]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v34]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v34]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v33]]
@@ -1412,72 +1412,72 @@
       name = "Versions"
 [[v33]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v33]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v33]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v33]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v33]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v33]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v33]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v33]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v33]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v33]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v33]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v33]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v33]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v33]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v32]]
@@ -2153,72 +2153,72 @@
       name = "Versions"
 [[v32]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v32]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v32]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v32]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v32]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v32]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v32]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v32]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v32]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v32]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v32]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v32]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v32]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v32]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v31]]
@@ -2894,72 +2894,72 @@
       name = "Versions"
 [[v31]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v31]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v31]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v31]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v31]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v31]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v31]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v31]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v31]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v31]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v31]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v31]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v31]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v31]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v30]]
@@ -3635,72 +3635,72 @@
       name = "Versions"
 [[v30]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v30]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v30]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v30]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v30]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v30]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v30]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v30]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v30]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v30]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v30]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v30]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v30]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v30]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v27]]
@@ -4369,72 +4369,72 @@
       name = "Versions"
 [[v27]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v27]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v27]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v27]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v27]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v27]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v27]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v27]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v27]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v27]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v27]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v27]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v27]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v27]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v26]]
@@ -5082,72 +5082,72 @@
       name = "Versions"
 [[v26]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v26]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v26]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v26]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v26]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v26]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v26]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v26]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v26]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v26]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v26]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v26]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v26]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v26]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v25]]
@@ -5746,72 +5746,72 @@
       name = "Versions"
 [[v25]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v25]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v25]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v25]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v25]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v25]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v25]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v25]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v25]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v25]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v25]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v25]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v25]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v25]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v24]]
@@ -6312,72 +6312,72 @@
       name = "Versions"
 [[v24]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v24]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v24]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v24]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v24]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v24]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v24]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v24]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v24]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v24]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v24]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v24]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v24]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v24]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v23]]
@@ -6815,72 +6815,72 @@
       name = "Versions"
 [[v23]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v23]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v23]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v23]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v23]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v23]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v23]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v23]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v23]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v23]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v23]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v23]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v23]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v23]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v22]]
@@ -7283,72 +7283,72 @@
       name = "Versions"
 [[v22]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v22]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v22]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v22]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v22]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v22]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v22]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v22]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v22]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v22]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v22]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v22]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v22]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v22]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[v21]]
@@ -7702,72 +7702,72 @@
       name = "Versions"
 [[v21]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[v21]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[v21]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[v21]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[v21]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[v21]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[v21]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[v21]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[v21]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[v21]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[v21]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[v21]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[v21]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[v21]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[main]]
@@ -8443,112 +8443,145 @@
       name = "Versions"
 [[main]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[main]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[main]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[main]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[main]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[main]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[main]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[main]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[main]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[main]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[main]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[main]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[main]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[main]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"
 [[current]]
-      name = "The Distribution: Create Powerful APIs with Ease"
-      identifier = "the-distribution-create-powerful-apis-with-ease"
-      pageRef = '/distribution'
+      name = "The Symfony API Platform variant"
+      identifier = "the-symfony-api-platform-variant"
+      pageRef = '/symfony'
       weight = 1
 [[current]]
       name = "Getting Started With API Platform: Create Your API and Your Jamstack Site"
-      identifier = "the-distribution-create-powerful-apis-with-ease-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
-      pageRef = '/distribution'
-      url = '/distribution'
+      identifier = "the-symfony-api-platform-variant-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
+      pageRef = '/symfony'
+      url = '/symfony'
       weight = 1
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'the-symfony-api-platform-variant'
 [[current]]
       name = "Testing the API"
-      identifier = "the-distribution-create-powerful-apis-with-ease-testing-the-api"
-      pageRef = '/distribution/testing'
-      url = '/distribution/testing'
+      identifier = "the-symfony-api-platform-variant-testing-the-api"
+      pageRef = '/symfony/testing'
+      url = '/symfony/testing'
       weight = 2
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'the-symfony-api-platform-variant'
 [[current]]
       name = "Debugging"
-      identifier = "the-distribution-create-powerful-apis-with-ease-debugging"
-      pageRef = '/distribution/debugging'
-      url = '/distribution/debugging'
+      identifier = "the-symfony-api-platform-variant-debugging"
+      pageRef = '/symfony/debugging'
+      url = '/symfony/debugging'
       weight = 3
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'the-symfony-api-platform-variant'
 [[current]]
       name = "Configuring the Caddy Web Server"
-      identifier = "the-distribution-create-powerful-apis-with-ease-configuring-the-caddy-web-server"
-      pageRef = '/distribution/caddy'
-      url = '/distribution/caddy'
+      identifier = "the-symfony-api-platform-variant-configuring-the-caddy-web-server"
+      pageRef = '/symfony/caddy'
+      url = '/symfony/caddy'
       weight = 4
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'the-symfony-api-platform-variant'
+[[current]]
+      name = "The Laravel API Platform variant"
+      identifier = "the-laravel-api-platform-variant"
+      pageRef = '/laravel'
+      weight = 2
+[[current]]
+      name = "API Platform for Laravel Projects"
+      identifier = "the-laravel-api-platform-variant-api-platform-for-laravel-projects"
+      pageRef = '/laravel'
+      url = '/laravel'
+      weight = 1
+      parent = 'the-laravel-api-platform-variant'
+[[current]]
+      name = "Parameters and Filters"
+      identifier = "the-laravel-api-platform-variant-parameters-and-filters"
+      pageRef = '/laravel/filters'
+      url = '/laravel/filters'
+      weight = 2
+      parent = 'the-laravel-api-platform-variant'
+[[current]]
+      name = "Security"
+      identifier = "the-laravel-api-platform-variant-security"
+      pageRef = '/laravel/security'
+      url = '/laravel/security'
+      weight = 3
+      parent = 'the-laravel-api-platform-variant'
+[[current]]
+      name = "Validation"
+      identifier = "the-laravel-api-platform-variant-validation"
+      pageRef = '/laravel/validation'
+      url = '/laravel/validation'
+      weight = 4
+      parent = 'the-laravel-api-platform-variant'
 [[current]]
       name = "Core"
       identifier = "core"
       pageRef = '/core'
-      weight = 2
+      weight = 3
 [[current]]
       name = "The API Platform Core Library"
       identifier = "core-the-api-platform-core-library"
@@ -8882,7 +8915,7 @@
       name = "Schema Generator"
       identifier = "schema-generator"
       pageRef = '/schema-generator'
-      weight = 3
+      weight = 4
 [[current]]
       name = "The Schema Generator"
       identifier = "schema-generator-the-schema-generator"
@@ -8908,7 +8941,7 @@
       name = "Admin"
       identifier = "admin"
       pageRef = '/admin'
-      weight = 4
+      weight = 5
 [[current]]
       name = "The API Platform Admin"
       identifier = "admin-the-api-platform-admin"
@@ -8997,7 +9030,7 @@
       name = "Create Client"
       identifier = "create-client"
       pageRef = '/create-client'
-      weight = 5
+      weight = 6
 [[current]]
       name = "API Platform Create Client"
       identifier = "create-client-api-platform-create-client"
@@ -9079,7 +9112,7 @@
       name = "Deployment"
       identifier = "deployment"
       pageRef = '/deployment'
-      weight = 6
+      weight = 7
 [[current]]
       name = "Deploying API Platform Applications"
       identifier = "deployment-deploying-api-platform-applications"
@@ -9126,7 +9159,7 @@
       name = "General Information"
       identifier = "general-information"
       pageRef = '/extra'
-      weight = 7
+      weight = 8
 [[current]]
       name = "API Platform's Philosophy"
       identifier = "general-information-api-platforms-philosophy"
@@ -9177,6 +9210,124 @@
       weight = 7
       parent = 'general-information'
 [[current]]
+      name = "API Reference"
+      url = '/references/'
+      pageRef = '/references/_index.md'
+      weight = 3
+[[current]]
+      name = "Guides"
+      url = '/guides/'
+      pageRef = '/guides/_index.md'
+      weight = 3
+[[current]]
+      name = "Create a Custom Doctrine Filter"
+      parent = "Guides"
+      pageRef = "/guides/create-a-custom-doctrine-filter.md"
+      url = "/guides/create-a-custom-doctrine-filter"
+      weight = "10"
+[[current]]
+      name = "Custom pagination"
+      parent = "Guides"
+      pageRef = "/guides/custom-pagination.md"
+      url = "/guides/custom-pagination"
+      weight = "12"
+[[current]]
+      name = "Declare a Resource"
+      parent = "Guides"
+      pageRef = "/guides/declare-a-resource.md"
+      url = "/guides/declare-a-resource"
+      weight = "1"
+[[current]]
+      name = "Delete operation with validation"
+      parent = "Guides"
+      pageRef = "/guides/delete-operation-with-validation.md"
+      url = "/guides/delete-operation-with-validation"
+      weight = "20"
+[[current]]
+      name = "Doctrine entity as API resource"
+      parent = "Guides"
+      pageRef = "/guides/doctrine-entity-as-resource.md"
+      url = "/guides/doctrine-entity-as-resource"
+      weight = "4"
+[[current]]
+      name = "Doctrine ORM SearchFilter"
+      parent = "Guides"
+      pageRef = "/guides/doctrine-search-filter.md"
+      url = "/guides/doctrine-search-filter"
+      weight = "7"
+[[current]]
+      name = "Error provider to translate exception messages"
+      parent = "Guides"
+      pageRef = "/guides/error-provider.md"
+      url = "/guides/error-provider"
+      weight = "7"
+[[current]]
+      name = "Error resource for domain exceptions"
+      parent = "Guides"
+      pageRef = "/guides/error-resource.md"
+      url = "/guides/error-resource"
+      weight = "7"
+[[current]]
+      name = "Extend OpenAPI Documentation"
+      parent = "Guides"
+      pageRef = "/guides/extend-openapi-documentation.md"
+      url = "/guides/extend-openapi-documentation"
+      weight = "11"
+[[current]]
+      name = "Handle doctrine links"
+      parent = "Guides"
+      pageRef = "/guides/handle-links.md"
+      url = "/guides/handle-links"
+      weight = "15"
+[[current]]
+      name = "Hook a Persistence Layer with a Processor"
+      parent = "Guides"
+      pageRef = "/guides/hook-a-persistence-layer-with-a-processor.md"
+      url = "/guides/hook-a-persistence-layer-with-a-processor"
+      weight = "3"
+[[current]]
+      name = "How to create a Guide"
+      parent = "Guides"
+      pageRef = "/guides/how-to.md"
+      url = "/guides/how-to"
+      weight = "0"
+[[current]]
+      name = "Customize HTTP Cache Tags"
+      parent = "Guides"
+      pageRef = "/guides/http-cache-tags.md"
+      url = "/guides/http-cache-tags"
+      weight = "21"
+[[current]]
+      name = "Provide the Resource State"
+      parent = "Guides"
+      pageRef = "/guides/provide-the-resource-state.md"
+      url = "/guides/provide-the-resource-state"
+      weight = "2"
+[[current]]
+      name = "How to return an IRI instead of an object for your resources relations ?"
+      parent = "Guides"
+      pageRef = "/guides/return-the-iri-of-your-resources-relations.md"
+      url = "/guides/return-the-iri-of-your-resources-relations"
+      weight = "11"
+[[current]]
+      name = "Declare a subresource"
+      parent = "Guides"
+      pageRef = "/guides/subresource.md"
+      url = "/guides/subresource"
+      weight = "8"
+[[current]]
+      name = "Test your API"
+      parent = "Guides"
+      pageRef = "/guides/test-your-api.md"
+      url = "/guides/test-your-api"
+      weight = "7"
+[[current]]
+      name = "Validate incoming data"
+      parent = "Guides"
+      pageRef = "/guides/validate-incoming-data.md"
+      url = "/guides/validate-incoming-data"
+      weight = "5"
+[[current]]
       name = "Changelog"
       url = '/changelog/'
       pageRef = '/changelog/'
@@ -9184,71 +9335,71 @@
       name = "Versions"
 [[current]]
       name = "4.0 (current)"
-      url = '/distribution'
+      url = '/'
       weight = 1 
       parent = "Versions"
 [[current]]
       name = "3.4"
-      url = '/v3.4/distribution'
+      url = '/v3.4/'
       weight = 2
       parent = "Versions"
 [[current]]
       name = "3.3"
-      url = '/v3.3/distribution'
+      url = '/v3.3/'
       weight = 3
       parent = "Versions"
 [[current]]
       name = "3.2"
-      url = '/v3.2/distribution'
+      url = '/v3.2/'
       weight = 4
       parent = "Versions"
 [[current]]
       name = "3.1"
-      url = '/v3.1/distribution'
+      url = '/v3.1/'
       weight = 5
       parent = "Versions"
 [[current]]
       name = "3.0"
-      url = '/v3.0/distribution'
+      url = '/v3.0/'
       weight = 6
       parent = "Versions"
 [[current]]
       name = "2.7"
-      url = '/v2.7/distribution'
+      url = '/v2.7/'
       weight = 7
       parent = "Versions"
 [[current]]
       name = "2.6"
-      url = '/v2.6/distribution'
+      url = '/v2.6/'
       weight = 8
       parent = "Versions"
 [[current]]
       name = "2.5"
-      url = '/v2.5/distribution'
+      url = '/v2.5/'
       weight = 9
       parent = "Versions"
 [[current]]
       name = "2.4"
-      url = '/v2.4/distribution'
+      url = '/v2.4/'
       weight = 10
       parent = "Versions"
 [[current]]
       name = "2.3"
-      url = '/v2.3/distribution'
+      url = '/v2.3/'
       weight = 11
       parent = "Versions"
 [[current]]
       name = "2.2"
-      url = '/v2.2/distribution'
+      url = '/v2.2/'
       weight = 12
       parent = "Versions"
 [[current]]
       name = "2.1"
-      url = '/v2.1/distribution'
+      url = '/v2.1/'
       weight = 13
       parent = "Versions"
 [[current]]
       name = "main (dev)"
-      url = '/main/distribution'
+      url = '/main/'
       weight = 14
       parent = "Versions"

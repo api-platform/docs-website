@@ -155,7 +155,7 @@ type: reference
     if (version === currentVersion) {
       menu += `[[${menuVersion}]]
       name = "${version} (current)"
-      url = '/distribution'
+      url = '/'
       weight = ${i + 1} 
       parent = "Versions"
 `
@@ -166,7 +166,7 @@ type: reference
     const pVer = version === 'main' ? version : `v${version}`
     menu += `[[${menuVersion}]]
       name = "${version === 'main' ? "main (dev)" : version}"
-      url = '/${pVer}/distribution'
+      url = '/${pVer}/'
       weight = ${i + 1}
       parent = "Versions"
 `
