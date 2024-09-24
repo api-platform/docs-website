@@ -1,7 +1,9 @@
 {{ $pathParts := split (path.Dir .Page.File.Path) "/" }}
 {{ $parentFolder := delimit $pathParts "/" }}
 
-{{- if (strings.HasPrefix .Destination "..") -}}
+{{- if strings.HasPrefix .Destination "images/" -}}
+  <img src="../{{ .Destination }}" alt="{{ .Text | safeHTML }}" />
+{{- else if strings.HasPrefix .Destination ".." -}}
     {{- if eq .Page.File.BaseFileName "_index" }} 
     <img src="{{ .Destination }}" alt="{{ .Text | safeHTML }}" />
     {{- else }}
