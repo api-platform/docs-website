@@ -1,5 +1,5 @@
 {{- if not (strings.HasPrefix .Destination "http") -}}
-<a href="{{ replaceRE `(/?(?:index\.md|\.md)/?)` "/" (.Destination | safeURL) }}">{{ .Text | safeHTML }}</a>
+<a href="{{ (.Page.GetPage .Destination).RelPermalink | safeURL }}">{{ .Text | safeHTML }}</a>
 {{- else -}}
 <a href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
 {{- end -}}
