@@ -31,8 +31,9 @@ do
 
 	if [[ -d $root/core.temp/docs/guides ]];
 	then
+    cd $root/core.temp
 		rm -f composer.lock
-		composer update --prefer-dist 
+		composer update --prefer-dist --ignore-platform-req=ext-mongodb
 		cd $root/core.temp/docs
 		cp $root/pdg.config.yaml pdg.config.yaml
 
