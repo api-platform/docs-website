@@ -664,9 +664,122 @@
       weight = 7
       parent = 'general-information'
 [[v34]]
+      name = "Guides"
+      url = '/v3.4/guides/'
+      pageRef = '/v3.4/guides/_index.md'
+      weight = 3
+[[v34]]
+      name = "Create a Custom Doctrine Filter"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/create-a-custom-doctrine-filter.mdx"
+      url = "/v3.4/guides/create-a-custom-doctrine-filter"
+      weight = "10"
+[[v34]]
+      name = "Custom pagination"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/custom-pagination.mdx"
+      url = "/v3.4/guides/custom-pagination"
+      weight = "12"
+[[v34]]
+      name = "Declare a Resource"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/declare-a-resource.mdx"
+      url = "/v3.4/guides/declare-a-resource"
+      weight = "1"
+[[v34]]
+      name = "Delete operation with validation"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/delete-operation-with-validation.mdx"
+      url = "/v3.4/guides/delete-operation-with-validation"
+      weight = "20"
+[[v34]]
+      name = "Doctrine entity as API resource"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/doctrine-entity-as-resource.mdx"
+      url = "/v3.4/guides/doctrine-entity-as-resource"
+      weight = "4"
+[[v34]]
+      name = "Doctrine ORM SearchFilter"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/doctrine-search-filter.mdx"
+      url = "/v3.4/guides/doctrine-search-filter"
+      weight = "7"
+[[v34]]
+      name = "Error provider to translate exception messages"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/error-provider.mdx"
+      url = "/v3.4/guides/error-provider"
+      weight = "7"
+[[v34]]
+      name = "Error resource for domain exceptions"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/error-resource.mdx"
+      url = "/v3.4/guides/error-resource"
+      weight = "7"
+[[v34]]
+      name = "Extend OpenAPI Documentation"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/extend-openapi-documentation.mdx"
+      url = "/v3.4/guides/extend-openapi-documentation"
+      weight = "11"
+[[v34]]
+      name = "Handle doctrine links"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/handle-links.mdx"
+      url = "/v3.4/guides/handle-links"
+      weight = "15"
+[[v34]]
+      name = "Hook a Persistence Layer with a Processor"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/hook-a-persistence-layer-with-a-processor.mdx"
+      url = "/v3.4/guides/hook-a-persistence-layer-with-a-processor"
+      weight = "3"
+[[v34]]
+      name = "How to create a Guide"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/how-to.mdx"
+      url = "/v3.4/guides/how-to"
+      weight = "0"
+[[v34]]
+      name = "Customize HTTP Cache Tags"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/http-cache-tags.mdx"
+      url = "/v3.4/guides/http-cache-tags"
+      weight = "21"
+[[v34]]
+      name = "Provide the Resource State"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/provide-the-resource-state.mdx"
+      url = "/v3.4/guides/provide-the-resource-state"
+      weight = "2"
+[[v34]]
+      name = "How to return an IRI instead of an object for your resources relations ?"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/return-the-iri-of-your-resources-relations.mdx"
+      url = "/v3.4/guides/return-the-iri-of-your-resources-relations"
+      weight = "11"
+[[v34]]
+      name = "Declare a subresource"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/subresource.mdx"
+      url = "/v3.4/guides/subresource"
+      weight = "8"
+[[v34]]
+      name = "Test your API"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/test-your-api.mdx"
+      url = "/v3.4/guides/test-your-api"
+      weight = "7"
+[[v34]]
+      name = "Validate incoming data"
+      parent = "Guides"
+      pageRef = "/v3.4/guides/validate-incoming-data.mdx"
+      url = "/v3.4/guides/validate-incoming-data"
+      weight = "5"
+[[v34]]
       name = "Changelog"
-      url = '/v3.4/changelog/'
-      pageRef = '/v3.4/changelog/'
+      url = '/v3.4/changelog'
+      pageRef = '/v3.4/changelog'
 [[v34]]
       name = "Versions"
 [[v34]]
@@ -1405,9 +1518,122 @@
       weight = 7
       parent = 'general-information'
 [[v33]]
+      name = "Guides"
+      url = '/v3.3/guides/'
+      pageRef = '/v3.3/guides/_index.md'
+      weight = 3
+[[v33]]
+      name = "Create a Custom Doctrine Filter"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/create-a-custom-doctrine-filter.mdx"
+      url = "/v3.3/guides/create-a-custom-doctrine-filter"
+      weight = "10"
+[[v33]]
+      name = "Custom pagination"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/custom-pagination.mdx"
+      url = "/v3.3/guides/custom-pagination"
+      weight = "12"
+[[v33]]
+      name = "Declare a Resource"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/declare-a-resource.mdx"
+      url = "/v3.3/guides/declare-a-resource"
+      weight = "1"
+[[v33]]
+      name = "Delete operation with validation"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/delete-operation-with-validation.mdx"
+      url = "/v3.3/guides/delete-operation-with-validation"
+      weight = "20"
+[[v33]]
+      name = "Doctrine entity as API resource"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/doctrine-entity-as-resource.mdx"
+      url = "/v3.3/guides/doctrine-entity-as-resource"
+      weight = "4"
+[[v33]]
+      name = "Doctrine ORM SearchFilter"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/doctrine-search-filter.mdx"
+      url = "/v3.3/guides/doctrine-search-filter"
+      weight = "7"
+[[v33]]
+      name = "Error provider to translate exception messages"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/error-provider.mdx"
+      url = "/v3.3/guides/error-provider"
+      weight = "7"
+[[v33]]
+      name = "Error resource for domain exceptions"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/error-resource.mdx"
+      url = "/v3.3/guides/error-resource"
+      weight = "7"
+[[v33]]
+      name = "Extend OpenAPI Documentation"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/extend-openapi-documentation.mdx"
+      url = "/v3.3/guides/extend-openapi-documentation"
+      weight = "11"
+[[v33]]
+      name = "Handle doctrine links"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/handle-links.mdx"
+      url = "/v3.3/guides/handle-links"
+      weight = "15"
+[[v33]]
+      name = "Hook a Persistence Layer with a Processor"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/hook-a-persistence-layer-with-a-processor.mdx"
+      url = "/v3.3/guides/hook-a-persistence-layer-with-a-processor"
+      weight = "3"
+[[v33]]
+      name = "How to create a Guide"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/how-to.mdx"
+      url = "/v3.3/guides/how-to"
+      weight = "0"
+[[v33]]
+      name = "Customize HTTP Cache Tags"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/http-cache-tags.mdx"
+      url = "/v3.3/guides/http-cache-tags"
+      weight = "21"
+[[v33]]
+      name = "Provide the Resource State"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/provide-the-resource-state.mdx"
+      url = "/v3.3/guides/provide-the-resource-state"
+      weight = "2"
+[[v33]]
+      name = "How to return an IRI instead of an object for your resources relations ?"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/return-the-iri-of-your-resources-relations.mdx"
+      url = "/v3.3/guides/return-the-iri-of-your-resources-relations"
+      weight = "11"
+[[v33]]
+      name = "Declare a subresource"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/subresource.mdx"
+      url = "/v3.3/guides/subresource"
+      weight = "8"
+[[v33]]
+      name = "Test your API"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/test-your-api.mdx"
+      url = "/v3.3/guides/test-your-api"
+      weight = "7"
+[[v33]]
+      name = "Validate incoming data"
+      parent = "Guides"
+      pageRef = "/v3.3/guides/validate-incoming-data.mdx"
+      url = "/v3.3/guides/validate-incoming-data"
+      weight = "5"
+[[v33]]
       name = "Changelog"
-      url = '/v3.3/changelog/'
-      pageRef = '/v3.3/changelog/'
+      url = '/v3.3/changelog'
+      pageRef = '/v3.3/changelog'
 [[v33]]
       name = "Versions"
 [[v33]]
@@ -2146,9 +2372,116 @@
       weight = 7
       parent = 'general-information'
 [[v32]]
+      name = "Guides"
+      url = '/v3.2/guides/'
+      pageRef = '/v3.2/guides/_index.md'
+      weight = 3
+[[v32]]
+      name = "Create a Custom Doctrine Filter"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/create-a-custom-doctrine-filter.mdx"
+      url = "/v3.2/guides/create-a-custom-doctrine-filter"
+      weight = "10"
+[[v32]]
+      name = "Custom pagination"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/custom-pagination.mdx"
+      url = "/v3.2/guides/custom-pagination"
+      weight = "12"
+[[v32]]
+      name = "Declare a Resource"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/declare-a-resource.mdx"
+      url = "/v3.2/guides/declare-a-resource"
+      weight = "1"
+[[v32]]
+      name = "Delete operation with validation"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/delete-operation-with-validation.mdx"
+      url = "/v3.2/guides/delete-operation-with-validation"
+      weight = "20"
+[[v32]]
+      name = "Doctrine entity as API resource"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/doctrine-entity-as-resource.mdx"
+      url = "/v3.2/guides/doctrine-entity-as-resource"
+      weight = "4"
+[[v32]]
+      name = "Doctrine ORM SearchFilter"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/doctrine-search-filter.mdx"
+      url = "/v3.2/guides/doctrine-search-filter"
+      weight = "7"
+[[v32]]
+      name = "Error provider to translate exception messages"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/error-provider.mdx"
+      url = "/v3.2/guides/error-provider"
+      weight = "7"
+[[v32]]
+      name = "Error resource for domain exceptions"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/error-resource.mdx"
+      url = "/v3.2/guides/error-resource"
+      weight = "7"
+[[v32]]
+      name = "Extend OpenAPI Documentation"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/extend-openapi-documentation.mdx"
+      url = "/v3.2/guides/extend-openapi-documentation"
+      weight = "11"
+[[v32]]
+      name = "Handle doctrine links"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/handle-links.mdx"
+      url = "/v3.2/guides/handle-links"
+      weight = "15"
+[[v32]]
+      name = "Hook a Persistence Layer with a Processor"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/hook-a-persistence-layer-with-a-processor.mdx"
+      url = "/v3.2/guides/hook-a-persistence-layer-with-a-processor"
+      weight = "3"
+[[v32]]
+      name = "How to create a Guide"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/how-to.mdx"
+      url = "/v3.2/guides/how-to"
+      weight = "0"
+[[v32]]
+      name = "Provide the Resource State"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/provide-the-resource-state.mdx"
+      url = "/v3.2/guides/provide-the-resource-state"
+      weight = "2"
+[[v32]]
+      name = "How to return an IRI instead of an object for your resources relations ?"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/return-the-iri-of-your-resources-relations.mdx"
+      url = "/v3.2/guides/return-the-iri-of-your-resources-relations"
+      weight = "11"
+[[v32]]
+      name = "Declare a subresource"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/subresource.mdx"
+      url = "/v3.2/guides/subresource"
+      weight = "8"
+[[v32]]
+      name = "Test your API"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/test-your-api.mdx"
+      url = "/v3.2/guides/test-your-api"
+      weight = "7"
+[[v32]]
+      name = "Validate incoming data"
+      parent = "Guides"
+      pageRef = "/v3.2/guides/validate-incoming-data.mdx"
+      url = "/v3.2/guides/validate-incoming-data"
+      weight = "5"
+[[v32]]
       name = "Changelog"
-      url = '/v3.2/changelog/'
-      pageRef = '/v3.2/changelog/'
+      url = '/v3.2/changelog'
+      pageRef = '/v3.2/changelog'
 [[v32]]
       name = "Versions"
 [[v32]]
@@ -2887,9 +3220,104 @@
       weight = 7
       parent = 'general-information'
 [[v31]]
+      name = "Guides"
+      url = '/v3.1/guides/'
+      pageRef = '/v3.1/guides/_index.md'
+      weight = 3
+[[v31]]
+      name = "Create a Custom Doctrine Filter"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/create-a-custom-doctrine-filter.mdx"
+      url = "/v3.1/guides/create-a-custom-doctrine-filter"
+      weight = "10"
+[[v31]]
+      name = "Custom pagination"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/custom-pagination.mdx"
+      url = "/v3.1/guides/custom-pagination"
+      weight = "12"
+[[v31]]
+      name = "Declare a Resource"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/declare-a-resource.mdx"
+      url = "/v3.1/guides/declare-a-resource"
+      weight = "1"
+[[v31]]
+      name = "Delete operation with validation"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/delete-operation-with-validation.mdx"
+      url = "/v3.1/guides/delete-operation-with-validation"
+      weight = "20"
+[[v31]]
+      name = "Doctrine entity as API resource"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/doctrine-entity-as-resource.mdx"
+      url = "/v3.1/guides/doctrine-entity-as-resource"
+      weight = "4"
+[[v31]]
+      name = "Doctrine ORM SearchFilter"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/doctrine-search-filter.mdx"
+      url = "/v3.1/guides/doctrine-search-filter"
+      weight = "7"
+[[v31]]
+      name = "Extend OpenAPI Documentation"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/extend-openapi-documentation.mdx"
+      url = "/v3.1/guides/extend-openapi-documentation"
+      weight = "11"
+[[v31]]
+      name = "Handle doctrine links"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/handle-links.mdx"
+      url = "/v3.1/guides/handle-links"
+      weight = "15"
+[[v31]]
+      name = "Hook a Persistence Layer with a Processor"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/hook-a-persistence-layer-with-a-processor.mdx"
+      url = "/v3.1/guides/hook-a-persistence-layer-with-a-processor"
+      weight = "3"
+[[v31]]
+      name = "How to create a Guide"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/how-to.mdx"
+      url = "/v3.1/guides/how-to"
+      weight = "0"
+[[v31]]
+      name = "Provide the Resource State"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/provide-the-resource-state.mdx"
+      url = "/v3.1/guides/provide-the-resource-state"
+      weight = "2"
+[[v31]]
+      name = "How to return an IRI instead of an object for your resources relations ?"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/return-the-iri-of-your-resources-relations.mdx"
+      url = "/v3.1/guides/return-the-iri-of-your-resources-relations"
+      weight = "11"
+[[v31]]
+      name = "Declare a subresource"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/subresource.mdx"
+      url = "/v3.1/guides/subresource"
+      weight = "8"
+[[v31]]
+      name = "Test your API"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/test-your-api.mdx"
+      url = "/v3.1/guides/test-your-api"
+      weight = "7"
+[[v31]]
+      name = "Validate incoming data"
+      parent = "Guides"
+      pageRef = "/v3.1/guides/validate-incoming-data.mdx"
+      url = "/v3.1/guides/validate-incoming-data"
+      weight = "5"
+[[v31]]
       name = "Changelog"
-      url = '/v3.1/changelog/'
-      pageRef = '/v3.1/changelog/'
+      url = '/v3.1/changelog'
+      pageRef = '/v3.1/changelog'
 [[v31]]
       name = "Versions"
 [[v31]]
@@ -3629,8 +4057,8 @@
       parent = 'general-information'
 [[v30]]
       name = "Changelog"
-      url = '/v3.0/changelog/'
-      pageRef = '/v3.0/changelog/'
+      url = '/v3.0/changelog'
+      pageRef = '/v3.0/changelog'
 [[v30]]
       name = "Versions"
 [[v30]]
@@ -4363,8 +4791,8 @@
       parent = 'general-information'
 [[v27]]
       name = "Changelog"
-      url = '/v2.7/changelog/'
-      pageRef = '/v2.7/changelog/'
+      url = '/v2.7/changelog'
+      pageRef = '/v2.7/changelog'
 [[v27]]
       name = "Versions"
 [[v27]]
@@ -5076,8 +5504,8 @@
       parent = 'general-information'
 [[v26]]
       name = "Changelog"
-      url = '/v2.6/changelog/'
-      pageRef = '/v2.6/changelog/'
+      url = '/v2.6/changelog'
+      pageRef = '/v2.6/changelog'
 [[v26]]
       name = "Versions"
 [[v26]]
@@ -5740,8 +6168,8 @@
       parent = 'general-information'
 [[v25]]
       name = "Changelog"
-      url = '/v2.5/changelog/'
-      pageRef = '/v2.5/changelog/'
+      url = '/v2.5/changelog'
+      pageRef = '/v2.5/changelog'
 [[v25]]
       name = "Versions"
 [[v25]]
@@ -6306,8 +6734,8 @@
       parent = 'extra'
 [[v24]]
       name = "Changelog"
-      url = '/v2.4/changelog/'
-      pageRef = '/v2.4/changelog/'
+      url = '/v2.4/changelog'
+      pageRef = '/v2.4/changelog'
 [[v24]]
       name = "Versions"
 [[v24]]
@@ -6809,8 +7237,8 @@
       parent = 'extra'
 [[v23]]
       name = "Changelog"
-      url = '/v2.3/changelog/'
-      pageRef = '/v2.3/changelog/'
+      url = '/v2.3/changelog'
+      pageRef = '/v2.3/changelog'
 [[v23]]
       name = "Versions"
 [[v23]]
@@ -7277,8 +7705,8 @@
       parent = 'extra'
 [[v22]]
       name = "Changelog"
-      url = '/v2.2/changelog/'
-      pageRef = '/v2.2/changelog/'
+      url = '/v2.2/changelog'
+      pageRef = '/v2.2/changelog'
 [[v22]]
       name = "Versions"
 [[v22]]
@@ -7696,8 +8124,8 @@
       parent = 'extra'
 [[v21]]
       name = "Changelog"
-      url = '/v2.1/changelog/'
-      pageRef = '/v2.1/changelog/'
+      url = '/v2.1/changelog'
+      pageRef = '/v2.1/changelog'
 [[v21]]
       name = "Versions"
 [[v21]]
@@ -8436,9 +8864,122 @@
       weight = 7
       parent = 'general-information'
 [[main]]
+      name = "Guides"
+      url = '/main/guides/'
+      pageRef = '/main/guides/_index.md'
+      weight = 3
+[[main]]
+      name = "Create a Custom Doctrine Filter"
+      parent = "Guides"
+      pageRef = "/main/guides/create-a-custom-doctrine-filter.mdx"
+      url = "/main/guides/create-a-custom-doctrine-filter"
+      weight = "10"
+[[main]]
+      name = "Custom pagination"
+      parent = "Guides"
+      pageRef = "/main/guides/custom-pagination.mdx"
+      url = "/main/guides/custom-pagination"
+      weight = "12"
+[[main]]
+      name = "Declare a Resource"
+      parent = "Guides"
+      pageRef = "/main/guides/declare-a-resource.mdx"
+      url = "/main/guides/declare-a-resource"
+      weight = "1"
+[[main]]
+      name = "Delete operation with validation"
+      parent = "Guides"
+      pageRef = "/main/guides/delete-operation-with-validation.mdx"
+      url = "/main/guides/delete-operation-with-validation"
+      weight = "20"
+[[main]]
+      name = "Doctrine entity as API resource"
+      parent = "Guides"
+      pageRef = "/main/guides/doctrine-entity-as-resource.mdx"
+      url = "/main/guides/doctrine-entity-as-resource"
+      weight = "4"
+[[main]]
+      name = "Doctrine ORM SearchFilter"
+      parent = "Guides"
+      pageRef = "/main/guides/doctrine-search-filter.mdx"
+      url = "/main/guides/doctrine-search-filter"
+      weight = "7"
+[[main]]
+      name = "Error provider to translate exception messages"
+      parent = "Guides"
+      pageRef = "/main/guides/error-provider.mdx"
+      url = "/main/guides/error-provider"
+      weight = "7"
+[[main]]
+      name = "Error resource for domain exceptions"
+      parent = "Guides"
+      pageRef = "/main/guides/error-resource.mdx"
+      url = "/main/guides/error-resource"
+      weight = "7"
+[[main]]
+      name = "Extend OpenAPI Documentation"
+      parent = "Guides"
+      pageRef = "/main/guides/extend-openapi-documentation.mdx"
+      url = "/main/guides/extend-openapi-documentation"
+      weight = "11"
+[[main]]
+      name = "Handle doctrine links"
+      parent = "Guides"
+      pageRef = "/main/guides/handle-links.mdx"
+      url = "/main/guides/handle-links"
+      weight = "15"
+[[main]]
+      name = "Hook a Persistence Layer with a Processor"
+      parent = "Guides"
+      pageRef = "/main/guides/hook-a-persistence-layer-with-a-processor.mdx"
+      url = "/main/guides/hook-a-persistence-layer-with-a-processor"
+      weight = "3"
+[[main]]
+      name = "How to create a Guide"
+      parent = "Guides"
+      pageRef = "/main/guides/how-to.mdx"
+      url = "/main/guides/how-to"
+      weight = "0"
+[[main]]
+      name = "Customize HTTP Cache Tags"
+      parent = "Guides"
+      pageRef = "/main/guides/http-cache-tags.mdx"
+      url = "/main/guides/http-cache-tags"
+      weight = "21"
+[[main]]
+      name = "Provide the Resource State"
+      parent = "Guides"
+      pageRef = "/main/guides/provide-the-resource-state.mdx"
+      url = "/main/guides/provide-the-resource-state"
+      weight = "2"
+[[main]]
+      name = "How to return an IRI instead of an object for your resources relations ?"
+      parent = "Guides"
+      pageRef = "/main/guides/return-the-iri-of-your-resources-relations.mdx"
+      url = "/main/guides/return-the-iri-of-your-resources-relations"
+      weight = "11"
+[[main]]
+      name = "Declare a subresource"
+      parent = "Guides"
+      pageRef = "/main/guides/subresource.mdx"
+      url = "/main/guides/subresource"
+      weight = "8"
+[[main]]
+      name = "Test your API"
+      parent = "Guides"
+      pageRef = "/main/guides/test-your-api.mdx"
+      url = "/main/guides/test-your-api"
+      weight = "7"
+[[main]]
+      name = "Validate incoming data"
+      parent = "Guides"
+      pageRef = "/main/guides/validate-incoming-data.mdx"
+      url = "/main/guides/validate-incoming-data"
+      weight = "5"
+[[main]]
       name = "Changelog"
-      url = '/main/changelog/'
-      pageRef = '/main/changelog/'
+      url = '/main/changelog'
+      pageRef = '/main/changelog'
 [[main]]
       name = "Versions"
 [[main]]
@@ -9210,11 +9751,6 @@
       weight = 7
       parent = 'general-information'
 [[current]]
-      name = "API Reference"
-      url = '/references/'
-      pageRef = '/references/_index.md'
-      weight = 3
-[[current]]
       name = "Guides"
       url = '/guides/'
       pageRef = '/guides/_index.md'
@@ -9222,115 +9758,115 @@
 [[current]]
       name = "Create a Custom Doctrine Filter"
       parent = "Guides"
-      pageRef = "/guides/create-a-custom-doctrine-filter.md"
+      pageRef = "/guides/create-a-custom-doctrine-filter.mdx"
       url = "/guides/create-a-custom-doctrine-filter"
       weight = "10"
 [[current]]
       name = "Custom pagination"
       parent = "Guides"
-      pageRef = "/guides/custom-pagination.md"
+      pageRef = "/guides/custom-pagination.mdx"
       url = "/guides/custom-pagination"
       weight = "12"
 [[current]]
       name = "Declare a Resource"
       parent = "Guides"
-      pageRef = "/guides/declare-a-resource.md"
+      pageRef = "/guides/declare-a-resource.mdx"
       url = "/guides/declare-a-resource"
       weight = "1"
 [[current]]
       name = "Delete operation with validation"
       parent = "Guides"
-      pageRef = "/guides/delete-operation-with-validation.md"
+      pageRef = "/guides/delete-operation-with-validation.mdx"
       url = "/guides/delete-operation-with-validation"
       weight = "20"
 [[current]]
       name = "Doctrine entity as API resource"
       parent = "Guides"
-      pageRef = "/guides/doctrine-entity-as-resource.md"
+      pageRef = "/guides/doctrine-entity-as-resource.mdx"
       url = "/guides/doctrine-entity-as-resource"
       weight = "4"
 [[current]]
       name = "Doctrine ORM SearchFilter"
       parent = "Guides"
-      pageRef = "/guides/doctrine-search-filter.md"
+      pageRef = "/guides/doctrine-search-filter.mdx"
       url = "/guides/doctrine-search-filter"
       weight = "7"
 [[current]]
       name = "Error provider to translate exception messages"
       parent = "Guides"
-      pageRef = "/guides/error-provider.md"
+      pageRef = "/guides/error-provider.mdx"
       url = "/guides/error-provider"
       weight = "7"
 [[current]]
       name = "Error resource for domain exceptions"
       parent = "Guides"
-      pageRef = "/guides/error-resource.md"
+      pageRef = "/guides/error-resource.mdx"
       url = "/guides/error-resource"
       weight = "7"
 [[current]]
       name = "Extend OpenAPI Documentation"
       parent = "Guides"
-      pageRef = "/guides/extend-openapi-documentation.md"
+      pageRef = "/guides/extend-openapi-documentation.mdx"
       url = "/guides/extend-openapi-documentation"
       weight = "11"
 [[current]]
       name = "Handle doctrine links"
       parent = "Guides"
-      pageRef = "/guides/handle-links.md"
+      pageRef = "/guides/handle-links.mdx"
       url = "/guides/handle-links"
       weight = "15"
 [[current]]
       name = "Hook a Persistence Layer with a Processor"
       parent = "Guides"
-      pageRef = "/guides/hook-a-persistence-layer-with-a-processor.md"
+      pageRef = "/guides/hook-a-persistence-layer-with-a-processor.mdx"
       url = "/guides/hook-a-persistence-layer-with-a-processor"
       weight = "3"
 [[current]]
       name = "How to create a Guide"
       parent = "Guides"
-      pageRef = "/guides/how-to.md"
+      pageRef = "/guides/how-to.mdx"
       url = "/guides/how-to"
       weight = "0"
 [[current]]
       name = "Customize HTTP Cache Tags"
       parent = "Guides"
-      pageRef = "/guides/http-cache-tags.md"
+      pageRef = "/guides/http-cache-tags.mdx"
       url = "/guides/http-cache-tags"
       weight = "21"
 [[current]]
       name = "Provide the Resource State"
       parent = "Guides"
-      pageRef = "/guides/provide-the-resource-state.md"
+      pageRef = "/guides/provide-the-resource-state.mdx"
       url = "/guides/provide-the-resource-state"
       weight = "2"
 [[current]]
       name = "How to return an IRI instead of an object for your resources relations ?"
       parent = "Guides"
-      pageRef = "/guides/return-the-iri-of-your-resources-relations.md"
+      pageRef = "/guides/return-the-iri-of-your-resources-relations.mdx"
       url = "/guides/return-the-iri-of-your-resources-relations"
       weight = "11"
 [[current]]
       name = "Declare a subresource"
       parent = "Guides"
-      pageRef = "/guides/subresource.md"
+      pageRef = "/guides/subresource.mdx"
       url = "/guides/subresource"
       weight = "8"
 [[current]]
       name = "Test your API"
       parent = "Guides"
-      pageRef = "/guides/test-your-api.md"
+      pageRef = "/guides/test-your-api.mdx"
       url = "/guides/test-your-api"
       weight = "7"
 [[current]]
       name = "Validate incoming data"
       parent = "Guides"
-      pageRef = "/guides/validate-incoming-data.md"
+      pageRef = "/guides/validate-incoming-data.mdx"
       url = "/guides/validate-incoming-data"
       weight = "5"
 [[current]]
       name = "Changelog"
-      url = '/changelog/'
-      pageRef = '/changelog/'
+      url = '/changelog'
+      pageRef = '/changelog'
 [[current]]
       name = "Versions"
 [[current]]

@@ -1,0 +1,13 @@
+sections:
+  - admin
+  - core
+  - create-client
+  - deployment
+  - distribution
+  - symfony
+  - laravel
+  - extra
+  - guides
+  - references
+  - schema-generator
+  - changelog

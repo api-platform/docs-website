@@ -24,9 +24,9 @@ do
   git reset --hard FETCH_HEAD
 
   if [[ $version == "main" ]]; then
-    cp $root/core.temp/CHANGELOG.md $root/content/$version/changelog.md
+    mkdir -p "$root/content/$version/changelog" && cp $root/core.temp/CHANGELOG.md $root/content/$version/changelog/_index.md
   else
-    cp $root/core.temp/CHANGELOG.md $root/content/v$version/changelog.md
+    mkdir -p "$root/content/v$version/changelog" && cp "$root/core.temp/CHANGELOG.md" "$root/content/v$version/changelog/_index.md"
   fi
 
 	if [[ -d $root/core.temp/docs/guides ]];

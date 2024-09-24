@@ -143,8 +143,8 @@ type: reference
 
   menu += `[[${menuVersion}]]
       name = "Changelog"
-      url = '${pathVersion}/changelog/'
-      pageRef = '${pathVersion}/changelog/'
+      url = '${pathVersion}/changelog'
+      pageRef = '${pathVersion}/changelog'
 `
 
   menu += `[[${menuVersion}]]

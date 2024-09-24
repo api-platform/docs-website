@@ -19,7 +19,7 @@
 	</div>
   {{ partial "footer.html" . }}
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-  {{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "symfony" "laravel" "extra" "guides" "references" "schema-generator" "changelog" }}
+  {{- $sections := (index .Site.Data.sections "sections") }}
   {{- .Scratch.Set "version" .Page.Section }}
   {{- if in $sections .Page.Section }}
     {{- .Scratch.Set "version" "4.0" }}

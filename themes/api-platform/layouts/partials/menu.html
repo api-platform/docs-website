@@ -8,7 +8,7 @@ Renders a menu for the given menu ID.
 */}}
 
 {{- $page := . }}
-{{- $sections := slice "admin" "core" "create-client" "deployment" "distribution" "symfony" "laravel" "extra" "guides" "references" "schema-generator" "changelog" }}
+{{- $sections := (index .Site.Data.sections "sections") }}
 {{- .Scratch.Set "menuID" (replace $page.Section "." "") }}
 {{- if in $sections (.Scratch.Get "menuID") }}
   {{- .Scratch.Set "menuID" "current" }}
