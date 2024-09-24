@@ -2767,12 +2767,12 @@ img {
   margin-top: -0.25rem;
 }
 
-.-mt-20 {
-  margin-top: -5rem;
-}
-
 .-mt-24 {
   margin-top: -6rem;
+}
+
+.-mt-32 {
+  margin-top: -8rem;
 }
 
 .mb-1 {
@@ -2797,10 +2797,6 @@ img {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .ml-2 {
@@ -2835,8 +2831,8 @@ img {
   margin-top: 1rem;
 }
 
-.-mt-32 {
-  margin-top: -8rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -2845,10 +2841,6 @@ img {
 
 .inline-block {
   display: inline-block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -3755,12 +3747,12 @@ img {
   padding-top: 4rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pt-36 {
@@ -3777,10 +3769,6 @@ img {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .text-left {
@@ -3939,14 +3927,6 @@ img {
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow-md {
@@ -4870,12 +4850,12 @@ kbd.DocSearch-Commands-Key) {
     color: rgb(0 153 161 / var(--tw-text-opacity));
   }
 
-  .hover\:opacity-75:hover {
-    opacity: 0.75;
-  }
-
   .hover\:opacity-100:hover {
     opacity: 1;
+  }
+
+  .hover\:opacity-75:hover {
+    opacity: 0.75;
   }
 
   .hover\:brightness-125:hover {
@@ -4967,6 +4947,35 @@ kbd.DocSearch-Commands-Key) {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.data-\[open\=1\]\:mb-8[data-open=1] {
+  margin-bottom: 2rem;
+}
+
+.data-\[is-open\]\:mb-8[data-is-open] {
+  margin-bottom: 2rem;
+}
+
+.group[data-is-open] .group-data-\[is-open\]\:rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group[data-open=0] .group-data-\[open\=0\]\:grid-rows-\[0fr\] {
+  grid-template-rows: 0fr;
+}
+
+.group[data-open=1] .group-data-\[open\=1\]\:grid-rows-\[1fr\] {
+  grid-template-rows: 1fr;
+}
+
+.group[data-is-open] .group-data-\[is-open\]\:grid-rows-\[1fr\] {
+  grid-template-rows: 1fr;
+}
+
+.group[data-is-open] .group-data-\[is-open\]\:opacity-100 {
+  opacity: 1;
 }
 
 .prose-headings\:font-title :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -5661,12 +5670,12 @@ kbd.DocSearch-Commands-Key) {
     padding-right: 2rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:text-3xl {

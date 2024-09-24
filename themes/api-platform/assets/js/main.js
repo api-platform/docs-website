@@ -40,17 +40,17 @@ function ApiPlatform() {
 
   function toggleSidebarMenu(event) {
     event.preventDefault()
-    const target = event.target.closest('.doc-nav')
-    const id = target.dataset.identifier
-    if (undefined === state[id]) {
-			const isOpen = 1 === parseInt(target.dataset.isOpen || 0)
-      state[id] = !isOpen	
-    } else {
-      state[id] = !state[id]
-    }
+    const target = event.target.closest('.doc-nav');
+    console.log(target.dataset.isOpen);
+    if (target.hasAttribute("data-is-open")) delete target.dataset.isOpen;
+    else target.dataset.isOpen = "";
 
-    const elements = target.querySelectorAll('[data-menu-open]')
-    toggleClasses(elements, 'menuOpen', 'menuClose', state[id])
+    const elements = document.querySelectorAll('.doc-nav');
+    elements.forEach((element) => {
+      if (element !== target) {
+        delete element.dataset.isOpen; // Only one menu element can be open
+      }
+    });
   }
 
   window.toggleSidebarMenu = toggleSidebarMenu
