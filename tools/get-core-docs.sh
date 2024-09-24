@@ -19,8 +19,8 @@ for version in "${versions[@]}"
 do
   git restore .
 	git fetch --depth=1 origin $version
-	git branch -D $version-temp
-	git checkout FETCH_HEAD -b $version-temp
+	git branch -D temp-$version
+	git checkout FETCH_HEAD -b temp-$version
   git reset --hard FETCH_HEAD
 
   if [[ $version == "main" ]]; then
