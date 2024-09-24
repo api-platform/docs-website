@@ -1,4 +1,7 @@
-<h{{ .Level }} id="{{ .Anchor }}">
-  <a href="#{{ .Anchor }}">#</a>
+<div class="relative">
+  <i class="absolute pt-32 -mt-32 md:pt-20 md:-mt-20 w-px h-px block top-0 left-0" id="{{ .Anchor }}" ></i>
+<h{{ .Level }} id="{{ .Anchor }}" >
+  {{ if ne .Level 1 }} <a href="#{{ .Anchor }}" class="font-bold no-underline opacity-70 hover:opacity-100"><small>#</small></a>{{ end }}
   {{ .Text | safeHTML }}
 </h{{ .Level }}>
+</div>
