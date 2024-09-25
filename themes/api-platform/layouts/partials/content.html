@@ -1,53 +1,61 @@
-      <script>
-        let mybutton = document.getElementById("btnScrollTop");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+<script>
     let mybutton = document.getElementById("btnScrollTop");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.classList.remove("translate-y-full", "opacity-0", "bottom-0");
-    mybutton.classList.add("bottom-4");
-  } else {
-     mybutton.classList.add("translate-y-full", "opacity-0", "bottom-0");
-     mybutton.classList.remove("bottom-4");
-  }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-    </script>
-  <div class="px-6 md:px-10 xl:px-16 py-6 leading-loose text-blue-black/80 dark:text-white/80">
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        let mybutton = document.getElementById("btnScrollTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.classList.remove("translate-y-full", "opacity-0", "bottom-0");
+            mybutton.classList.add("bottom-4");
+        } else {
+            mybutton.classList.add("translate-y-full", "opacity-0", "bottom-0");
+            mybutton.classList.remove("bottom-4");
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<div class="px-6 md:px-10 xl:px-16 py-6 leading-loose text-blue-black/80 dark:text-white/80">
     <!-- <BreadCrumbs breadCrumbs={breadCrumbs} /> -->
-    <div class="prose max-w-none dark:prose-invert prose-img:w-full prose-img:max-w-2xl prose-headings:font-title prose-h1:font-bold prose-code:after:hidden prose-code:before:hidden prose-code:py-1 prose-code:px-1.5 prose-code:bg-gray-100 prose-code:dark:bg-blue-darkest prose-h1:border-b-px prose-h1:border-b-gray-300 prose-h1:pb-2 max-md:prose-tr:flex max-md:prose-tr:flex-col max-md:prose-td:px-0 max-md:prose-td:py-1">
+    <div
+        class="prose max-w-none dark:prose-invert prose-img:w-full prose-img:max-w-2xl prose-headings:font-title prose-h1:font-bold prose-code:after:hidden prose-code:before:hidden prose-code:py-1 prose-code:px-1.5 prose-code:bg-gray-100 prose-code:dark:bg-blue-darkest prose-h1:border-b-px prose-h1:border-b-gray-300 prose-h1:pb-2 max-md:prose-tr:flex max-md:prose-tr:flex-col max-md:prose-td:px-0 max-md:prose-td:py-1">
 
-      <div class="doc">
-        <h1>{{ partial "extract-h1.html" . }}</h1>
-           {{ if and .TableOfContents (ge (len (findRE "<a " .TableOfContents)) 2) }}
-      <div class="table-of-contents">
-        <h2>Quick links</h2>
-        {{ .TableOfContents | safeHTML }}
-      </div>
-    {{ end }}
-        {{ partial "remove-h1.html" . }}
-      </div>
+        <div class="doc">
+            <h1>{{ partial "extract-h1.html" . }}</h1>
+            {{ if and .TableOfContents (ge (len (findRE "<a " .TableOfContents)) 2) }}
+      <div class=" table-of-contents">
+                <h2>Quick links</h2>
+                {{ .TableOfContents | safeHTML }}
+        </div>
+        {{ end }}
+        {{- $withoutH1 := partial "remove-h1.html" . }}
+        {{ $updatedContent := $withoutH1 | replaceRE `src="[^"]*/symfonycasts-player.png"`
+        `src="/docs/images/symfonycasts-player.png"` }}
+        {{ $updatedContent | safeHTML }}
+    </div>
 
-      <p class="mt-10">
+    <p class="mt-10">
         {{- $link := substr (replace .Page.RelPermalink "/docs/" "") 0 -1 }}
         {{- $sections := (index .Site.Data.sections "sections") }}
         {{- .Scratch.Set "version" "" }}
         {{- if in $sections (replace .Page.Section "." "") }}
-          {{- .Scratch.Set "version" "4.0/" }}
+        {{- .Scratch.Set "version" "4.0/" }}
         {{- end }}
-        <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{ .Scratch.Get "version"}}{{ replaceRE `^v` "" $link }}/index.md">You can also help us improve the documentation of this page.</a>
-      </p>
-    </div>
-    <button onclick="topFunction()" id="btnScrollTop" title="Go to top" class="shadow-floating opacity-0 translate-y-full sticky left-full -translate-x-4 bottom-0 shadow-floating transition-all rounded-full flex items-center justify-center bg-blue w-10 h-10 z-20"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-8 h-8 stroke-white dark:stroke-blue-black">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-</svg>
-</button>
-  </div>
+        <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{ .Scratch.Get " version"}}{{ replaceRE `^v` "" $link }}/index.md">You can also help us improve the documentation of this page.</a>
+    </p>
+</div>
+    <button onclick="topFunction()" id="btnScrollTop" title="Go to top"
+        class="opacity-0 translate-y-full sticky left-full -translate-x-4 bottom-0 shadow-floating transition-all rounded-full flex items-center justify-center bg-blue w-10 h-10 z-20"><svg
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            class="w-8 h-8 stroke-white dark:stroke-blue-black">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+    </button>
+</div>

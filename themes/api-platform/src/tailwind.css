@@ -89,6 +89,9 @@
     .table-of-contents a {
       @apply text-blue no-underline hover:underline;
     }
+    img[src="/docs/images/symfonycasts-player.png"] {
+      @apply max-w-xs shadow-floating mb-0;
+    }
 }
 
 @layer utilities {
