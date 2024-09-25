@@ -74,6 +74,21 @@
     .reference h1 a {
         @apply text-blue font-semibold no-underline; 
     }
+    .table-of-contents {
+      @apply bg-blue-extralight/30 px-4 pt-4 pb-1 mb-4 dark:bg-blue/20 -mt-4;
+    }
+    .table-of-contents h2 {
+      @apply mt-0 mb-2 text-base;
+    }
+    .table-of-contents ul {
+      @apply list-none sm:columns-2  lg:columns-3 gap-4 leading-tight text-xs p-0;
+    }
+    .table-of-contents li {
+      @apply mb-3 overflow-hidden text-ellipsis whitespace-nowrap;
+    }
+    .table-of-contents a {
+      @apply text-blue no-underline hover:underline;
+    }
 }
 
 @layer utilities {

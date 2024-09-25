@@ -2642,6 +2642,69 @@ img {
   text-decoration-line: none;
 }
 
+.table-of-contents {
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  background-color: rgb(163 210 212 / 0.3);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+:is(.dark .table-of-contents) {
+  background-color: rgb(0 153 161 / 0.2);
+}
+
+.table-of-contents h2 {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.table-of-contents ul {
+  list-style-type: none;
+  gap: 1rem;
+  padding: 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+  .table-of-contents ul {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .table-of-contents ul {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}
+
+.table-of-contents li {
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-of-contents a {
+  --tw-text-opacity: 1;
+  color: rgb(0 153 161 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .table-of-contents a:hover {
+    text-decoration-line: underline;
+  }
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -2674,6 +2737,14 @@ img {
   right: -100%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -2688,6 +2759,10 @@ img {
 
 .left-\[80\%\] {
   left: 80%;
+}
+
+.left-full {
+  left: 100%;
 }
 
 .right-0 {
@@ -2831,10 +2906,6 @@ img {
   margin-top: 1rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -2869,6 +2940,10 @@ img {
 
 .h-0\.75 {
   height: 3px;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-12 {
@@ -2933,6 +3008,10 @@ img {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-16 {
@@ -3094,6 +3173,11 @@ img {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-4 {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-x-40 {
   --tw-translate-x: -10rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3204,6 +3288,11 @@ img {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-full {
+  --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-px {
   --tw-translate-y: 1px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3246,11 +3335,6 @@ img {
 
 .rotate-15 {
   --tw-rotate: 15deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-180 {
-  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3310,10 +3394,6 @@ img {
 
 .grid-rows-\[0fr\] {
   grid-template-rows: 0fr;
-}
-
-.grid-rows-\[1fr\] {
-  grid-template-rows: 1fr;
 }
 
 .flex-row {
@@ -3629,6 +3709,10 @@ img {
   stroke: currentColor;
 }
 
+.stroke-white {
+  stroke: #ffffff;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -3917,16 +4001,18 @@ img {
   opacity: 0;
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .opacity-60 {
   opacity: 0.6;
 }
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.shadow-floating {
+  --tw-shadow: 0px 0px 31px 5px rgba(0,0,0,0.1);
+  --tw-shadow-colored: 0px 0px 31px 5px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-md {
@@ -4949,10 +5035,6 @@ kbd.DocSearch-Commands-Key) {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.data-\[open\=1\]\:mb-8[data-open=1] {
-  margin-bottom: 2rem;
-}
-
 .data-\[is-open\]\:mb-8[data-is-open] {
   margin-bottom: 2rem;
 }
@@ -4960,14 +5042,6 @@ kbd.DocSearch-Commands-Key) {
 .group[data-is-open] .group-data-\[is-open\]\:rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group[data-open=0] .group-data-\[open\=0\]\:grid-rows-\[0fr\] {
-  grid-template-rows: 0fr;
-}
-
-.group[data-open=1] .group-data-\[open\=1\]\:grid-rows-\[1fr\] {
-  grid-template-rows: 1fr;
 }
 
 .group[data-is-open] .group-data-\[is-open\]\:grid-rows-\[1fr\] {
@@ -5084,6 +5158,10 @@ kbd.DocSearch-Commands-Key) {
 :is(.dark .dark\:bg-blue-light) {
   --tw-bg-opacity: 1;
   background-color: rgb(78 183 188 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:stroke-blue-black) {
+  stroke: #0d262b;
 }
 
 :is(.dark .dark\:text-blue) {
@@ -6176,6 +6254,11 @@ kbd.DocSearch-Commands-Key) {
 
   .xl\:border-b-px {
     border-bottom-width: 1px;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .xl\:py-12 {

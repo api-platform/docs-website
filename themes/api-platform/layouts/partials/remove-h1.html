@@ -1,0 +1,9 @@
+{{ $content := .Content }}
+{{ $h1Split := split $content "</h1>" }}
+
+{{ if gt (len $h1Split) 1 }}
+  {{ $afterH1 := index $h1Split 1 }}
+  {{ $afterH1 | safeHTML }}
+{{ else }}
+  {{ $content | safeHTML }}
+{{ end }}

@@ -91,6 +91,7 @@ module.exports = {
       },
       boxShadow: {
         'inner-light': 'inset 0 1px 0 0 #00555a',
+        floating: '0px 0px 31px 5px rgba(0,0,0,0.1)',
       },
       rotate: {
         15: '15deg',

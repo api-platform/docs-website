@@ -1,0 +1,8 @@
+{{ $content := .Content }}
+{{ $h1Split := split $content "</h1>" }}
+{{ if gt (len $h1Split) 1 }}
+  {{ $firstH1 := replaceRE "(?i)<h1[^>]*>" "" (index $h1Split 0) }}
+  {{ $firstH1 | safeHTML }}
+{{ else }}
+  {{ .Title }}
+{{ end }}

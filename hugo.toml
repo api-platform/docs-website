@@ -21,3 +21,6 @@ disablePathToLower = true
     # tabWidth = 4
   [markup.goldmark.renderer]
     unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2 
+    endLevel = 2 
