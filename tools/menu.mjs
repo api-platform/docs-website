@@ -147,7 +147,7 @@ type: reference
       pageRef = '${pathVersion}/changelog'
 `
 
-  menu += `[[${menuVersion}]]
+  /*menu += `[[${menuVersion}]]
       name = "Versions"
 `
 
@@ -170,7 +170,7 @@ type: reference
       weight = ${i + 1}
       parent = "Versions"
 `
-  })
+  })*/
 
   return menu
 }

@@ -2914,6 +2914,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   margin-top: 1rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -3010,6 +3014,26 @@ img[src="/docs/images/symfonycasts-player.png"] {
   height: 100vh;
 }
 
+.max-h-\[50\%\] {
+  max-height: 50%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-\[100vh-50px\] {
+  min-height: 100vh-50px;
+}
+
+.min-h-\[calc\(100vh-50px\)\] {
+  min-height: calc(100vh - 50px);
+}
+
+.min-h-\[calc\(100vh-64px\)\] {
+  min-height: calc(100vh - 64px);
+}
+
 .w-0 {
   width: 0px;
 }
@@ -3098,6 +3122,30 @@ img[src="/docs/images/symfonycasts-player.png"] {
   width: 100vw;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -3140,6 +3188,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .flex-1 {
@@ -3306,6 +3358,11 @@ img[src="/docs/images/symfonycasts-player.png"] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-\[10\%\] {
+  --tw-translate-x: 10%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-rotate-15 {
   --tw-rotate: -15deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3452,6 +3509,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -3524,6 +3585,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   border-radius: 0.125rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-l-md {
   border-top-left-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
@@ -3587,6 +3652,11 @@ img[src="/docs/images/symfonycasts-player.png"] {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-b-gray-300 {
@@ -3799,6 +3869,11 @@ img[src="/docs/images/symfonycasts-player.png"] {
   padding-bottom: 1.5rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -3863,6 +3938,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   padding-top: 2rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3916,6 +3995,16 @@ img[src="/docs/images/symfonycasts-player.png"] {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .\!font-light {
@@ -5564,6 +5653,10 @@ kbd.DocSearch-Commands-Key) {
     display: none;
   }
 
+  .md\:max-h-\[70\%\] {
+    max-height: 70%;
+  }
+
   .md\:flex-1 {
     flex: 1 1 0%;
   }
@@ -5885,6 +5978,10 @@ kbd.DocSearch-Commands-Key) {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 
   .lg\:max-w-none {
@@ -6238,6 +6335,10 @@ kbd.DocSearch-Commands-Key) {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-96 {
+    width: 24rem;
   }
 
   .xl\:grid-cols-2 {

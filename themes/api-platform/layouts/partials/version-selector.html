@@ -1,0 +1,53 @@
+<div class="flex flex-col gap-1 mb-4">
+  <label class="text-xs uppercase" for="version-select">Version</label>
+<select class="border-gray-200 border-px py-1 px-1 rounded-md w-24 font-bold text-blue" id="version-select" defaultValue='v4.0' onchange="changeVersion(this.value)">
+    {{ $currentVersion := index (split .Page.RelPermalink "/") 2 }}
+    {{ $defaultVersion := .Site.Params.defaultVersion }}
+    {{ $pathExists := false }} <!-- Variable pour stocker le résultat -->
+    {{ range .Site.Params.versions }}
+        {{ if eq .path $currentVersion }}
+            {{ $pathExists = true }} <!-- Si le path correspond, mettre à jour la variable -->
+        {{ end }}
+    {{ end }}
+    {{ $prefix := "" }}
+        {{ if not $pathExists }}
+            {{ $prefix = "/docs/" }}
+            {{ $currentVersion = .Site.Params.defaultVersion }}
+        {{ else }}
+            {{ $prefix = printf "/docs/%s" $currentVersion }}
+        {{ end }}
+    {{ $endUrl := replace .Page.RelPermalink $prefix "" }}
+    {{ $parts := split $endUrl "/" }}
+    {{ $numParts := len $parts }} 
+    {{ range .Site.Params.versions }}
+    {{ $url := "" }}
+    {{ if eq .path $defaultVersion }}
+    {{ $url = printf "/docs%s" $endUrl }}
+    {{ else }}
+    {{ $url = printf "/docs/%s%s" .path $endUrl }}
+    {{ end }}
+    {{ $urlToTest := replace $url "/docs/" "" }}
+    {{ if gt $numParts 3 }}
+        {{ $urlToTest = replaceRE $urlToTest "/\\/$/" "" }} <!-- Removes the final slash when the page is not a folder to avoid hugo bug -->
+    {{ end }}
+
+    {{ $page := $.Site.GetPage "section" $urlToTest }} <!-- Check if the redirection exists, or redirect to the version home -->
+    {{ if not $page }}
+    {{ $url = printf "/docs/%s" .path }}
+    {{ end }}
+      <option value="{{ $url }}" {{ if eq .path $currentVersion }}selected{{ end }}>
+        {{ .version }}
+      </option>
+    {{ end }}
+  </select>
+</div>
+
+<script>
+  function changeVersion(selectedVersion) {
+    console.log(selectedVersion);
+    //return;
+   
+    // Décommenter pour activer la redirection
+    window.location.href = selectedVersion;
+  }
+</script>

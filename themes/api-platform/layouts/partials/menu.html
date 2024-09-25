@@ -13,6 +13,12 @@ Renders a menu for the given menu ID.
 {{- if in $sections (.Scratch.Get "menuID") }}
   {{- .Scratch.Set "menuID" "current" }}
 {{- end }}
+{{- $menuID := .Scratch.Get "menuID" }}
+{{- if eq $menuID "" }} <!-- If menuId is empty : take current menu -->
+  {{- $menuID = "current" }} 
+  {{- .Scratch.Set "menuID" "current" }}
+{{- end }}
+{{ partial "version-selector.html" . }}
 {{- range index site.Menus (.Scratch.Get "menuID") }}
   {{- $attrs := dict "href" .URL "class" "flex-1 font-semibold uppercase doc-category" }}
   {{- $isOpen := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
