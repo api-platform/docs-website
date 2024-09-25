@@ -9053,71 +9053,71 @@
       weight = 14
       parent = "Versions"
 [[current]]
-      name = "The Symfony API Platform variant"
-      identifier = "the-symfony-api-platform-variant"
+      name = "API Platform for Symfony"
+      identifier = "api-platform-for-symfony"
       pageRef = '/symfony'
       weight = 1
 [[current]]
       name = "Getting Started With API Platform: Create Your API and Your Jamstack Site"
-      identifier = "the-symfony-api-platform-variant-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
+      identifier = "api-platform-for-symfony-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
       pageRef = '/symfony'
       url = '/symfony'
       weight = 1
-      parent = 'the-symfony-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Testing the API"
-      identifier = "the-symfony-api-platform-variant-testing-the-api"
+      identifier = "api-platform-for-symfony-testing-the-api"
       pageRef = '/symfony/testing'
       url = '/symfony/testing'
       weight = 2
-      parent = 'the-symfony-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Debugging"
-      identifier = "the-symfony-api-platform-variant-debugging"
+      identifier = "api-platform-for-symfony-debugging"
       pageRef = '/symfony/debugging'
       url = '/symfony/debugging'
       weight = 3
-      parent = 'the-symfony-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Configuring the Caddy Web Server"
-      identifier = "the-symfony-api-platform-variant-configuring-the-caddy-web-server"
+      identifier = "api-platform-for-symfony-configuring-the-caddy-web-server"
       pageRef = '/symfony/caddy'
       url = '/symfony/caddy'
       weight = 4
-      parent = 'the-symfony-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
-      name = "The Laravel API Platform variant"
-      identifier = "the-laravel-api-platform-variant"
+      name = "API Platform for Laravel"
+      identifier = "api-platform-for-symfony"
       pageRef = '/laravel'
       weight = 2
 [[current]]
       name = "API Platform for Laravel Projects"
-      identifier = "the-laravel-api-platform-variant-api-platform-for-laravel-projects"
+      identifier = "api-platform-for-symfony-api-platform-for-laravel-projects"
       pageRef = '/laravel'
       url = '/laravel'
       weight = 1
-      parent = 'the-laravel-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Parameters and Filters"
-      identifier = "the-laravel-api-platform-variant-parameters-and-filters"
+      identifier = "api-platform-for-symfony-parameters-and-filters"
       pageRef = '/laravel/filters'
       url = '/laravel/filters'
       weight = 2
-      parent = 'the-laravel-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Security"
-      identifier = "the-laravel-api-platform-variant-security"
+      identifier = "api-platform-for-symfony-security"
       pageRef = '/laravel/security'
       url = '/laravel/security'
       weight = 3
-      parent = 'the-laravel-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Validation"
-      identifier = "the-laravel-api-platform-variant-validation"
+      identifier = "api-platform-for-symfony-validation"
       pageRef = '/laravel/validation'
       url = '/laravel/validation'
       weight = 4
-      parent = 'the-laravel-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
       name = "Core"
       identifier = "core"
