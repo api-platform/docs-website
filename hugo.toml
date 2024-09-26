@@ -88,3 +88,56 @@ defaultVersionPath = "v4.0"  # Version par défaut
 [[params.redirects]]
   from = "/docs/distribution/"
   to = "/docs/symfony/"
+
+[[params.redirects]]
+  from = "/docs/main/distribution/"
+  to = "/docs/main/symfony/"
+
+[[params.redirects]]
+  from = "/docs/v3.4/symfony/"
+  to = "/docs/v3.4/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v3.3/symfony/"
+  to = "/docs/v3.3/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v3.2/symfony/"
+  to = "/docs/v3.2/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v3.1/symfony/"
+  to = "/docs/v3.1/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v3.0/symfony/"
+  to = "/docs/v3.0/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.7/symfony/"
+  to = "/docs/v2.7/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.6/symfony/"
+  to = "/docs/v2.6/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.5/symfony/"
+  to = "/docs/v2.5/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.4/symfony/"
+  to = "/docs/v2.4/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.3/symfony/"
+  to = "/docs/v2.3/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.2/symfony/"
+  to = "/docs/v2.2/distribution/"
+
+[[params.redirects]]
+  from = "/docs/v2.1/symfony/"
+  to = "/docs/v2.1/distribution/"
+
