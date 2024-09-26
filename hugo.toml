@@ -26,8 +26,8 @@ disablePathToLower = true
     endLevel = 2 
 
 [params]
-defaultVersion = "v4.0"  # Version par défaut
-
+defaultVersion = "4.0"  # Version par défaut
+defaultVersionPath = "v4.0"  # Version par défaut
 
 [[params.versions]]
   version = "4.0"
@@ -84,3 +84,7 @@ defaultVersion = "v4.0"  # Version par défaut
 [[params.versions]]
   version = "main"
   path = "main"
+
+[[params.redirects]]
+    from = "/docs/distribution/"
+    to = "/docs/symfony/"

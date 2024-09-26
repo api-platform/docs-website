@@ -8,11 +8,14 @@ Renders a menu for the given menu ID.
 */}}
 
 {{- $page := . }}
-{{- $sections := (index .Site.Data.sections "sections") }}
-{{- .Scratch.Set "menuID" (replace $page.Section "." "") }}
-{{- if in $sections (.Scratch.Get "menuID") }}
-  {{- .Scratch.Set "menuID" "current" }}
-{{- end }}
+{{ partial "checkVersion.html" . }}  
+{{ $currentVersion := .Scratch.Get "currentVersion" }}
+{{ $versionPath := .Scratch.Get "versionPath" }}
+{{ if eq $currentVersion .Site.Params.defaultVersion }} 
+    {{- .Scratch.Set "menuID" "current" }} 
+{{ else }}
+    {{- .Scratch.Set "menuID" (replace $versionPath "." "") }}
+{{ end }}
 {{- $menuID := .Scratch.Get "menuID" }}
 {{- if eq $menuID "" }} <!-- If menuId is empty : take current menu -->
   {{- $menuID = "current" }} 
