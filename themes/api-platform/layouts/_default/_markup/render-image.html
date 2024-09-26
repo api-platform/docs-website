@@ -7,6 +7,8 @@
     {{- else }}
     <img src="../{{ .Destination }}" alt="{{ .Text | safeHTML }}" />
 {{- end }}
-{{- else -}}
+{{- else if ne .Page.File.BaseFileName "_index" }} 
+<img src="../{{ .Destination }}" alt="{{ .Text | safeHTML }}" />
+{{ else }}
 <img src="{{ .Destination }}" alt="{{ .Text | safeHTML }}" />
 {{- end -}}

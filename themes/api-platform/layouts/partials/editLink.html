@@ -3,15 +3,15 @@
         {{ partial "checkVersion.html" . }}  
         {{ $currentVersion := .Scratch.Get "currentVersion" }}
         {{ if eq $currentVersion .Site.Params.defaultVersion }}
-         {{ $link = replace .Page.RelPermalink "/docs" $currentVersion }}
+            {{ $link = replace .Page.RelPermalink "/docs" $currentVersion }}
         {{ else}}
-         {{ $link = replaceRE "^/docs/v?" "" .Page.RelPermalink }}
-          {{ end }}
-{{ $parts := split $link "/" }}  <!-- Split url parts -->
-{{ if eq (len $parts) 3 }} 
-    {{ $link = replaceRE "/$" "/index.md" $link }}
-{{ else }}
-    {{ $link = replaceRE "/$" ".md" $link }}  
-{{ end }}
+            {{ $link = replaceRE "^/docs/v?" "" .Page.RelPermalink }}
+        {{ end }}
+        {{ $parts := split $link "/" }} 
+        {{ if eq (len $parts) 3 }} 
+            {{ $link = replaceRE "/$" "/index.md" $link }}
+        {{ else }}
+            {{ $link = replaceRE "/$" ".md" $link }}  
+        {{ end }}
         <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{$link}}">You can also help us improve the documentation of this page.</a>
     </p>
