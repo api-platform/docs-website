@@ -2,25 +2,18 @@
 {{- $defaultVersion := .Site.Params.defaultVersion }} 
 {{- $defaultVersionPath := .Site.Params.defaultVersionPath }} 
 
-{{- $versionPath := "" }}
-{{- $currentVersion := "" }}
-
-{{- $validVersion := false }}
+{{- $currentVersion := $defaultVersion }} 
+{{- $versionPath := $defaultVersionPath }} 
 
 {{- range .Site.Params.versions }}
   {{- if eq .path $version }}
-    {{- $validVersion = true }}
-    {{- $currentVersion = .version }}      <!-- Assurez-vous que .version est correct -->
-    {{- $versionPath = .path }}            <!-- Mettez .path ici si vous voulez le chemin de version -->
+    {{- $currentVersion = .version }} 
+    {{- $versionPath = .path }}  
     {{- break }} 
   {{- end }}
-{{- end }}
-
-{{- if not $validVersion }}
-    {{- $currentVersion = $defaultVersion }}  <!-- Utilisez la version par défaut si aucune correspondance -->
-    {{- $versionPath = $defaultVersionPath }}  <!-- Utilisez le chemin par défaut -->
 {{- end }}
 
 {{- /* Renvoyer les valeurs dans Scratch */ -}}
 {{- .Scratch.Set "currentVersion" $currentVersion }}
 {{- .Scratch.Set "versionPath" $versionPath }}
+
