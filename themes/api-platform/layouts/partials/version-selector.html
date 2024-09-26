@@ -33,6 +33,13 @@
         {{ end }}
     {{ end }}
 
+    {{ range $.Site.Params.redirects }}
+        {{ if eq $url .from }}
+            {{ $pageExists = true }}
+            {{ $url = .to }}
+        {{ end }}
+    {{ end }}
+
       <option value="{{ $url }}" {{ if eq .path $currentVersion }}selected{{ end }} {{ if not $pageExists }}disabled{{ end }}>
         {{ .version }}
       </option>
