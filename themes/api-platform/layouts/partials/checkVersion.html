@@ -1,0 +1,19 @@
+{{- $version := .Page.Section }} 
+{{- $defaultVersion := .Site.Params.defaultVersion }} 
+{{- $defaultVersionPath := .Site.Params.defaultVersionPath }} 
+
+{{- $currentVersion := $defaultVersion }} 
+{{- $versionPath := $defaultVersionPath }} 
+
+{{- range .Site.Params.versions }}
+  {{- if eq .path $version }}
+    {{- $currentVersion = .version }} 
+    {{- $versionPath = .path }}  
+    {{- break }} 
+  {{- end }}
+{{- end }}
+
+{{- /* Renvoyer les valeurs dans Scratch */ -}}
+{{- .Scratch.Set "currentVersion" $currentVersion }}
+{{- .Scratch.Set "versionPath" $versionPath }}
+

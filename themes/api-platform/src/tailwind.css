@@ -83,8 +83,11 @@
     .table-of-contents ul {
       @apply list-none sm:columns-2  lg:columns-3 gap-4 leading-tight text-xs p-0;
     }
+    .table-of-contents.one-column ul {
+      @apply !columns-1;
+    }
     .table-of-contents li {
-      @apply mb-3 overflow-hidden text-ellipsis whitespace-nowrap;
+      @apply mb-3 overflow-hidden text-ellipsis whitespace-nowrap !mt-0;
     }
     .table-of-contents a {
       @apply text-blue no-underline hover:underline;

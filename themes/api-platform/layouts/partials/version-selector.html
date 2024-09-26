@@ -1,0 +1,60 @@
+<div class="flex flex-col gap-1 mb-4">
+  <label class="text-xs uppercase" for="version-select">Version</label>
+<select class="border-gray-200 border-px py-1 px-1 rounded-md w-32 font-bold text-blue" id="version-select" defaultValue='v4.0' onchange="changeVersion(this.value)">
+    {{ $currentVersion := index (split .Page.RelPermalink "/") 2 }}
+    {{ $defaultVersion := .Site.Params.defaultVersionPath }}
+    {{ $versionExists := false }} 
+    {{ range .Site.Params.versions }}
+        {{ if eq .path $currentVersion }}
+            {{ $versionExists = true }}
+            {{ break }}
+        {{ end }}
+    {{ end }}
+    {{ $prefix := "" }}
+        {{ if not $versionExists }}
+            {{ $prefix = "/docs" }}
+            {{ $currentVersion = $defaultVersion }}
+        {{ else }}
+            {{ $prefix = printf "/docs/%s" $currentVersion }}
+        {{ end }}
+    {{ $endUrl := replace .Page.RelPermalink $prefix "" }}
+    {{ range .Site.Params.versions }}
+      {{ $url := "" }}
+      {{ if eq .path $defaultVersion }}
+        {{ $url = printf "/docs%s" $endUrl }}
+      {{ else }}
+        {{ $url = printf "/docs/%s%s" .path $endUrl }}
+      {{ end }}
+      {{ $pageExists := false }}
+      {{ range $.Site.Pages }}
+          {{ if eq .RelPermalink $url }}
+              {{ $pageExists = true }}
+              {{ break }}
+          {{ end }}
+      {{ end }}
+
+    {{ range $.Site.Params.redirects }}
+        {{ if eq $url .from }}
+            {{ $pageExists = true }}
+            {{ $url = .to }}
+            {{ break }}
+        {{ end }}
+    {{ end }}
+
+      <option value="{{ $url }}" {{ if eq .path $currentVersion }}selected{{ end }} {{ if not $pageExists }}disabled{{ end }}>
+        {{ .version }}
+        {{ if eq .version $.Site.Params.defaultVersion }}
+        (current)
+        {{ else if eq .version "main"}}
+        (dev)
+        {{ end }}
+      </option>
+    {{ end }}
+  </select>
+</div>
+
+<script>
+  function changeVersion(selectedVersion) {
+    window.location.href = selectedVersion;
+  }
+</script>

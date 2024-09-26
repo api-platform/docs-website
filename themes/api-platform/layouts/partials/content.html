@@ -30,26 +30,19 @@
         <div class="doc">
             <h1>{{ partial "extract-h1.html" . }}</h1>
             {{ if and .TableOfContents (ge (len (findRE "<a " .TableOfContents)) 2) }}
-      <div class=" table-of-contents">
-                <h2>Quick links</h2>
-                {{ .TableOfContents | safeHTML }}
-        </div>
+      <div class="table-of-contents {{ if and .TableOfContents (lt (len (findRE "<a " .TableOfContents)) 5) }} one-column{{ end }}">
+    <h2>Table of Contents</h2>
+    {{ .TableOfContents | safeHTML }}
+</div>
         {{ end }}
+        <!-- replace all instances of symfonycasts image by static image -->
         {{- $withoutH1 := partial "remove-h1.html" . }}
-        {{ $updatedContent := $withoutH1 | replaceRE `src="[^"]*/symfonycasts-player.png"`
-        `src="/docs/images/symfonycasts-player.png"` }}
+        <!-- replace all instances of symfonycasts image by static image -->
+        {{ $updatedContent := $withoutH1 | replaceRE `src="[^"]*/symfonycasts-player.png"` `src="/docs/images/symfonycasts-player.png"` }} 
         {{ $updatedContent | safeHTML }}
     </div>
 
-    <p class="mt-10">
-        {{- $link := substr (replace .Page.RelPermalink "/docs/" "") 0 -1 }}
-        {{- $sections := (index .Site.Data.sections "sections") }}
-        {{- .Scratch.Set "version" "" }}
-        {{- if in $sections (replace .Page.Section "." "") }}
-        {{- .Scratch.Set "version" "4.0/" }}
-        {{- end }}
-        <a class="text-blue" href="https://github.com/api-platform/docs/edit/{{ .Scratch.Get " version"}}{{ replaceRE `^v` "" $link }}/index.md">You can also help us improve the documentation of this page.</a>
-    </p>
+    {{ partial "editLink.html" . }}
 </div>
     <button onclick="topFunction()" id="btnScrollTop" title="Go to top"
         class="opacity-0 translate-y-full sticky left-full -translate-x-4 bottom-0 shadow-floating transition-all rounded-full flex items-center justify-center bg-blue w-10 h-10 z-20"><svg

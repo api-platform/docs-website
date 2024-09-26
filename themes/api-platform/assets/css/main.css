@@ -2686,8 +2686,14 @@ img {
   }
 }
 
+.table-of-contents.one-column ul {
+  -moz-columns: 1 !important;
+       columns: 1 !important;
+}
+
 .table-of-contents li {
   margin-bottom: 0.75rem;
+  margin-top: 0px !important;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2719,6 +2725,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
 
 .invisible {
   visibility: hidden;
+}
+
+.static {
+  position: static;
 }
 
 .fixed {
@@ -3010,6 +3020,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   height: 100vh;
 }
 
+.min-h-\[calc\(100vh-64px\)\] {
+  min-height: calc(100vh - 64px);
+}
+
 .w-0 {
   width: 0px;
 }
@@ -3034,6 +3048,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   width: 75%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -3052,6 +3070,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-7 {
@@ -3286,6 +3308,11 @@ img[src="/docs/images/symfonycasts-player.png"] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-\[10\%\] {
+  --tw-translate-x: 10%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3452,6 +3479,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -3520,6 +3551,10 @@ img[src="/docs/images/symfonycasts-player.png"] {
   border-radius: 100%;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -3572,6 +3607,11 @@ img[src="/docs/images/symfonycasts-player.png"] {
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-gray-300 {
@@ -3734,6 +3774,11 @@ img[src="/docs/images/symfonycasts-player.png"] {
   padding: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -3833,10 +3878,6 @@ img[src="/docs/images/symfonycasts-player.png"] {
 
 .pr-8 {
   padding-right: 2rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .pt-24 {
@@ -6238,6 +6279,10 @@ kbd.DocSearch-Commands-Key) {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-96 {
+    width: 24rem;
   }
 
   .xl\:grid-cols-2 {

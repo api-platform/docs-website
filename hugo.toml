@@ -24,3 +24,67 @@ disablePathToLower = true
   [markup.tableOfContents]
     startLevel = 2 
     endLevel = 2 
+
+[params]
+defaultVersion = "4.0"  # Version par défaut
+defaultVersionPath = "v4.0"  # Version par défaut
+
+[[params.versions]]
+  version = "4.0"
+  path = "v4.0"
+
+[[params.versions]]
+  version = "3.4"
+  path = "v3.4"
+
+[[params.versions]]
+  version = "3.3"
+  path = "v3.3"
+
+[[params.versions]]
+  version = "3.2"
+  path = "v3.2"
+
+[[params.versions]]
+  version = "3.1"
+  path = "v3.1"
+
+[[params.versions]]
+  version = "3.0"
+  path = "v3.0"
+
+[[params.versions]]
+  version = "2.7"
+  path = "v2.7"
+
+[[params.versions]]
+  version = "2.6"
+  path = "v2.6"
+
+[[params.versions]]
+  version = "2.5"
+  path = "v2.5"
+
+[[params.versions]]
+  version = "2.4"
+  path = "v2.4"
+
+[[params.versions]]
+  version = "2.3"
+  path = "v2.3"
+
+[[params.versions]]
+  version = "2.2"
+  path = "v2.2"
+
+[[params.versions]]
+  version = "2.1"
+  path = "v2.1"
+
+[[params.versions]]
+  version = "main"
+  path = "main"
+
+[[params.redirects]]
+  from = "/docs/distribution/"
+  to = "/docs/symfony/"

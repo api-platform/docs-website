@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="text-center flex flex-col lg:flex-row gap-8 items-center justify-center min-h-[calc(100vh-64px)] px-6 md:px-10 xl:px-16 py-6 leading-loose text-blue-black/80 dark:text-white/80">
+<div className="flex flex-col items-center">
+    <h1 class="text-5xl font-title font-bold text-blue leading-tight">Page not found</h1>
+<p>Looks like this page doesn't exist...</p>
+<a class="bg-blue text-white px-4 py-2 rounded-3xl mt-4 inline-block transition-all text-sm font-title font-bold uppercase hover:brightness-125 hover:scale-105" href="/docs">Back to documentation</a>
+</div>
+<img class="w-64 translate-x-[10%] xl:w-96" src="https://api-platform.com/images/404.svg" />
+</div>
+{{ end }}
