@@ -1,6 +1,6 @@
 <div class="flex flex-col gap-1 mb-4">
-  <label class="text-xs uppercase" for="version-select">Version</label>
-<select class="border-gray-200 border-px py-1 px-1 rounded-md w-32 font-bold text-blue" id="version-select" defaultValue='v4.0' onchange="changeVersion(this.value)">
+  <label class="text-xs uppercase dark:text-text-primary-dark" for="version-select">Version</label>
+<select class="border-gray-200 border-px py-1 px-1 rounded-md w-32 font-bold text-blue  dark:border-blue-dark dark:bg-blue-darkest" id="version-select" defaultValue='v4.0' onchange="changeVersion(this.value)">
     {{ $currentVersion := index (split .Page.RelPermalink "/") 2 }}
     {{ $defaultVersion := .Site.Params.defaultVersionPath }}
     {{ $versionExists := false }} 
