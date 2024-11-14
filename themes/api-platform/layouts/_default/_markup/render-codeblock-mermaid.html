@@ -1,0 +1,9 @@
+<div class="mermaid-container relative flex justify-center items-center">
+  <div class="mermaid-loader absolute inset-0 flex items-center justify-center">
+    <div class="w-6 h-6 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+  </div>
+  <pre class="mermaid opacity-0">
+      {{- .Inner | safeHTML }}
+    </pre>
+</div>
+{{ .Page.Store.Set "hasMermaid" true }}
