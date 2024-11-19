@@ -1,0 +1,15 @@
+{{ partial "render-codeblock.html" . }}
+
+<script type="module">
+    document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();
+
+            const selection = window.getSelection();
+            const selectedText = selection.toString();
+            const cleanedText = selectedText.replace(/^[+-]\s*/gm, '');
+
+            e.clipboardData.setData('text/plain', cleanedText);
+        });
+    });
+</script>
