@@ -1,0 +1,9 @@
+{{ $result := transform.HighlightCodeBlock . }}
+{{ $resultWrapped := $result.Wrapped }}
+
+<!-- Remplacement simple de <span class="gi"> par <span class="gi modified"> -->
+{{ $updated := replaceRE "<span class=\"gi\">\\+" "<span class=\"gi add\">" $resultWrapped }}
+{{ $updated := replaceRE "<span class=\"gd\">\\-" "<span class=\"gd remove\">" $updated }}
+
+<!-- Affichage du résultat après remplacement -->
+{{ $updated | safeHTML }}

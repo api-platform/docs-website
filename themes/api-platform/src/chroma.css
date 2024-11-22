@@ -174,3 +174,12 @@
 /* GenericUnderline */ .dark .chroma .gl {  }
 /* TextWhitespace */ .dark .chroma .w {  }
 
+.chroma .gi.add:before {
+    content: "+";
+    user-select: none;
+}
+
+.chroma .gd.remove:before {
+    content: "-";
+    user-select: none;
+}
