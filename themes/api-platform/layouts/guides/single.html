@@ -31,13 +31,15 @@
         {{ partial "guides/section.html" . }}
 {{ end }}
 </div>
-  <p class="mt-10">
-    <a
-      class="text-blue"
-      href="https://github.com/api-platform/core/edit/{{ substr (replace (replace .Page.RelPermalink "/docs/" "") "/guides" "/docs/guides") 0 -1 }}.php"
-    >
-      You can also help us improve this guide.
-    </a>
-  </p>
+    <p class="mt-10">
+        {{ partial "checkVersion.html" . }}
+        {{ $currentVersion := .Scratch.Get "currentVersion" }}
+        {{ $link := printf "%s/docs/guides/%s.php" $currentVersion (path.Base .Page.RelPermalink) }}
+
+        <a class="text-blue" href="https://github.com/api-platform/core/edit/{{ $link }}">
+            You can also help us improve this guide.
+        </a>
+    </p>
+
 </div>
 {{ end }}
