@@ -1,3 +1,747 @@
+[[v40]]
+      name = "API Platform for Symfony"
+      identifier = "api-platform-for-symfony"
+      pageRef = '/v4.0/symfony'
+      weight = 1
+[[v40]]
+      name = "Getting Started With API Platform with Symfony"
+      identifier = "api-platform-for-symfony-getting-started-with-api-platform-with-symfony"
+      pageRef = '/v4.0/symfony'
+      url = '/v4.0/symfony'
+      weight = 1
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Validation with Symfony"
+      identifier = "api-platform-for-symfony-validation-with-symfony"
+      pageRef = '/v4.0/symfony/validation'
+      url = '/v4.0/symfony/validation'
+      weight = 2
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Security with Symfony"
+      identifier = "api-platform-for-symfony-security-with-symfony"
+      pageRef = '/v4.0/symfony/security'
+      url = '/v4.0/symfony/security'
+      weight = 3
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Testing the API with Symfony"
+      identifier = "api-platform-for-symfony-testing-the-api-with-symfony"
+      pageRef = '/v4.0/symfony/testing'
+      url = '/v4.0/symfony/testing'
+      weight = 4
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Debugging with Symfony"
+      identifier = "api-platform-for-symfony-debugging-with-symfony"
+      pageRef = '/v4.0/symfony/debugging'
+      url = '/v4.0/symfony/debugging'
+      weight = 5
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Configuring the Caddy Web Server with Symfony"
+      identifier = "api-platform-for-symfony-configuring-the-caddy-web-server-with-symfony"
+      pageRef = '/v4.0/symfony/caddy'
+      url = '/v4.0/symfony/caddy'
+      weight = 6
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "JWT Authentication with Symfony"
+      identifier = "api-platform-for-symfony-jwt-authentication-with-symfony"
+      pageRef = '/v4.0/symfony/jwt'
+      url = '/v4.0/symfony/jwt'
+      weight = 7
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Symfony Messenger Integration: CQRS and Async Message Processing"
+      identifier = "api-platform-for-symfony-symfony-messenger-integration-cqrs-and-async-message-processing"
+      pageRef = '/v4.0/symfony/messenger'
+      url = '/v4.0/symfony/messenger'
+      weight = 8
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "User Entity with Symfony"
+      identifier = "api-platform-for-symfony-user-entity-with-symfony"
+      pageRef = '/v4.0/symfony/user'
+      url = '/v4.0/symfony/user'
+      weight = 9
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Handling File Upload with Symfony"
+      identifier = "api-platform-for-symfony-handling-file-upload-with-symfony"
+      pageRef = '/v4.0/symfony/file-upload'
+      url = '/v4.0/symfony/file-upload'
+      weight = 10
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Creating Custom Operations and Symfony Controllers"
+      identifier = "api-platform-for-symfony-creating-custom-operations-and-symfony-controllers"
+      pageRef = '/v4.0/symfony/controllers'
+      url = '/v4.0/symfony/controllers'
+      weight = 11
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "NelmioApiDocBundle Integration with Symfony"
+      identifier = "api-platform-for-symfony-nelmioapidocbundle-integration-with-symfony"
+      pageRef = '/v4.0/symfony/nelmio-api-doc'
+      url = '/v4.0/symfony/nelmio-api-doc'
+      weight = 12
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "Migrate From FOSRestBundle with Symfony"
+      identifier = "api-platform-for-symfony-migrate-from-fosrestbundle-with-symfony"
+      pageRef = '/v4.0/symfony/migrate-from-fosrestbundle'
+      url = '/v4.0/symfony/migrate-from-fosrestbundle'
+      weight = 13
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "FOSUserBundle Integration with Symfony"
+      identifier = "api-platform-for-symfony-fosuserbundle-integration-with-symfony"
+      pageRef = '/v4.0/symfony/fosuser-bundle'
+      url = '/v4.0/symfony/fosuser-bundle'
+      weight = 14
+      parent = 'api-platform-for-symfony'
+[[v40]]
+      name = "API Platform for Laravel"
+      identifier = "api-platform-for-laravel"
+      pageRef = '/v4.0/laravel'
+      weight = 2
+[[v40]]
+      name = "API Platform for Laravel Projects"
+      identifier = "api-platform-for-laravel-api-platform-for-laravel-projects"
+      pageRef = '/v4.0/laravel'
+      url = '/v4.0/laravel'
+      weight = 1
+      parent = 'api-platform-for-laravel'
+[[v40]]
+      name = "Testing the API with Laravel"
+      identifier = "api-platform-for-laravel-testing-the-api-with-laravel"
+      pageRef = '/v4.0/laravel/testing'
+      url = '/v4.0/laravel/testing'
+      weight = 2
+      parent = 'api-platform-for-laravel'
+[[v40]]
+      name = "Parameters and Filters"
+      identifier = "api-platform-for-laravel-parameters-and-filters"
+      pageRef = '/v4.0/laravel/filters'
+      url = '/v4.0/laravel/filters'
+      weight = 3
+      parent = 'api-platform-for-laravel'
+[[v40]]
+      name = "Security with Laravel"
+      identifier = "api-platform-for-laravel-security-with-laravel"
+      pageRef = '/v4.0/laravel/security'
+      url = '/v4.0/laravel/security'
+      weight = 4
+      parent = 'api-platform-for-laravel'
+[[v40]]
+      name = "Validation with Laravel"
+      identifier = "api-platform-for-laravel-validation-with-laravel"
+      pageRef = '/v4.0/laravel/validation'
+      url = '/v4.0/laravel/validation'
+      weight = 5
+      parent = 'api-platform-for-laravel'
+[[v40]]
+      name = "JWT Authentication with Laravel"
+      identifier = "api-platform-for-laravel-jwt-authentication-with-laravel"
+      pageRef = '/v4.0/laravel/jwt'
+      url = '/v4.0/laravel/jwt'
+      weight = 6
+      parent = 'api-platform-for-laravel'
+[[v40]]
+      name = "Core"
+      identifier = "core"
+      pageRef = '/v4.0/core'
+      weight = 3
+[[v40]]
+      name = "The API Platform Core Library"
+      identifier = "core-the-api-platform-core-library"
+      pageRef = '/v4.0/core'
+      url = '/v4.0/core'
+      weight = 1
+      parent = 'core'
+[[v40]]
+      name = "Getting started"
+      identifier = "core-getting-started"
+      pageRef = '/v4.0/core/getting-started'
+      url = '/v4.0/core/getting-started'
+      weight = 2
+      parent = 'core'
+[[v40]]
+      name = "Upgrade Guide"
+      identifier = "core-upgrade-guide"
+      pageRef = '/v4.0/core/upgrade-guide'
+      url = '/v4.0/core/upgrade-guide'
+      weight = 3
+      parent = 'core'
+[[v40]]
+      name = "General Design Considerations"
+      identifier = "core-general-design-considerations"
+      pageRef = '/v4.0/core/design'
+      url = '/v4.0/core/design'
+      weight = 4
+      parent = 'core'
+[[v40]]
+      name = "Extending API Platform"
+      identifier = "core-extending-api-platform"
+      pageRef = '/v4.0/core/extending'
+      url = '/v4.0/core/extending'
+      weight = 5
+      parent = 'core'
+[[v40]]
+      name = "Testing the API"
+      identifier = "core-testing-the-api"
+      pageRef = '/v4.0/core/testing'
+      url = '/v4.0/core/testing'
+      weight = 6
+      parent = 'core'
+[[v40]]
+      name = "Operations"
+      identifier = "core-operations"
+      pageRef = '/v4.0/core/operations'
+      url = '/v4.0/core/operations'
+      weight = 7
+      parent = 'core'
+[[v40]]
+      name = "GraphQL Support"
+      identifier = "core-graphql-support"
+      pageRef = '/v4.0/core/graphql'
+      url = '/v4.0/core/graphql'
+      weight = 8
+      parent = 'core'
+[[v40]]
+      name = "State Providers"
+      identifier = "core-state-providers"
+      pageRef = '/v4.0/core/state-providers'
+      url = '/v4.0/core/state-providers'
+      weight = 9
+      parent = 'core'
+[[v40]]
+      name = "State Processors"
+      identifier = "core-state-processors"
+      pageRef = '/v4.0/core/state-processors'
+      url = '/v4.0/core/state-processors'
+      weight = 10
+      parent = 'core'
+[[v40]]
+      name = "Filters"
+      identifier = "core-filters"
+      pageRef = '/v4.0/core/filters'
+      url = '/v4.0/core/filters'
+      weight = 11
+      parent = 'core'
+[[v40]]
+      name = "Elasticsearch Filters"
+      identifier = "core-elasticsearch-filters"
+      pageRef = '/v4.0/core/elasticsearch-filters'
+      url = '/v4.0/core/elasticsearch-filters'
+      weight = 12
+      parent = 'core'
+[[v40]]
+      name = "Doctrine ORM and MongoDB ODM Filters"
+      identifier = "core-doctrine-orm-and-mongodb-odm-filters"
+      pageRef = '/v4.0/core/doctrine-filters'
+      url = '/v4.0/core/doctrine-filters'
+      weight = 13
+      parent = 'core'
+[[v40]]
+      name = "Subresources"
+      identifier = "core-subresources"
+      pageRef = '/v4.0/core/subresources'
+      url = '/v4.0/core/subresources'
+      weight = 14
+      parent = 'core'
+[[v40]]
+      name = "The Serialization Process"
+      identifier = "core-the-serialization-process"
+      pageRef = '/v4.0/core/serialization'
+      url = '/v4.0/core/serialization'
+      weight = 15
+      parent = 'core'
+[[v40]]
+      name = "Validation"
+      identifier = "core-validation"
+      pageRef = '/v4.0/core/validation'
+      url = '/v4.0/core/validation'
+      weight = 16
+      parent = 'core'
+[[v40]]
+      name = "Security"
+      identifier = "core-security"
+      pageRef = '/v4.0/core/security'
+      url = '/v4.0/core/security'
+      weight = 17
+      parent = 'core'
+[[v40]]
+      name = "Content Negotiation"
+      identifier = "core-content-negotiation"
+      pageRef = '/v4.0/core/content-negotiation'
+      url = '/v4.0/core/content-negotiation'
+      weight = 18
+      parent = 'core'
+[[v40]]
+      name = "Pagination"
+      identifier = "core-pagination"
+      pageRef = '/v4.0/core/pagination'
+      url = '/v4.0/core/pagination'
+      weight = 19
+      parent = 'core'
+[[v40]]
+      name = "Deprecating Resources and Properties (Alternative to Versioning)"
+      identifier = "core-deprecating-resources-and-properties-alternative-to-versioning"
+      pageRef = '/v4.0/core/deprecations'
+      url = '/v4.0/core/deprecations'
+      weight = 20
+      parent = 'core'
+[[v40]]
+      name = "Overriding Default Order"
+      identifier = "core-overriding-default-order"
+      pageRef = '/v4.0/core/default-order'
+      url = '/v4.0/core/default-order'
+      weight = 21
+      parent = 'core'
+[[v40]]
+      name = "Performance and Cache"
+      identifier = "core-performance-and-cache"
+      pageRef = '/v4.0/core/performance'
+      url = '/v4.0/core/performance'
+      weight = 22
+      parent = 'core'
+[[v40]]
+      name = "Extensions for Doctrine and Elasticsearch"
+      identifier = "core-extensions-for-doctrine-and-elasticsearch"
+      pageRef = '/v4.0/core/extensions'
+      url = '/v4.0/core/extensions'
+      weight = 23
+      parent = 'core'
+[[v40]]
+      name = "Using Data Transfer Objects (DTOs)"
+      identifier = "core-using-data-transfer-objects-dtos"
+      pageRef = '/v4.0/core/dto'
+      url = '/v4.0/core/dto'
+      weight = 24
+      parent = 'core'
+[[v40]]
+      name = "OpenAPI Specification Support (formerly Swagger)"
+      identifier = "core-openapi-specification-support-formerly-swagger"
+      pageRef = '/v4.0/core/openapi'
+      url = '/v4.0/core/openapi'
+      weight = 25
+      parent = 'core'
+[[v40]]
+      name = "JSON Schema Support"
+      identifier = "core-json-schema-support"
+      pageRef = '/v4.0/core/json-schema'
+      url = '/v4.0/core/json-schema'
+      weight = 26
+      parent = 'core'
+[[v40]]
+      name = "Creating Async APIs using the Mercure Protocol"
+      identifier = "core-creating-async-apis-using-the-mercure-protocol"
+      pageRef = '/v4.0/core/mercure'
+      url = '/v4.0/core/mercure'
+      weight = 27
+      parent = 'core'
+[[v40]]
+      name = "Pushing Related Resources Using HTTP/2"
+      identifier = "core-pushing-related-resources-using-http2"
+      pageRef = '/v4.0/core/push-relations'
+      url = '/v4.0/core/push-relations'
+      weight = 28
+      parent = 'core'
+[[v40]]
+      name = "Errors Handling"
+      identifier = "core-errors-handling"
+      pageRef = '/v4.0/core/errors'
+      url = '/v4.0/core/errors'
+      weight = 29
+      parent = 'core'
+[[v40]]
+      name = "Using External Vocabularies"
+      identifier = "core-using-external-vocabularies"
+      pageRef = '/v4.0/core/external-vocabularies'
+      url = '/v4.0/core/external-vocabularies'
+      weight = 30
+      parent = 'core'
+[[v40]]
+      name = "Operation Path Naming"
+      identifier = "core-operation-path-naming"
+      pageRef = '/v4.0/core/operation-path-naming'
+      url = '/v4.0/core/operation-path-naming'
+      weight = 31
+      parent = 'core'
+[[v40]]
+      name = "URL Generation Strategy"
+      identifier = "core-url-generation-strategy"
+      pageRef = '/v4.0/core/url-generation-strategy'
+      url = '/v4.0/core/url-generation-strategy'
+      weight = 32
+      parent = 'core'
+[[v40]]
+      name = "Extending JSON-LD AND Hydra Contexts"
+      identifier = "core-extending-json-ld-and-hydra-contexts"
+      pageRef = '/v4.0/core/extending-jsonld-context'
+      url = '/v4.0/core/extending-jsonld-context'
+      weight = 33
+      parent = 'core'
+[[v40]]
+      name = "Identifiers"
+      identifier = "core-identifiers"
+      pageRef = '/v4.0/core/identifiers'
+      url = '/v4.0/core/identifiers'
+      weight = 34
+      parent = 'core'
+[[v40]]
+      name = "MongoDB Support"
+      identifier = "core-mongodb-support"
+      pageRef = '/v4.0/core/mongodb'
+      url = '/v4.0/core/mongodb'
+      weight = 35
+      parent = 'core'
+[[v40]]
+      name = "Elasticsearch Support"
+      identifier = "core-elasticsearch-support"
+      pageRef = '/v4.0/core/elasticsearch'
+      url = '/v4.0/core/elasticsearch'
+      weight = 36
+      parent = 'core'
+[[v40]]
+      name = "The Event System"
+      identifier = "core-the-event-system"
+      pageRef = '/v4.0/core/events'
+      url = '/v4.0/core/events'
+      weight = 37
+      parent = 'core'
+[[v40]]
+      name = "JWT Authentication"
+      identifier = "core-jwt-authentication"
+      pageRef = '/v4.0/core/jwt'
+      url = '/v4.0/core/jwt'
+      weight = 38
+      parent = 'core'
+[[v40]]
+      name = "Accept `application/x-www-form-urlencoded` Form Data"
+      identifier = "core-accept-applicationx-www-form-urlencoded-form-data"
+      pageRef = '/v4.0/core/form-data'
+      url = '/v4.0/core/form-data'
+      weight = 39
+      parent = 'core'
+[[v40]]
+      name = "Bootstraping the core library"
+      identifier = "core-bootstraping-the-core-library"
+      pageRef = '/v4.0/core/bootstrap'
+      url = '/v4.0/core/bootstrap'
+      weight = 40
+      parent = 'core'
+[[v40]]
+      name = "Configuration Reference"
+      identifier = "core-configuration-reference"
+      pageRef = '/v4.0/core/configuration'
+      url = '/v4.0/core/configuration'
+      weight = 41
+      parent = 'core'
+[[v40]]
+      name = "Schema Generator"
+      identifier = "schema-generator"
+      pageRef = '/v4.0/schema-generator'
+      weight = 4
+[[v40]]
+      name = "The Schema Generator"
+      identifier = "schema-generator-the-schema-generator"
+      pageRef = '/v4.0/schema-generator'
+      url = '/v4.0/schema-generator'
+      weight = 1
+      parent = 'schema-generator'
+[[v40]]
+      name = "Getting Started"
+      identifier = "schema-generator-getting-started"
+      pageRef = '/v4.0/schema-generator/getting-started'
+      url = '/v4.0/schema-generator/getting-started'
+      weight = 2
+      parent = 'schema-generator'
+[[v40]]
+      name = "Configuration"
+      identifier = "schema-generator-configuration"
+      pageRef = '/v4.0/schema-generator/configuration'
+      url = '/v4.0/schema-generator/configuration'
+      weight = 3
+      parent = 'schema-generator'
+[[v40]]
+      name = "Admin"
+      identifier = "admin"
+      pageRef = '/v4.0/admin'
+      weight = 5
+[[v40]]
+      name = "The API Platform Admin"
+      identifier = "admin-the-api-platform-admin"
+      pageRef = '/v4.0/admin'
+      url = '/v4.0/admin'
+      weight = 1
+      parent = 'admin'
+[[v40]]
+      name = "Getting Started"
+      identifier = "admin-getting-started"
+      pageRef = '/v4.0/admin/getting-started'
+      url = '/v4.0/admin/getting-started'
+      weight = 2
+      parent = 'admin'
+[[v40]]
+      name = "Handling Relations"
+      identifier = "admin-handling-relations"
+      pageRef = '/v4.0/admin/handling-relations'
+      url = '/v4.0/admin/handling-relations'
+      weight = 3
+      parent = 'admin'
+[[v40]]
+      name = "OpenAPI"
+      identifier = "admin-openapi"
+      pageRef = '/v4.0/admin/openapi'
+      url = '/v4.0/admin/openapi'
+      weight = 4
+      parent = 'admin'
+[[v40]]
+      name = "Using the Schema.org Vocabulary"
+      identifier = "admin-using-the-schemaorg-vocabulary"
+      pageRef = '/v4.0/admin/schema.org'
+      url = '/v4.0/admin/schema.org'
+      weight = 5
+      parent = 'admin'
+[[v40]]
+      name = "Validation"
+      identifier = "admin-validation"
+      pageRef = '/v4.0/admin/validation'
+      url = '/v4.0/admin/validation'
+      weight = 6
+      parent = 'admin'
+[[v40]]
+      name = "Real-time Updates With Mercure"
+      identifier = "admin-real-time-updates-with-mercure"
+      pageRef = '/v4.0/admin/real-time-mercure'
+      url = '/v4.0/admin/real-time-mercure'
+      weight = 7
+      parent = 'admin'
+[[v40]]
+      name = "Authentication Support"
+      identifier = "admin-authentication-support"
+      pageRef = '/v4.0/admin/authentication-support'
+      url = '/v4.0/admin/authentication-support'
+      weight = 8
+      parent = 'admin'
+[[v40]]
+      name = "Handling File Upload"
+      identifier = "admin-handling-file-upload"
+      pageRef = '/v4.0/admin/file-upload'
+      url = '/v4.0/admin/file-upload'
+      weight = 9
+      parent = 'admin'
+[[v40]]
+      name = "Performance"
+      identifier = "admin-performance"
+      pageRef = '/v4.0/admin/performance'
+      url = '/v4.0/admin/performance'
+      weight = 10
+      parent = 'admin'
+[[v40]]
+      name = "Customizing the Admin"
+      identifier = "admin-customizing-the-admin"
+      pageRef = '/v4.0/admin/customizing'
+      url = '/v4.0/admin/customizing'
+      weight = 11
+      parent = 'admin'
+[[v40]]
+      name = "Components"
+      identifier = "admin-components"
+      pageRef = '/v4.0/admin/components'
+      url = '/v4.0/admin/components'
+      weight = 12
+      parent = 'admin'
+[[v40]]
+      name = "Create Client"
+      identifier = "create-client"
+      pageRef = '/v4.0/create-client'
+      weight = 6
+[[v40]]
+      name = "API Platform Create Client"
+      identifier = "create-client-api-platform-create-client"
+      pageRef = '/v4.0/create-client'
+      url = '/v4.0/create-client'
+      weight = 1
+      parent = 'create-client'
+[[v40]]
+      name = "Next.js Generator"
+      identifier = "create-client-nextjs-generator"
+      pageRef = '/v4.0/create-client/nextjs'
+      url = '/v4.0/create-client/nextjs'
+      weight = 2
+      parent = 'create-client'
+[[v40]]
+      name = "Nuxt Generator"
+      identifier = "create-client-nuxt-generator"
+      pageRef = '/v4.0/create-client/nuxt'
+      url = '/v4.0/create-client/nuxt'
+      weight = 3
+      parent = 'create-client'
+[[v40]]
+      name = "Vuetify Generator"
+      identifier = "create-client-vuetify-generator"
+      pageRef = '/v4.0/create-client/vuetify'
+      url = '/v4.0/create-client/vuetify'
+      weight = 4
+      parent = 'create-client'
+[[v40]]
+      name = "Quasar Framework Generator"
+      identifier = "create-client-quasar-framework-generator"
+      pageRef = '/v4.0/create-client/quasar'
+      url = '/v4.0/create-client/quasar'
+      weight = 5
+      parent = 'create-client'
+[[v40]]
+      name = "React Generator"
+      identifier = "create-client-react-generator"
+      pageRef = '/v4.0/create-client/react'
+      url = '/v4.0/create-client/react'
+      weight = 6
+      parent = 'create-client'
+[[v40]]
+      name = "React Native generator"
+      identifier = "create-client-react-native-generator"
+      pageRef = '/v4.0/create-client/react-native'
+      url = '/v4.0/create-client/react-native'
+      weight = 7
+      parent = 'create-client'
+[[v40]]
+      name = "Vue.js Generator"
+      identifier = "create-client-vuejs-generator"
+      pageRef = '/v4.0/create-client/vuejs'
+      url = '/v4.0/create-client/vuejs'
+      weight = 8
+      parent = 'create-client'
+[[v40]]
+      name = "TypeScript Interfaces"
+      identifier = "create-client-typescript-interfaces"
+      pageRef = '/v4.0/create-client/typescript'
+      url = '/v4.0/create-client/typescript'
+      weight = 9
+      parent = 'create-client'
+[[v40]]
+      name = "Custom Generator"
+      identifier = "create-client-custom-generator"
+      pageRef = '/v4.0/create-client/custom'
+      url = '/v4.0/create-client/custom'
+      weight = 10
+      parent = 'create-client'
+[[v40]]
+      name = "Troubleshooting"
+      identifier = "create-client-troubleshooting"
+      pageRef = '/v4.0/create-client/troubleshooting'
+      url = '/v4.0/create-client/troubleshooting'
+      weight = 11
+      parent = 'create-client'
+[[v40]]
+      name = "Deployment"
+      identifier = "deployment"
+      pageRef = '/v4.0/deployment'
+      weight = 7
+[[v40]]
+      name = "Deploying API Platform Applications"
+      identifier = "deployment-deploying-api-platform-applications"
+      pageRef = '/v4.0/deployment'
+      url = '/v4.0/deployment'
+      weight = 1
+      parent = 'deployment'
+[[v40]]
+      name = "Deploying with Docker Compose"
+      identifier = "deployment-deploying-with-docker-compose"
+      pageRef = '/v4.0/deployment/docker-compose'
+      url = '/v4.0/deployment/docker-compose'
+      weight = 2
+      parent = 'deployment'
+[[v40]]
+      name = "Deploying to a Kubernetes Cluster"
+      identifier = "deployment-deploying-to-a-kubernetes-cluster"
+      pageRef = '/v4.0/deployment/kubernetes'
+      url = '/v4.0/deployment/kubernetes'
+      weight = 3
+      parent = 'deployment'
+[[v40]]
+      name = "Deploying to minikube"
+      identifier = "deployment-deploying-to-minikube"
+      pageRef = '/v4.0/deployment/minikube'
+      url = '/v4.0/deployment/minikube'
+      weight = 4
+      parent = 'deployment'
+[[v40]]
+      name = "Deploying an API Platform App on Heroku"
+      identifier = "deployment-deploying-an-api-platform-app-on-heroku"
+      pageRef = '/v4.0/deployment/heroku'
+      url = '/v4.0/deployment/heroku'
+      weight = 5
+      parent = 'deployment'
+[[v40]]
+      name = "Implement Træfik Into API Platform Dockerized"
+      identifier = "deployment-implement-trfik-into-api-platform-dockerized"
+      pageRef = '/v4.0/deployment/traefik'
+      url = '/v4.0/deployment/traefik'
+      weight = 6
+      parent = 'deployment'
+[[v40]]
+      name = "General Information"
+      identifier = "general-information"
+      pageRef = '/v4.0/extra'
+      weight = 8
+[[v40]]
+      name = "API Platform's Philosophy"
+      identifier = "general-information-api-platforms-philosophy"
+      pageRef = '/v4.0/extra/philosophy'
+      url = '/v4.0/extra/philosophy'
+      weight = 1
+      parent = 'general-information'
+[[v40]]
+      name = "The Release Process"
+      identifier = "general-information-the-release-process"
+      pageRef = '/v4.0/extra/releases'
+      url = '/v4.0/extra/releases'
+      weight = 2
+      parent = 'general-information'
+[[v40]]
+      name = "API Platform for Enterprise"
+      identifier = "general-information-api-platform-for-enterprise"
+      pageRef = '/v4.0/extra/enterprise'
+      url = '/v4.0/extra/enterprise'
+      weight = 3
+      parent = 'general-information'
+[[v40]]
+      name = "Security Policy"
+      identifier = "general-information-security-policy"
+      pageRef = '/v4.0/extra/security'
+      url = '/v4.0/extra/security'
+      weight = 4
+      parent = 'general-information'
+[[v40]]
+      name = "Troubleshooting"
+      identifier = "general-information-troubleshooting"
+      pageRef = '/v4.0/extra/troubleshooting'
+      url = '/v4.0/extra/troubleshooting'
+      weight = 5
+      parent = 'general-information'
+[[v40]]
+      name = "Contribution Guides"
+      identifier = "general-information-contribution-guides"
+      pageRef = '/v4.0/extra/contribution-guides'
+      url = '/v4.0/extra/contribution-guides'
+      weight = 6
+      parent = 'general-information'
+[[v40]]
+      name = "Contributor Code of Conduct"
+      identifier = "general-information-contributor-code-of-conduct"
+      pageRef = '/v4.0/extra/conduct'
+      url = '/v4.0/extra/conduct'
+      weight = 7
+      parent = 'general-information'
+[[v40]]
+      name = "Changelog"
+      url = '/v4.0/changelog'
+      pageRef = '/v4.0/changelog'
 [[v34]]
       name = "The Distribution: Create Powerful APIs with Ease"
       identifier = "the-distribution-create-powerful-apis-with-ease"
@@ -663,119 +1407,6 @@
       url = '/v3.4/extra/conduct'
       weight = 7
       parent = 'general-information'
-[[v34]]
-      name = "Guides"
-      url = '/v3.4/guides/'
-      pageRef = '/v3.4/guides/_index.md'
-      weight = 3
-[[v34]]
-      name = "Create a Custom Doctrine Filter"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/create-a-custom-doctrine-filter.mdx"
-      url = "/v3.4/guides/create-a-custom-doctrine-filter"
-      weight = "10"
-[[v34]]
-      name = "Custom pagination"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/custom-pagination.mdx"
-      url = "/v3.4/guides/custom-pagination"
-      weight = "12"
-[[v34]]
-      name = "Declare a Resource"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/declare-a-resource.mdx"
-      url = "/v3.4/guides/declare-a-resource"
-      weight = "1"
-[[v34]]
-      name = "Delete operation with validation"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/delete-operation-with-validation.mdx"
-      url = "/v3.4/guides/delete-operation-with-validation"
-      weight = "20"
-[[v34]]
-      name = "Doctrine entity as API resource"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/doctrine-entity-as-resource.mdx"
-      url = "/v3.4/guides/doctrine-entity-as-resource"
-      weight = "4"
-[[v34]]
-      name = "Doctrine ORM SearchFilter"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/doctrine-search-filter.mdx"
-      url = "/v3.4/guides/doctrine-search-filter"
-      weight = "7"
-[[v34]]
-      name = "Error provider to translate exception messages"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/error-provider.mdx"
-      url = "/v3.4/guides/error-provider"
-      weight = "7"
-[[v34]]
-      name = "Error resource for domain exceptions"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/error-resource.mdx"
-      url = "/v3.4/guides/error-resource"
-      weight = "7"
-[[v34]]
-      name = "Extend OpenAPI Documentation"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/extend-openapi-documentation.mdx"
-      url = "/v3.4/guides/extend-openapi-documentation"
-      weight = "11"
-[[v34]]
-      name = "Handle doctrine links"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/handle-links.mdx"
-      url = "/v3.4/guides/handle-links"
-      weight = "15"
-[[v34]]
-      name = "Hook a Persistence Layer with a Processor"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/hook-a-persistence-layer-with-a-processor.mdx"
-      url = "/v3.4/guides/hook-a-persistence-layer-with-a-processor"
-      weight = "3"
-[[v34]]
-      name = "How to create a Guide"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/how-to.mdx"
-      url = "/v3.4/guides/how-to"
-      weight = "0"
-[[v34]]
-      name = "Customize HTTP Cache Tags"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/http-cache-tags.mdx"
-      url = "/v3.4/guides/http-cache-tags"
-      weight = "21"
-[[v34]]
-      name = "Provide the Resource State"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/provide-the-resource-state.mdx"
-      url = "/v3.4/guides/provide-the-resource-state"
-      weight = "2"
-[[v34]]
-      name = "How to return an IRI instead of an object for your resources relations ?"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/return-the-iri-of-your-resources-relations.mdx"
-      url = "/v3.4/guides/return-the-iri-of-your-resources-relations"
-      weight = "11"
-[[v34]]
-      name = "Declare a subresource"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/subresource.mdx"
-      url = "/v3.4/guides/subresource"
-      weight = "8"
-[[v34]]
-      name = "Test your API"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/test-your-api.mdx"
-      url = "/v3.4/guides/test-your-api"
-      weight = "7"
-[[v34]]
-      name = "Validate incoming data"
-      parent = "Guides"
-      pageRef = "/v3.4/guides/validate-incoming-data.mdx"
-      url = "/v3.4/guides/validate-incoming-data"
-      weight = "5"
 [[v34]]
       name = "Changelog"
       url = '/v3.4/changelog'
@@ -7335,43 +7966,160 @@
       url = '/v2.1/changelog'
       pageRef = '/v2.1/changelog'
 [[main]]
-      name = "The Distribution: Create Powerful APIs with Ease"
-      identifier = "the-distribution-create-powerful-apis-with-ease"
-      pageRef = '/main/distribution'
+      name = "API Platform for Symfony"
+      identifier = "api-platform-for-symfony"
+      pageRef = '/main/symfony'
       weight = 1
 [[main]]
-      name = "Getting Started With API Platform: Create Your API and Your Jamstack Site"
-      identifier = "the-distribution-create-powerful-apis-with-ease-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
-      pageRef = '/main/distribution'
-      url = '/main/distribution'
+      name = "Getting Started With API Platform for Symfony"
+      identifier = "api-platform-for-symfony-getting-started-with-api-platform-for-symfony"
+      pageRef = '/main/symfony'
+      url = '/main/symfony'
       weight = 1
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'api-platform-for-symfony'
 [[main]]
-      name = "Testing the API"
-      identifier = "the-distribution-create-powerful-apis-with-ease-testing-the-api"
-      pageRef = '/main/distribution/testing'
-      url = '/main/distribution/testing'
+      name = "Validation with Symfony"
+      identifier = "api-platform-for-symfony-validation-with-symfony"
+      pageRef = '/main/symfony/validation'
+      url = '/main/symfony/validation'
       weight = 2
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "Security with Symfony"
+      identifier = "api-platform-for-symfony-security-with-symfony"
+      pageRef = '/main/symfony/security'
+      url = '/main/symfony/security'
+      weight = 3
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "Testing the API with Symfony"
+      identifier = "api-platform-for-symfony-testing-the-api-with-symfony"
+      pageRef = '/main/symfony/testing'
+      url = '/main/symfony/testing'
+      weight = 4
+      parent = 'api-platform-for-symfony'
 [[main]]
       name = "Debugging"
-      identifier = "the-distribution-create-powerful-apis-with-ease-debugging"
-      pageRef = '/main/distribution/debugging'
-      url = '/main/distribution/debugging'
-      weight = 3
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      identifier = "api-platform-for-symfony-debugging"
+      pageRef = '/main/symfony/debugging'
+      url = '/main/symfony/debugging'
+      weight = 5
+      parent = 'api-platform-for-symfony'
 [[main]]
       name = "Configuring the Caddy Web Server"
-      identifier = "the-distribution-create-powerful-apis-with-ease-configuring-the-caddy-web-server"
-      pageRef = '/main/distribution/caddy'
-      url = '/main/distribution/caddy'
+      identifier = "api-platform-for-symfony-configuring-the-caddy-web-server"
+      pageRef = '/main/symfony/caddy'
+      url = '/main/symfony/caddy'
+      weight = 6
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "JWT Authentication with Symfony"
+      identifier = "api-platform-for-symfony-jwt-authentication-with-symfony"
+      pageRef = '/main/symfony/jwt'
+      url = '/main/symfony/jwt'
+      weight = 7
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "Symfony Messenger Integration: CQRS and Async Message Processing"
+      identifier = "api-platform-for-symfony-symfony-messenger-integration-cqrs-and-async-message-processing"
+      pageRef = '/main/symfony/messenger'
+      url = '/main/symfony/messenger'
+      weight = 8
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "User Entity with Symfony"
+      identifier = "api-platform-for-symfony-user-entity-with-symfony"
+      pageRef = '/main/symfony/user'
+      url = '/main/symfony/user'
+      weight = 9
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "Handling File Upload with Symfony"
+      identifier = "api-platform-for-symfony-handling-file-upload-with-symfony"
+      pageRef = '/main/symfony/file-upload'
+      url = '/main/symfony/file-upload'
+      weight = 10
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "Creating Custom Operations and Symfony Controllers"
+      identifier = "api-platform-for-symfony-creating-custom-operations-and-symfony-controllers"
+      pageRef = '/main/symfony/controllers'
+      url = '/main/symfony/controllers'
+      weight = 11
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "NelmioApiDocBundle Integration with Symfony"
+      identifier = "api-platform-for-symfony-nelmioapidocbundle-integration-with-symfony"
+      pageRef = '/main/symfony/nelmio-api-doc'
+      url = '/main/symfony/nelmio-api-doc'
+      weight = 12
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "Migrate From FOSRestBundle with Symfony"
+      identifier = "api-platform-for-symfony-migrate-from-fosrestbundle-with-symfony"
+      pageRef = '/main/symfony/migrate-from-fosrestbundle'
+      url = '/main/symfony/migrate-from-fosrestbundle'
+      weight = 13
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "FOSUserBundle Integration with Symfony"
+      identifier = "api-platform-for-symfony-fosuserbundle-integration-with-symfony"
+      pageRef = '/main/symfony/fosuser-bundle'
+      url = '/main/symfony/fosuser-bundle'
+      weight = 14
+      parent = 'api-platform-for-symfony'
+[[main]]
+      name = "API Platform for Laravel"
+      identifier = "api-platform-for-laravel"
+      pageRef = '/main/laravel'
+      weight = 2
+[[main]]
+      name = "API Platform for Laravel Projects"
+      identifier = "api-platform-for-laravel-api-platform-for-laravel-projects"
+      pageRef = '/main/laravel'
+      url = '/main/laravel'
+      weight = 1
+      parent = 'api-platform-for-laravel'
+[[main]]
+      name = "Testing the API with Laravel"
+      identifier = "api-platform-for-laravel-testing-the-api-with-laravel"
+      pageRef = '/main/laravel/testing'
+      url = '/main/laravel/testing'
+      weight = 2
+      parent = 'api-platform-for-laravel'
+[[main]]
+      name = "Parameters and Filters"
+      identifier = "api-platform-for-laravel-parameters-and-filters"
+      pageRef = '/main/laravel/filters'
+      url = '/main/laravel/filters'
+      weight = 3
+      parent = 'api-platform-for-laravel'
+[[main]]
+      name = "Security with Laravel"
+      identifier = "api-platform-for-laravel-security-with-laravel"
+      pageRef = '/main/laravel/security'
+      url = '/main/laravel/security'
       weight = 4
-      parent = 'the-distribution-create-powerful-apis-with-ease'
+      parent = 'api-platform-for-laravel'
+[[main]]
+      name = "Validation with Laravel"
+      identifier = "api-platform-for-laravel-validation-with-laravel"
+      pageRef = '/main/laravel/validation'
+      url = '/main/laravel/validation'
+      weight = 5
+      parent = 'api-platform-for-laravel'
+[[main]]
+      name = "JWT Authentication with Laravel"
+      identifier = "api-platform-for-laravel-jwt-authentication-with-laravel"
+      pageRef = '/main/laravel/jwt'
+      url = '/main/laravel/jwt'
+      weight = 6
+      parent = 'api-platform-for-laravel'
 [[main]]
       name = "Core"
       identifier = "core"
       pageRef = '/main/core'
-      weight = 2
+      weight = 3
 [[main]]
       name = "The API Platform Core Library"
       identifier = "core-the-api-platform-core-library"
@@ -7408,8 +8156,8 @@
       weight = 5
       parent = 'core'
 [[main]]
-      name = "Testing Utilities"
-      identifier = "core-testing-utilities"
+      name = "Testing the API"
+      identifier = "core-testing-the-api"
       pageRef = '/main/core/testing'
       url = '/main/core/testing'
       weight = 6
@@ -7450,178 +8198,178 @@
       weight = 11
       parent = 'core'
 [[main]]
+      name = "Elasticsearch Filters"
+      identifier = "core-elasticsearch-filters"
+      pageRef = '/main/core/elasticsearch-filters'
+      url = '/main/core/elasticsearch-filters'
+      weight = 12
+      parent = 'core'
+[[main]]
+      name = "Doctrine ORM and MongoDB ODM Filters"
+      identifier = "core-doctrine-orm-and-mongodb-odm-filters"
+      pageRef = '/main/core/doctrine-filters'
+      url = '/main/core/doctrine-filters'
+      weight = 13
+      parent = 'core'
+[[main]]
       name = "Subresources"
       identifier = "core-subresources"
       pageRef = '/main/core/subresources'
       url = '/main/core/subresources'
-      weight = 12
+      weight = 14
       parent = 'core'
 [[main]]
       name = "The Serialization Process"
       identifier = "core-the-serialization-process"
       pageRef = '/main/core/serialization'
       url = '/main/core/serialization'
-      weight = 13
+      weight = 15
       parent = 'core'
 [[main]]
       name = "Validation"
       identifier = "core-validation"
       pageRef = '/main/core/validation'
       url = '/main/core/validation'
-      weight = 14
+      weight = 16
       parent = 'core'
 [[main]]
       name = "Security"
       identifier = "core-security"
       pageRef = '/main/core/security'
       url = '/main/core/security'
-      weight = 15
+      weight = 17
       parent = 'core'
 [[main]]
       name = "Content Negotiation"
       identifier = "core-content-negotiation"
       pageRef = '/main/core/content-negotiation'
       url = '/main/core/content-negotiation'
-      weight = 16
+      weight = 18
       parent = 'core'
 [[main]]
       name = "Pagination"
       identifier = "core-pagination"
       pageRef = '/main/core/pagination'
       url = '/main/core/pagination'
-      weight = 17
+      weight = 19
       parent = 'core'
 [[main]]
       name = "Deprecating Resources and Properties (Alternative to Versioning)"
       identifier = "core-deprecating-resources-and-properties-alternative-to-versioning"
       pageRef = '/main/core/deprecations'
       url = '/main/core/deprecations'
-      weight = 18
+      weight = 20
       parent = 'core'
 [[main]]
       name = "Overriding Default Order"
       identifier = "core-overriding-default-order"
       pageRef = '/main/core/default-order'
       url = '/main/core/default-order'
-      weight = 19
+      weight = 21
       parent = 'core'
 [[main]]
       name = "Performance and Cache"
       identifier = "core-performance-and-cache"
       pageRef = '/main/core/performance'
       url = '/main/core/performance'
-      weight = 20
+      weight = 22
       parent = 'core'
 [[main]]
-      name = "Extensions"
-      identifier = "core-extensions"
+      name = "Extensions for Doctrine and Elasticsearch"
+      identifier = "core-extensions-for-doctrine-and-elasticsearch"
       pageRef = '/main/core/extensions'
       url = '/main/core/extensions'
-      weight = 21
-      parent = 'core'
-[[main]]
-      name = "Symfony Messenger Integration: CQRS and Async Message Processing"
-      identifier = "core-symfony-messenger-integration-cqrs-and-async-message-processing"
-      pageRef = '/main/core/messenger'
-      url = '/main/core/messenger'
-      weight = 22
+      weight = 23
       parent = 'core'
 [[main]]
       name = "Using Data Transfer Objects (DTOs)"
       identifier = "core-using-data-transfer-objects-dtos"
       pageRef = '/main/core/dto'
       url = '/main/core/dto'
-      weight = 23
+      weight = 24
       parent = 'core'
 [[main]]
       name = "OpenAPI Specification Support (formerly Swagger)"
       identifier = "core-openapi-specification-support-formerly-swagger"
       pageRef = '/main/core/openapi'
       url = '/main/core/openapi'
-      weight = 24
+      weight = 25
       parent = 'core'
 [[main]]
       name = "JSON Schema Support"
       identifier = "core-json-schema-support"
       pageRef = '/main/core/json-schema'
       url = '/main/core/json-schema'
-      weight = 25
+      weight = 26
       parent = 'core'
 [[main]]
       name = "Creating Async APIs using the Mercure Protocol"
       identifier = "core-creating-async-apis-using-the-mercure-protocol"
       pageRef = '/main/core/mercure'
       url = '/main/core/mercure'
-      weight = 26
+      weight = 27
       parent = 'core'
 [[main]]
       name = "Pushing Related Resources Using HTTP/2"
       identifier = "core-pushing-related-resources-using-http2"
       pageRef = '/main/core/push-relations'
       url = '/main/core/push-relations'
-      weight = 27
+      weight = 28
       parent = 'core'
 [[main]]
       name = "Errors Handling"
       identifier = "core-errors-handling"
       pageRef = '/main/core/errors'
       url = '/main/core/errors'
-      weight = 28
+      weight = 29
       parent = 'core'
 [[main]]
       name = "Using External Vocabularies"
       identifier = "core-using-external-vocabularies"
       pageRef = '/main/core/external-vocabularies'
       url = '/main/core/external-vocabularies'
-      weight = 29
+      weight = 30
       parent = 'core'
 [[main]]
       name = "Operation Path Naming"
       identifier = "core-operation-path-naming"
       pageRef = '/main/core/operation-path-naming'
       url = '/main/core/operation-path-naming'
-      weight = 30
+      weight = 31
       parent = 'core'
 [[main]]
       name = "URL Generation Strategy"
       identifier = "core-url-generation-strategy"
       pageRef = '/main/core/url-generation-strategy'
       url = '/main/core/url-generation-strategy'
-      weight = 31
+      weight = 32
       parent = 'core'
 [[main]]
       name = "Extending JSON-LD AND Hydra Contexts"
       identifier = "core-extending-json-ld-and-hydra-contexts"
       pageRef = '/main/core/extending-jsonld-context'
       url = '/main/core/extending-jsonld-context'
-      weight = 32
+      weight = 33
       parent = 'core'
 [[main]]
       name = "Identifiers"
       identifier = "core-identifiers"
       pageRef = '/main/core/identifiers'
       url = '/main/core/identifiers'
-      weight = 33
+      weight = 34
       parent = 'core'
 [[main]]
       name = "MongoDB Support"
       identifier = "core-mongodb-support"
       pageRef = '/main/core/mongodb'
       url = '/main/core/mongodb'
-      weight = 34
+      weight = 35
       parent = 'core'
 [[main]]
       name = "Elasticsearch Support"
       identifier = "core-elasticsearch-support"
       pageRef = '/main/core/elasticsearch'
       url = '/main/core/elasticsearch'
-      weight = 35
-      parent = 'core'
-[[main]]
-      name = "Creating Custom Operations and Controllers"
-      identifier = "core-creating-custom-operations-and-controllers"
-      pageRef = '/main/core/controllers'
-      url = '/main/core/controllers'
       weight = 36
       parent = 'core'
 [[main]]
@@ -7632,80 +8380,38 @@
       weight = 37
       parent = 'core'
 [[main]]
-      name = "Handling File Upload"
-      identifier = "core-handling-file-upload"
-      pageRef = '/main/core/file-upload'
-      url = '/main/core/file-upload'
-      weight = 38
-      parent = 'core'
-[[main]]
       name = "JWT Authentication"
       identifier = "core-jwt-authentication"
       pageRef = '/main/core/jwt'
       url = '/main/core/jwt'
-      weight = 39
-      parent = 'core'
-[[main]]
-      name = "User Entity"
-      identifier = "core-user-entity"
-      pageRef = '/main/core/user'
-      url = '/main/core/user'
-      weight = 40
+      weight = 38
       parent = 'core'
 [[main]]
       name = "Accept `application/x-www-form-urlencoded` Form Data"
       identifier = "core-accept-applicationx-www-form-urlencoded-form-data"
       pageRef = '/main/core/form-data'
       url = '/main/core/form-data'
-      weight = 41
-      parent = 'core'
-[[main]]
-      name = "AngularJS Integration"
-      identifier = "core-angularjs-integration"
-      pageRef = '/main/core/angularjs-integration'
-      url = '/main/core/angularjs-integration'
-      weight = 42
-      parent = 'core'
-[[main]]
-      name = "FOSUserBundle Integration"
-      identifier = "core-fosuserbundle-integration"
-      pageRef = '/main/core/fosuser-bundle'
-      url = '/main/core/fosuser-bundle'
-      weight = 43
-      parent = 'core'
-[[main]]
-      name = "NelmioApiDocBundle Integration"
-      identifier = "core-nelmioapidocbundle-integration"
-      pageRef = '/main/core/nelmio-api-doc'
-      url = '/main/core/nelmio-api-doc'
-      weight = 44
+      weight = 39
       parent = 'core'
 [[main]]
       name = "Bootstraping the core library"
       identifier = "core-bootstraping-the-core-library"
       pageRef = '/main/core/bootstrap'
       url = '/main/core/bootstrap'
-      weight = 45
+      weight = 40
       parent = 'core'
 [[main]]
-      name = "Configuration"
-      identifier = "core-configuration"
+      name = "Configuration Reference"
+      identifier = "core-configuration-reference"
       pageRef = '/main/core/configuration'
       url = '/main/core/configuration'
-      weight = 46
-      parent = 'core'
-[[main]]
-      name = "Migrate From FOSRestBundle"
-      identifier = "core-migrate-from-fosrestbundle"
-      pageRef = '/main/core/migrate-from-fosrestbundle'
-      url = '/main/core/migrate-from-fosrestbundle'
-      weight = 47
+      weight = 41
       parent = 'core'
 [[main]]
       name = "Schema Generator"
       identifier = "schema-generator"
       pageRef = '/main/schema-generator'
-      weight = 3
+      weight = 4
 [[main]]
       name = "The Schema Generator"
       identifier = "schema-generator-the-schema-generator"
@@ -7731,7 +8437,7 @@
       name = "Admin"
       identifier = "admin"
       pageRef = '/main/admin'
-      weight = 4
+      weight = 5
 [[main]]
       name = "The API Platform Admin"
       identifier = "admin-the-api-platform-admin"
@@ -7820,7 +8526,7 @@
       name = "Create Client"
       identifier = "create-client"
       pageRef = '/main/create-client'
-      weight = 5
+      weight = 6
 [[main]]
       name = "API Platform Create Client"
       identifier = "create-client-api-platform-create-client"
@@ -7902,7 +8608,7 @@
       name = "Deployment"
       identifier = "deployment"
       pageRef = '/main/deployment'
-      weight = 6
+      weight = 7
 [[main]]
       name = "Deploying API Platform Applications"
       identifier = "deployment-deploying-api-platform-applications"
@@ -7925,7 +8631,7 @@
       weight = 3
       parent = 'deployment'
 [[main]]
-      name = "Deploying to Minikube"
+      name = "Deploying to minikube"
       identifier = "deployment-deploying-to-minikube"
       pageRef = '/main/deployment/minikube'
       url = '/main/deployment/minikube'
@@ -7949,7 +8655,7 @@
       name = "General Information"
       identifier = "general-information"
       pageRef = '/main/extra'
-      weight = 7
+      weight = 8
 [[main]]
       name = "API Platform's Philosophy"
       identifier = "general-information-api-platforms-philosophy"
@@ -8117,71 +8823,155 @@
       url = '/main/changelog'
       pageRef = '/main/changelog'
 [[current]]
-      name = "The Symfony API Platform variant"
-      identifier = "the-symfony-api-platform-variant"
+      name = "API Platform for Symfony"
+      identifier = "api-platform-for-symfony"
       pageRef = '/symfony'
       weight = 1
 [[current]]
-      name = "Getting Started With API Platform: Create Your API and Your Jamstack Site"
-      identifier = "the-symfony-api-platform-variant-getting-started-with-api-platform-create-your-api-and-your-jamstack-site"
+      name = "Getting Started With API Platform with Symfony"
+      identifier = "api-platform-for-symfony-getting-started-with-api-platform-with-symfony"
       pageRef = '/symfony'
       url = '/symfony'
       weight = 1
-      parent = 'the-symfony-api-platform-variant'
+      parent = 'api-platform-for-symfony'
 [[current]]
-      name = "Testing the API"
-      identifier = "the-symfony-api-platform-variant-testing-the-api"
+      name = "Validation with Symfony"
+      identifier = "api-platform-for-symfony-validation-with-symfony"
+      pageRef = '/symfony/validation'
+      url = '/symfony/validation'
+      weight = 2
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "Security with Symfony"
+      identifier = "api-platform-for-symfony-security-with-symfony"
+      pageRef = '/symfony/security'
+      url = '/symfony/security'
+      weight = 3
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "Testing the API with Symfony"
+      identifier = "api-platform-for-symfony-testing-the-api-with-symfony"
       pageRef = '/symfony/testing'
       url = '/symfony/testing'
-      weight = 2
-      parent = 'the-symfony-api-platform-variant'
+      weight = 4
+      parent = 'api-platform-for-symfony'
 [[current]]
-      name = "Debugging"
-      identifier = "the-symfony-api-platform-variant-debugging"
+      name = "Debugging with Symfony"
+      identifier = "api-platform-for-symfony-debugging-with-symfony"
       pageRef = '/symfony/debugging'
       url = '/symfony/debugging'
-      weight = 3
-      parent = 'the-symfony-api-platform-variant'
+      weight = 5
+      parent = 'api-platform-for-symfony'
 [[current]]
-      name = "Configuring the Caddy Web Server"
-      identifier = "the-symfony-api-platform-variant-configuring-the-caddy-web-server"
+      name = "Configuring the Caddy Web Server with Symfony"
+      identifier = "api-platform-for-symfony-configuring-the-caddy-web-server-with-symfony"
       pageRef = '/symfony/caddy'
       url = '/symfony/caddy'
-      weight = 4
-      parent = 'the-symfony-api-platform-variant'
+      weight = 6
+      parent = 'api-platform-for-symfony'
 [[current]]
-      name = "The Laravel API Platform variant"
-      identifier = "the-laravel-api-platform-variant"
+      name = "JWT Authentication with Symfony"
+      identifier = "api-platform-for-symfony-jwt-authentication-with-symfony"
+      pageRef = '/symfony/jwt'
+      url = '/symfony/jwt'
+      weight = 7
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "Symfony Messenger Integration: CQRS and Async Message Processing"
+      identifier = "api-platform-for-symfony-symfony-messenger-integration-cqrs-and-async-message-processing"
+      pageRef = '/symfony/messenger'
+      url = '/symfony/messenger'
+      weight = 8
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "User Entity with Symfony"
+      identifier = "api-platform-for-symfony-user-entity-with-symfony"
+      pageRef = '/symfony/user'
+      url = '/symfony/user'
+      weight = 9
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "Handling File Upload with Symfony"
+      identifier = "api-platform-for-symfony-handling-file-upload-with-symfony"
+      pageRef = '/symfony/file-upload'
+      url = '/symfony/file-upload'
+      weight = 10
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "Creating Custom Operations and Symfony Controllers"
+      identifier = "api-platform-for-symfony-creating-custom-operations-and-symfony-controllers"
+      pageRef = '/symfony/controllers'
+      url = '/symfony/controllers'
+      weight = 11
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "NelmioApiDocBundle Integration with Symfony"
+      identifier = "api-platform-for-symfony-nelmioapidocbundle-integration-with-symfony"
+      pageRef = '/symfony/nelmio-api-doc'
+      url = '/symfony/nelmio-api-doc'
+      weight = 12
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "Migrate From FOSRestBundle with Symfony"
+      identifier = "api-platform-for-symfony-migrate-from-fosrestbundle-with-symfony"
+      pageRef = '/symfony/migrate-from-fosrestbundle'
+      url = '/symfony/migrate-from-fosrestbundle'
+      weight = 13
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "FOSUserBundle Integration with Symfony"
+      identifier = "api-platform-for-symfony-fosuserbundle-integration-with-symfony"
+      pageRef = '/symfony/fosuser-bundle'
+      url = '/symfony/fosuser-bundle'
+      weight = 14
+      parent = 'api-platform-for-symfony'
+[[current]]
+      name = "API Platform for Laravel"
+      identifier = "api-platform-for-laravel"
       pageRef = '/laravel'
       weight = 2
 [[current]]
       name = "API Platform for Laravel Projects"
-      identifier = "the-laravel-api-platform-variant-api-platform-for-laravel-projects"
+      identifier = "api-platform-for-laravel-api-platform-for-laravel-projects"
       pageRef = '/laravel'
       url = '/laravel'
       weight = 1
-      parent = 'the-laravel-api-platform-variant'
+      parent = 'api-platform-for-laravel'
+[[current]]
+      name = "Testing the API with Laravel"
+      identifier = "api-platform-for-laravel-testing-the-api-with-laravel"
+      pageRef = '/laravel/testing'
+      url = '/laravel/testing'
+      weight = 2
+      parent = 'api-platform-for-laravel'
 [[current]]
       name = "Parameters and Filters"
-      identifier = "the-laravel-api-platform-variant-parameters-and-filters"
+      identifier = "api-platform-for-laravel-parameters-and-filters"
       pageRef = '/laravel/filters'
       url = '/laravel/filters'
-      weight = 2
-      parent = 'the-laravel-api-platform-variant'
+      weight = 3
+      parent = 'api-platform-for-laravel'
 [[current]]
-      name = "Security"
-      identifier = "the-laravel-api-platform-variant-security"
+      name = "Security with Laravel"
+      identifier = "api-platform-for-laravel-security-with-laravel"
       pageRef = '/laravel/security'
       url = '/laravel/security'
-      weight = 3
-      parent = 'the-laravel-api-platform-variant'
+      weight = 4
+      parent = 'api-platform-for-laravel'
 [[current]]
-      name = "Validation"
-      identifier = "the-laravel-api-platform-variant-validation"
+      name = "Validation with Laravel"
+      identifier = "api-platform-for-laravel-validation-with-laravel"
       pageRef = '/laravel/validation'
       url = '/laravel/validation'
-      weight = 4
-      parent = 'the-laravel-api-platform-variant'
+      weight = 5
+      parent = 'api-platform-for-laravel'
+[[current]]
+      name = "JWT Authentication with Laravel"
+      identifier = "api-platform-for-laravel-jwt-authentication-with-laravel"
+      pageRef = '/laravel/jwt'
+      url = '/laravel/jwt'
+      weight = 6
+      parent = 'api-platform-for-laravel'
 [[current]]
       name = "Core"
       identifier = "core"
@@ -8223,8 +9013,8 @@
       weight = 5
       parent = 'core'
 [[current]]
-      name = "Testing Utilities"
-      identifier = "core-testing-utilities"
+      name = "Testing the API"
+      identifier = "core-testing-the-api"
       pageRef = '/core/testing'
       url = '/core/testing'
       weight = 6
@@ -8265,178 +9055,178 @@
       weight = 11
       parent = 'core'
 [[current]]
+      name = "Elasticsearch Filters"
+      identifier = "core-elasticsearch-filters"
+      pageRef = '/core/elasticsearch-filters'
+      url = '/core/elasticsearch-filters'
+      weight = 12
+      parent = 'core'
+[[current]]
+      name = "Doctrine ORM and MongoDB ODM Filters"
+      identifier = "core-doctrine-orm-and-mongodb-odm-filters"
+      pageRef = '/core/doctrine-filters'
+      url = '/core/doctrine-filters'
+      weight = 13
+      parent = 'core'
+[[current]]
       name = "Subresources"
       identifier = "core-subresources"
       pageRef = '/core/subresources'
       url = '/core/subresources'
-      weight = 12
+      weight = 14
       parent = 'core'
 [[current]]
       name = "The Serialization Process"
       identifier = "core-the-serialization-process"
       pageRef = '/core/serialization'
       url = '/core/serialization'
-      weight = 13
+      weight = 15
       parent = 'core'
 [[current]]
       name = "Validation"
       identifier = "core-validation"
       pageRef = '/core/validation'
       url = '/core/validation'
-      weight = 14
+      weight = 16
       parent = 'core'
 [[current]]
       name = "Security"
       identifier = "core-security"
       pageRef = '/core/security'
       url = '/core/security'
-      weight = 15
+      weight = 17
       parent = 'core'
 [[current]]
       name = "Content Negotiation"
       identifier = "core-content-negotiation"
       pageRef = '/core/content-negotiation'
       url = '/core/content-negotiation'
-      weight = 16
+      weight = 18
       parent = 'core'
 [[current]]
       name = "Pagination"
       identifier = "core-pagination"
       pageRef = '/core/pagination'
       url = '/core/pagination'
-      weight = 17
+      weight = 19
       parent = 'core'
 [[current]]
       name = "Deprecating Resources and Properties (Alternative to Versioning)"
       identifier = "core-deprecating-resources-and-properties-alternative-to-versioning"
       pageRef = '/core/deprecations'
       url = '/core/deprecations'
-      weight = 18
+      weight = 20
       parent = 'core'
 [[current]]
       name = "Overriding Default Order"
       identifier = "core-overriding-default-order"
       pageRef = '/core/default-order'
       url = '/core/default-order'
-      weight = 19
+      weight = 21
       parent = 'core'
 [[current]]
       name = "Performance and Cache"
       identifier = "core-performance-and-cache"
       pageRef = '/core/performance'
       url = '/core/performance'
-      weight = 20
+      weight = 22
       parent = 'core'
 [[current]]
-      name = "Extensions"
-      identifier = "core-extensions"
+      name = "Extensions for Doctrine and Elasticsearch"
+      identifier = "core-extensions-for-doctrine-and-elasticsearch"
       pageRef = '/core/extensions'
       url = '/core/extensions'
-      weight = 21
-      parent = 'core'
-[[current]]
-      name = "Symfony Messenger Integration: CQRS and Async Message Processing"
-      identifier = "core-symfony-messenger-integration-cqrs-and-async-message-processing"
-      pageRef = '/core/messenger'
-      url = '/core/messenger'
-      weight = 22
+      weight = 23
       parent = 'core'
 [[current]]
       name = "Using Data Transfer Objects (DTOs)"
       identifier = "core-using-data-transfer-objects-dtos"
       pageRef = '/core/dto'
       url = '/core/dto'
-      weight = 23
+      weight = 24
       parent = 'core'
 [[current]]
       name = "OpenAPI Specification Support (formerly Swagger)"
       identifier = "core-openapi-specification-support-formerly-swagger"
       pageRef = '/core/openapi'
       url = '/core/openapi'
-      weight = 24
+      weight = 25
       parent = 'core'
 [[current]]
       name = "JSON Schema Support"
       identifier = "core-json-schema-support"
       pageRef = '/core/json-schema'
       url = '/core/json-schema'
-      weight = 25
+      weight = 26
       parent = 'core'
 [[current]]
       name = "Creating Async APIs using the Mercure Protocol"
       identifier = "core-creating-async-apis-using-the-mercure-protocol"
       pageRef = '/core/mercure'
       url = '/core/mercure'
-      weight = 26
+      weight = 27
       parent = 'core'
 [[current]]
       name = "Pushing Related Resources Using HTTP/2"
       identifier = "core-pushing-related-resources-using-http2"
       pageRef = '/core/push-relations'
       url = '/core/push-relations'
-      weight = 27
+      weight = 28
       parent = 'core'
 [[current]]
       name = "Errors Handling"
       identifier = "core-errors-handling"
       pageRef = '/core/errors'
       url = '/core/errors'
-      weight = 28
+      weight = 29
       parent = 'core'
 [[current]]
       name = "Using External Vocabularies"
       identifier = "core-using-external-vocabularies"
       pageRef = '/core/external-vocabularies'
       url = '/core/external-vocabularies'
-      weight = 29
+      weight = 30
       parent = 'core'
 [[current]]
       name = "Operation Path Naming"
       identifier = "core-operation-path-naming"
       pageRef = '/core/operation-path-naming'
       url = '/core/operation-path-naming'
-      weight = 30
+      weight = 31
       parent = 'core'
 [[current]]
       name = "URL Generation Strategy"
       identifier = "core-url-generation-strategy"
       pageRef = '/core/url-generation-strategy'
       url = '/core/url-generation-strategy'
-      weight = 31
+      weight = 32
       parent = 'core'
 [[current]]
       name = "Extending JSON-LD AND Hydra Contexts"
       identifier = "core-extending-json-ld-and-hydra-contexts"
       pageRef = '/core/extending-jsonld-context'
       url = '/core/extending-jsonld-context'
-      weight = 32
+      weight = 33
       parent = 'core'
 [[current]]
       name = "Identifiers"
       identifier = "core-identifiers"
       pageRef = '/core/identifiers'
       url = '/core/identifiers'
-      weight = 33
+      weight = 34
       parent = 'core'
 [[current]]
       name = "MongoDB Support"
       identifier = "core-mongodb-support"
       pageRef = '/core/mongodb'
       url = '/core/mongodb'
-      weight = 34
+      weight = 35
       parent = 'core'
 [[current]]
       name = "Elasticsearch Support"
       identifier = "core-elasticsearch-support"
       pageRef = '/core/elasticsearch'
       url = '/core/elasticsearch'
-      weight = 35
-      parent = 'core'
-[[current]]
-      name = "Creating Custom Operations and Controllers"
-      identifier = "core-creating-custom-operations-and-controllers"
-      pageRef = '/core/controllers'
-      url = '/core/controllers'
       weight = 36
       parent = 'core'
 [[current]]
@@ -8447,74 +9237,32 @@
       weight = 37
       parent = 'core'
 [[current]]
-      name = "Handling File Upload"
-      identifier = "core-handling-file-upload"
-      pageRef = '/core/file-upload'
-      url = '/core/file-upload'
-      weight = 38
-      parent = 'core'
-[[current]]
       name = "JWT Authentication"
       identifier = "core-jwt-authentication"
       pageRef = '/core/jwt'
       url = '/core/jwt'
-      weight = 39
-      parent = 'core'
-[[current]]
-      name = "User Entity"
-      identifier = "core-user-entity"
-      pageRef = '/core/user'
-      url = '/core/user'
-      weight = 40
+      weight = 38
       parent = 'core'
 [[current]]
       name = "Accept `application/x-www-form-urlencoded` Form Data"
       identifier = "core-accept-applicationx-www-form-urlencoded-form-data"
       pageRef = '/core/form-data'
       url = '/core/form-data'
-      weight = 41
-      parent = 'core'
-[[current]]
-      name = "AngularJS Integration"
-      identifier = "core-angularjs-integration"
-      pageRef = '/core/angularjs-integration'
-      url = '/core/angularjs-integration'
-      weight = 42
-      parent = 'core'
-[[current]]
-      name = "FOSUserBundle Integration"
-      identifier = "core-fosuserbundle-integration"
-      pageRef = '/core/fosuser-bundle'
-      url = '/core/fosuser-bundle'
-      weight = 43
-      parent = 'core'
-[[current]]
-      name = "NelmioApiDocBundle Integration"
-      identifier = "core-nelmioapidocbundle-integration"
-      pageRef = '/core/nelmio-api-doc'
-      url = '/core/nelmio-api-doc'
-      weight = 44
+      weight = 39
       parent = 'core'
 [[current]]
       name = "Bootstraping the core library"
       identifier = "core-bootstraping-the-core-library"
       pageRef = '/core/bootstrap'
       url = '/core/bootstrap'
-      weight = 45
+      weight = 40
       parent = 'core'
 [[current]]
-      name = "Configuration"
-      identifier = "core-configuration"
+      name = "Configuration Reference"
+      identifier = "core-configuration-reference"
       pageRef = '/core/configuration'
       url = '/core/configuration'
-      weight = 46
-      parent = 'core'
-[[current]]
-      name = "Migrate From FOSRestBundle"
-      identifier = "core-migrate-from-fosrestbundle"
-      pageRef = '/core/migrate-from-fosrestbundle'
-      url = '/core/migrate-from-fosrestbundle'
-      weight = 47
+      weight = 41
       parent = 'core'
 [[current]]
       name = "Schema Generator"
@@ -8740,7 +9488,7 @@
       weight = 3
       parent = 'deployment'
 [[current]]
-      name = "Deploying to Minikube"
+      name = "Deploying to minikube"
       identifier = "deployment-deploying-to-minikube"
       pageRef = '/deployment/minikube'
       url = '/deployment/minikube'
@@ -8801,7 +9549,7 @@
       weight = 5
       parent = 'general-information'
 [[current]]
-      name = "Contribution guides"
+      name = "Contribution Guides"
       identifier = "general-information-contribution-guides"
       pageRef = '/extra/contribution-guides'
       url = '/extra/contribution-guides'
