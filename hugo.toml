@@ -26,8 +26,12 @@ disablePathToLower = true
     endLevel = 2 
 
 [params]
-defaultVersion = "4.1"  # Version par défaut
-defaultVersionPath = "v4.1"  # Version par défaut
+defaultVersion = "4.2"  # Version par défaut
+defaultVersionPath = "v4.2"  # Version par défaut
+
+[[params.versions]]
+  version = "4.2"
+  path = "v4.2"
 
 [[params.versions]]
   version = "4.1"
