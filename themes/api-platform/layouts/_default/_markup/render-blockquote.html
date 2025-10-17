@@ -9,17 +9,17 @@
 {{ if eq .Type "alert" }}
   <blockquote class="alert alert-{{ .AlertType }}">
     <p class="alert-heading">
-      {{ transform.Emojify (index $emojis .AlertType) }}
       {{ with .AlertTitle }}
         {{ . }}
       {{ else }}
         {{ or (i18n .AlertType) (title .AlertType) }}
       {{ end }}
     </p>
-    {{ .Text }}
-  </blockquote>
+
+    {{ .Text | replaceRE `^<p><strong>([a-zA-Z]+)</strong></p>\n?` "" | safeHTML }}
+</blockquote>
 {{ else }}
-  <blockquote>
-    {{ .Text }}
-  </blockquote>
+<blockquote>
+    {{ .Text | safeHTML }}
+</blockquote>
 {{ end }}
