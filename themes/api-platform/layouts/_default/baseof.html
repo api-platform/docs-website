@@ -5,7 +5,7 @@
   {{ partial "mermaid.html" . }}
 </head>
 <body class="bg-white dark:bg-blue-black">
-	<div class="relative w-full overflow-x-clip bg-white dark:bg-blue-black">
+    <div class="relative w-full overflow-x-clip bg-white dark:bg-blue-black">
     {{ partial "header.html" . }}
     {{ partial "mobilesidebar.html" . }}
     {{/* partial "modalcon.html" . */}}
@@ -13,6 +13,7 @@
       <div class="flex flex-row items-start justify-start flex-wrap">
         {{ partial "sidebar.html" . }}
         <div class="flex-1 overflow-x-clip min-w-0">
+          {{ partial "copyMarkdownPage.html" . }}
           {{ block "main" . }}{{ end }}
         </div>
       </div>

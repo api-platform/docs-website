@@ -1,11 +1,3 @@
-{{ $emojis := dict
-  "caution" ":exclamation:"
-  "important" ":information_source:"
-  "note" ":information_source:"
-  "tip" ":bulb:"
-  "warning" ":information_source:"
-}}
-
 {{ if eq .Type "alert" }}
   <blockquote class="alert alert-{{ .AlertType }}">
     <p class="alert-heading">
@@ -20,6 +12,6 @@
 </blockquote>
 {{ else }}
 <blockquote>
-    {{ .Text | safeHTML }}
+    {{ .Text }}
 </blockquote>
 {{ end }}
