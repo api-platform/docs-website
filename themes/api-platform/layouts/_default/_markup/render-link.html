@@ -1,7 +1,7 @@
-{{- if not (strings.HasPrefix .Destination "http") -}}
+{{- if and (not (strings.HasPrefix .Destination "http")) (not (strings.HasPrefix .Destination "#")) -}}
   {{- $urlParts := strings.Split .Destination "#" -}}
   {{- $page := .Page.GetPage (index $urlParts 0) -}}
-  <a href="{{ $page.RelPermalink | safeURL }}{{ if gt (len $urlParts) 1 }}#{{ index $urlParts 1 }}{{ end }}">{{ .Text | safeHTML }}</a> 
+  <a href="{{ $page.RelPermalink | safeURL }}{{ if gt (len $urlParts) 1 }}#{{ index $urlParts 1 }}{{ end }}">{{ .Text | safeHTML }}</a>
 {{- else -}}
   <a href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
 {{- end -}}
