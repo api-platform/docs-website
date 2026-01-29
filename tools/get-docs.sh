@@ -4,6 +4,16 @@ root=$(pwd)
 
 IFS=$'\n' read -d '' -r -a versions < docs-versions.txt
 
+echo "===== DEBUG docs-versions.txt ====="
+cat -A docs-versions.txt
+
+echo "===== DEBUG versions array ====="
+for v in "${versions[@]}"; do
+  echo "-> \"$v\""
+done
+
+echo "==================================="
+
 if [[ ! -d $root/docs.temp ]]; then
   git clone --depth=1 https://github.com/api-platform/docs docs.temp
   cd $root/docs.temp
