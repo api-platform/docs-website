@@ -22,4 +22,11 @@ hugo
 ## Dev 
 
 In `themes/api-platform` run `npm run build -- --watch`
-Run `hugo serve`
+Run `hugo serve --watch`
+
+Hugo will share the URL to see the documentation with automatic rebuilding.
+
+You can now perform and test changes:
+
+- the directory `content/` is a clone of https://github.com/api-platform/docs
+- the directory `themes/` contain custom theming applied to the documents in `content/`
