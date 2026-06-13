@@ -17,6 +17,8 @@ npm run build
 # run hugo to build public/
 cd ../../
 hugo
+# generate public/llms.txt and public/llms-full.txt (current version, llmstxt.org)
+node tools/llms.mjs
 ```
 
 ## Dev 
