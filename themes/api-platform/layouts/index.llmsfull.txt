@@ -11,7 +11,7 @@ Source: {{ $base }}/
 
 ---
 
-# {{ partial "extract-h1.html" . | plainify | strings.TrimSpace }}
+# {{ trim (partial "extract-h1.html" . | plainify) " \r\n\t" }}
 
 Source: {{ .Permalink }}
 

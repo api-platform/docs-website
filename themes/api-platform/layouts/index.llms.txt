@@ -10,7 +10,8 @@
 {{ range $ch.items -}}
 {{- $path := cond (eq . "index") (printf "/%s" $ch.path) (printf "/%s/%s" $ch.path .) -}}
 {{- with $.Site.GetPage $path -}}
-- [{{ partial "extract-h1.html" . | plainify | strings.TrimSpace }}]({{ .Permalink }})
+{{- $title := trim (partial "extract-h1.html" . | plainify) " \r\n\t" -}}
+- [{{ $title }}]({{ .Permalink }})
 {{ end -}}
 {{- end -}}
 {{- end }}
