@@ -1,0 +1,21 @@
+{{- $base := .Site.BaseURL | strings.TrimSuffix "/" -}}
+{{- $version := .Site.Params.defaultVersion -}}
+# API Platform documentation ({{ $version }})
+
+Source: {{ $base }}/
+{{ $outline := os.ReadFile "content/outline.yaml" | transform.Unmarshal -}}
+{{- range $ch := $outline.chapters -}}
+{{- range $ch.items -}}
+{{- $path := cond (eq . "index") (printf "/%s" $ch.path) (printf "/%s/%s" $ch.path .) -}}
+{{- with $.Site.GetPage $path }}
+
+---
+
+# {{ partial "extract-h1.html" . | plainify | strings.TrimSpace }}
+
+Source: {{ .Permalink }}
+
+{{ .RawContent }}
+{{- end -}}
+{{- end -}}
+{{- end }}
