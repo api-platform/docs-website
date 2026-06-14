@@ -18,8 +18,6 @@ npm run build
 # current version, via the index.llms*.txt templates and [outputs] in hugo.toml)
 cd ../../
 hugo
-# generate public/llms.txt and public/llms-full.txt (current version, llmstxt.org)
-node tools/llms.mjs
 ```
 
 ## Dev 
