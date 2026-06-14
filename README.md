@@ -14,7 +14,8 @@ node tools/menu.mjs
 cd themes/api-platform
 npm install
 npm run build
-# run hugo to build public/
+# run hugo to build public/ (also emits llms.txt and llms-full.txt for the
+# current version, via the index.llms*.txt templates and [outputs] in hugo.toml)
 cd ../../
 hugo
 # generate public/llms.txt and public/llms-full.txt (current version, llmstxt.org)

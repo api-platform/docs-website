@@ -1,0 +1,16 @@
+{{- $base := .Site.BaseURL | strings.TrimSuffix "/" -}}
+{{- $version := .Site.Params.defaultVersion -}}
+# API Platform
+
+> API Platform is a framework for building hypermedia REST and GraphQL APIs in PHP, integrated with Symfony and Laravel. This file indexes the current ({{ $version }}) documentation for large language models, per the llmstxt.org convention. Full text: {{ $base }}/llms-full.txt
+{{ $outline := os.ReadFile "content/outline.yaml" | transform.Unmarshal -}}
+{{- range $ch := $outline.chapters }}
+
+## {{ $ch.title }}
+{{ range $ch.items -}}
+{{- $path := cond (eq . "index") (printf "/%s" $ch.path) (printf "/%s/%s" $ch.path .) -}}
+{{- with $.Site.GetPage $path -}}
+- [{{ partial "extract-h1.html" . | plainify | strings.TrimSpace }}]({{ .Permalink }})
+{{ end -}}
+{{- end -}}
+{{- end }}
