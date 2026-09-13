@@ -2,7 +2,7 @@
 
 ## Build
 
-```
+```bash
 npm install
 # fetches api-platform/docs
 bash tools/get-docs.sh
