@@ -48,6 +48,10 @@ defaultVersion = "4.3"  # Version par défaut
 defaultVersionPath = "v4.3"  # Version par défaut
 
 [[params.versions]]
+  version = "5.0"
+  path = "v5.0"
+
+[[params.versions]]
   version = "4.4"
   path = "v4.4"
 
@@ -174,4 +178,3 @@ defaultVersionPath = "v4.3"  # Version par défaut
 [[params.redirects]]
   from = "/docs/v2.1/symfony/"
   to = "/docs/v2.1/distribution/"
-
