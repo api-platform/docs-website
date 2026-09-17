@@ -44,8 +44,12 @@ disablePathToLower = true
   home = ["HTML", "RSS", "llms", "llmsfull"]
 
 [params]
-defaultVersion = "4.3"  # Version par défaut
-defaultVersionPath = "v4.3"  # Version par défaut
+defaultVersion = "5.0"  # Version par défaut
+defaultVersionPath = "v5.0"  # Version par défaut
+
+[[params.versions]]
+  version = "5.0"
+  path = "v5.0"
 
 [[params.versions]]
   version = "4.4"
